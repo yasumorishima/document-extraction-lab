@@ -48,10 +48,11 @@ Unrelated to the breaks: I could not reproduce #5 with a 12,000-page PDF (my sel
 
 **日本語の要約**：
 - 文字情報の無いフォントの字形を OCR の多数決で決める処理（PR #82）は、英語で誤り 0 だったこと（決めきれない字は未確定のまま残す）。
-- 一方、文字が図形で描かれたページはページ全体の OCR に回り、そこでは似た字（O/0、l/1、I/1）や金額の数字が**印なしで別の字になる**こと。自作サンプルと、公開されている実在の統計資料の両方で測った。
+- 一方、文字が図形で描かれたページはページ全体の OCR に回り、そこでは似た字（O/0、l/1、I/1）や金額の数字が別の字になること。自作サンプルと、公開されている実在の統計資料の両方で測った。
+- 英語では、OCR の後の「怪しい文字列」の確認にも 1 行も当たらず、**何の印も付かない**こと（アプリ自身の判定関数で確かめた）。日本語は多くの行がその確認を通るが、比べるのは英数字だけで、結果も止めない確認依頼になること（コードを読んで確認、生成 AI を含めた実行はしていない）。
 - 提案は 2 つ（図形のページでも「同じ形をまとめて投票し、決めきれない字は未確定のまま残す」ようにする。確認済みの対応表を文書をまたいで使えるようにする）。手伝えるかも聞く。
 
-**タイトル案**：`Outline-only pages go to full-page OCR, which silently swaps look-alike characters (measurements + a suggestion)`
+**タイトル案**：`Outline-only pages go to full-page OCR, which swaps look-alike characters without a flag in English text (measurements + a suggestion)`
 
 ```markdown
 I measured two parts of the pipeline on PDFs whose text cannot be extracted, at `8213721`. The inputs were self-made samples (fictional monthly statements, 12 months, English and Japanese) and a public government report: the Statistics Bureau of Japan's monthly "Population Estimates", Public Data License 1.0 (CC BY 4.0 compatible). Every output was compared character by character with ground truth.
@@ -67,14 +68,17 @@ I called `_recover_sync` directly with Tesseract 5.3.4, at the lockfile versions
 
 Leaving undecided glyphs unmapped instead of guessing worked: every English case it could not settle was a look-alike (O/0, I/l/1). In Japanese the errors are kanji/katakana pairs that look the same (工→エ, 力→カ, 夕→タ, 二→ニ, 一→ー), plus a few kanji read as Latin letters (座→E, 参→B).
 
-**2. Outline-only pages go to full-page OCR, which substitutes without any flag.**
+**2. Outline-only pages go to full-page OCR, which substitutes look-alike characters.**
 `classify._vector_outline_pages` finds pages whose characters are drawn as filled paths, and those pages go through OCRmyPDF `--force-ocr`. I ran your own `classify_pdf` → `run_ocr` on 22 such pages. The output was identical to running OCRmyPDF 17.4.0 directly with the same arguments, so I used the direct run for the larger set:
 
 - Self-made English, 10 variants (fonts, rules, tight tracking, Ghostscript-converted, small coordinate jitter), months 2–12 (about 5,250 characters per variant): **95–128 characters silently replaced** in each variant. Mostly O→0, l→1, I→1, I↔l. A clearer font did not help (DejaVu Serif still had 120). In one month an amount changed from `5,583` to `5,983`.
-- Self-made Japanese (4,207 characters): 249 replaced, including a digit (0→9).
+- Self-made Japanese (4,207 characters, OCR language set to `jpn+eng`; the default is `eng`, and an outline-only document gives language detection nothing to go on): 249 replaced, including a digit (0→9).
 - The public report (pages 1–5 of 11 monthly issues, 153,247 characters, outlined with Ghostscript `-dNoOutputFonts`): 4,145 extra or wrong characters and 6,812 missing. Examples: ー→-, 人→A, ＋→十, 月→4.
 
-For a screen-reader user, these are wrong words and wrong numbers with nothing to show they might be wrong.
+I also checked whether anything after OCR would flag these (by reading the code and running your `suspicious_text_signals` on the OCR outputs above; I did not run the LLM steps):
+
+- English: none of the 2,151 OCR lines (or whole pages) triggers a signal, so the grounded-text review never sees them. A screen-reader user gets the wrong words and numbers with nothing to show they might be wrong.
+- Japanese: many lines do trigger "mixed scripts" (57 of 239 in the self-made set, 1,404 of 3,728 in the public report). But the second opinion is a crop OCR with the default `eng` (`text_grounding.py:43`), and only a-z0-9 are compared (`page_intelligence.py:58-64`), so a kana/kanji swap such as 力→カ cannot itself show up as a difference. A confirmed candidate becomes a non-blocking review task (`release_policy.py`). I have not measured end to end which Japanese lines get such a task.
 
 **Suggestion.**
 On an outline page, the same character is drawn as (almost) the same path every time, so the idea behind `ocr_unicode` can carry over:
