@@ -1,0 +1,4 @@
+EN outline (ocrmypdf-12m): files 22, flagged as one block 0; lines 428, flagged 0 {}
+EN conditions (oss/ocrmypdf-conditions): files 88, flagged as one block 0; lines 1723, flagged 0 {}
+JA (ocrmypdf-ja): files 11, flagged as one block 11; lines 239, flagged 57 {'mixed scripts in one text block': 57, 'letters separated by spaces': 3}
+public (public/ocr): files 66, flagged as one block 66; lines 3728, flagged 1404 {'letters separated by spaces': 142, 'mixed scripts in one text block': 1291, 'very short token pattern': 8}
