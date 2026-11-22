@@ -4,8 +4,8 @@
 根拠は `oss-verification-2026-11.md` と `../results/oss-evaluation-2026-11.md`（どちらも実測）。
 
 投稿の直前にやること：
-- 両方の HEAD と issue 一覧をもう一度確かめる（2026-11-22 時点：pdf-glyph-mapping `7b4075b`、CUNY `8213721`。同じ内容の報告なし）。
-- このリポジトリを公開するなら、文中の「(link)」を実際の URL に置き換える。非公開のままなら、その行を消す。
+- 両方の HEAD と issue 一覧をもう一度確かめる（2026-11-22 公開後に再確認：pdf-glyph-mapping `7b4075b`、CUNY `8213721`。同じ内容の報告なし。CUNY の新しい issue #84〜#91 は別の話題）。
+- （済 2026-11-22）公開したので、CUNY 案の「(link)」を公開 URL に置き換えた。
 - CUNY は投稿前に `CONTRIBUTING`・issue テンプレートの有無を確かめ、あればそれに合わせる。
 
 ---
@@ -88,7 +88,7 @@ I built a small stdlib-only version of the grouping and lookup to test the idea.
 
 A second, smaller idea: for documents that come out in the same layout every month, being able to reuse a glyph map that someone has checked would remove most of the "unmapped" cases above. Each document is currently decided on its own.
 
-Is either of these something you would want in the app? If so, I can share the scripts, samples and scoring (link), or try a PR along the lines you prefer. If outline pages are out of scope for now, these numbers may still be useful as a known limitation.
+Is either of these something you would want in the app? If so, I can share the scripts, samples and scoring (https://github.com/yasumorishima/document-extraction-lab/tree/main/topics/glyph-table), or try a PR along the lines you prefer. If outline pages are out of scope for now, these numbers may still be useful as a known limitation.
 ```
 
 ---
