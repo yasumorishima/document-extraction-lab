@@ -24,7 +24,7 @@ from trying related OSS projects.
 - Reply to the owner in Japanese (です/ます). Do not claim anything not run.
 - Record progress and next steps in this file before ending a session.
 - Git author: `yasumorishima <90467955+yasumorishima@users.noreply.github.com>`. Check `git config user.email` before committing; never a personal address.
-- Merge PRs with the **rebase** method: a GitHub merge commit carries the owner's profile name as author.
+- Any commit GitHub makes on merge carries the owner's GitHub profile name: a merge commit as author, a rebase merge as committer (seen on `f756239` and `709890b`). No merge method avoids it. The owner accepted this (2026-11-22): keep using PR + merge.
 
 ## Progress log
 - 2026-11-21: repo created by the owner's local Claude.
