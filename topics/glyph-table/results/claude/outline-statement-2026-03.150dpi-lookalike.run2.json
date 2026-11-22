@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike",
+ "model_requested": "claude-opus-5-5",
+ "model_served": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3001,
+ "output_tokens": 1159,
+ "usd_estimate": 0.0352,
+ "seconds": 10.1,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: product codes mix look-alike characters (zero 0 and capital O; one 1, lowercase l and capital I). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "MONTHLY STATEMENT (SAMPLE)\nPeriod 2026-03\nAccount 4471-0098\nDate Code Item Qty Amount\n03/15 0?-788 Folder blue 2 9,480\n03/11 O1-563 Marker set 7 4,907\n03/25 1?-383 Whiteboard 5 2,210\n03/21 ?0-558 Stapler 8 21,456\n03/24 0O-307 Whiteboard 3 5,955\n03/06 ??-425 Chair mat 8 29,512\n03/24 0O-806 Whiteboard 11 30,811\n03/16 ??-540 Cable 2m 1 2,122\n03/15 0?-821 Whiteboard 7 14,679\n03/01 ?1-830 Whiteboard 2 1,532\n03/15 ?O-148 Cable 2m 11 22,198\n03/20 1O-327 Folder blue 12 40,224\n03/08 ?O-180 Cable 2m 11 8,041\n03/14 ?1-722 Ink red 8 32,112\nNote: rate 8% applies\nRef #Q7 (new code)\nTotal 225,239"
+}

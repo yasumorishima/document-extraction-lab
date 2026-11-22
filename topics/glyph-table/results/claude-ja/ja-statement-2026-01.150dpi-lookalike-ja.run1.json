@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-opus-5-5",
+ "model_served": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1363,
+ "usd_estimate": 0.0394,
+ "seconds": 13.0,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年01月 口座 4471-0098\n日付 品番 品名 数量 金額\n01/21 ニエー981 デスクライト 1 702\n01/19 エ八一389 ホワイトボード 1 3,710\n01/09 ニタ一817 ケーブル２ｍ 1 1,747\n01/24 タター817 インク赤 11 20,790\n01/10 ハハ一603 ＵＳＢハブ 5 20,390\n01/13 エロ一449 ＵＳＢハブ 8 17,976\n01/21 エカー592 マーカー 8 14,432\n01/02 ロロ一537 トナー黒 9 37,413\n01/05 タカー879 ケーブル２ｍ 6 22,410\n01/23 ニロ一491 ホワイトボード 2 9,110\n01/22 カター124 ＵＳＢハブ 6 11,592\n01/12 ロロ一842 ラベル 11 3,685\n01/02 エロ一951 トナー黒 10 37,750\n01/20 カエー514 ケーブル２ｍ 12 30,408\n合計 232,115"
+}

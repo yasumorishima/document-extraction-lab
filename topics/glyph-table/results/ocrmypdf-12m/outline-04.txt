@@ -1,0 +1,42 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-04                           Account 4471-0098
+
+
+
+
+Date             Code     Item               Qty        Amount
+
+04/05            10-527   Marker set         3          6,438
+
+04/17            10-744   Marker set         6          17,712
+
+04/07            01-159   Ink red            10         33,750
+
+04/13            10-465   Label roll         5          3,570
+
+04/20            10-440   Folder blue        3          2,151
+
+04/12            00-995   Folder blue        5          13,405
+
+04/02            00-612   USB hub            10         5,130
+
+04/20            11-970   Chair mat          2          640
+
+04/09            01-131   Whiteboard         6          23,886
+
+04/15            10-681   Ink red            3          9,882
+
+04/26            Il-179   Chair mat          10         39,830
+
+04/10            10-733   USB hub            10         23,970
+
+04/07            Il-462   Toner black        8          38,216
+
+04/13            10-941   Paper A4 box       9          9,594
+
+Note: rate 8% applies
+
+
+                                             Total      228,174
+

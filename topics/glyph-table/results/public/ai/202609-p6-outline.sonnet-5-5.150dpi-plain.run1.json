@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "plain",
+ "model_requested": "claude-sonnet-5-5",
+ "model_served": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 2938,
+ "output_tokens": 871,
+ "usd_estimate": 0.0146,
+ "seconds": 4.9,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription.",
+ "text": "人口推計\n人口推計の公表予定\n各月１日現在\n公表内容\n公表日\n2026年１月分\n2025年８月確定値、2026年１月概算値\n2026年 １月20日（火）14：00\n2026年２月分\n2025年９月確定値、2026年２月概算値\n２月20日（金）14：00\n2026年３月分\n2025年10月令和２年国勢調査を基準とする確定\n値、2026年３月概算値\n３月19日（木）14：00\n2026年４月分\n2025年11月令和２年国勢調査を基準とする確定\n値、2026年４月概算値\n４月20日（月）14：00\n2026年５月分\n2025年12月令和２年国勢調査を基準とする確定\n値、2026年５月概算値\n５月20日（水）14：00\n2026年６月分\n2026年１月令和２年国勢調査を基準とする確定\n値、2026年６月概算値\n６月19日（金）14：00\n2026年７月分\n2026年２月令和２年国勢調査を基準とする確定\n値、2026年７月概算値\n７月21日（火）14：00\n2026年８月分\n2026年３月令和２年国勢調査を基準とする確定\n値、2026年８月概算値\n８月20日（木）14：00\n2026年９月分\n2026年４月令和２年国勢調査を基準とする確定\n値、2026年９月概算値\n９月24日（木）14：00\n2026年10月分\n2026年５月令和２年国勢調査を基準とする確定\n値、2026年10月概算値\n10月20日（火）14：00\n2026年11月分\n2026年６月確定値、2026年11月概算値\n11月20日（金）14：00\n2026年12月分\n2026年７月確定値、2026年12月概算値\n12月21日（月）14：00\n2027年１月分\n2026年８月確定値、2027年１月概算値\n2027年 １月下旬\n2027年２月分\n2026年９月確定値、2027年２月概算値\n２月下旬\n2027年３月分\n2026年10月確定値、2027年３月概算値\n３月下旬\n◆ 「人口推計」の詳しい結果を御覧になる場合は、次のURLを参照ください。\nhttps://www.stat.go.jp/data/jinsui/index.html\n◆ 結果の利用・転載について\n統計データを引用する場合には、出典の表記をお願いします。\n出典 ：「人口推計」(総務省統計局)\n【問合せ先】\n総務省統計局統計調査部国勢統計課\n〒162－8668\n東京都新宿区若松町19番１号\n総務省統計局\nTEL： 03（5273）1009"
+}

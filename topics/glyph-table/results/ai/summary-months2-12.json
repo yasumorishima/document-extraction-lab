@@ -1,0 +1,632 @@
+{
+ "dejavu-serif | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5259,
+    "substituted": 0,
+    "unassigned": 0,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 0
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {},
+  "usd": 0.27,
+  "usd_per_page": 0.0246,
+  "seconds_per_page": 5.4,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ },
+ "ja | fable-5-2 | lookalike-ja | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 4207,
+    "correct": 3996,
+    "substituted": 205,
+    "unassigned": 0,
+    "missing": 6,
+    "extra": 6
+   },
+   "2": {
+    "truth_chars": 4207,
+    "correct": 3973,
+    "substituted": 210,
+    "unassigned": 22,
+    "missing": 2,
+    "extra": 2
+   },
+   "3": {
+    "truth_chars": 4207,
+    "correct": 3987,
+    "substituted": 216,
+    "unassigned": 0,
+    "missing": 4,
+    "extra": 4
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 11,
+   "2": 11,
+   "3": 11
+  },
+  "pages_where_all_runs_identical": "1/11",
+  "top_substitutions_all_runs": {
+   "ー->一": 161,
+   "一->ー": 140,
+   "力->カ": 69,
+   "工->エ": 66,
+   "夕->タ": 64,
+   "口->ロ": 56,
+   "二->ニ": 37,
+   "ー->—": 12,
+   "ー->―": 10,
+   "ニ->二": 7
+  },
+  "usd": 6.113,
+  "usd_per_page": 0.1852,
+  "seconds_per_page": 41.5,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": true
+ },
+ "ja | haiku-5-5 | lookalike-ja | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 4207,
+    "correct": 3954,
+    "substituted": 249,
+    "unassigned": 0,
+    "missing": 4,
+    "extra": 4
+   },
+   "2": {
+    "truth_chars": 4207,
+    "correct": 3964,
+    "substituted": 237,
+    "unassigned": 0,
+    "missing": 6,
+    "extra": 6
+   },
+   "3": {
+    "truth_chars": 4207,
+    "correct": 3972,
+    "substituted": 229,
+    "unassigned": 0,
+    "missing": 6,
+    "extra": 7
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 11,
+   "2": 11,
+   "3": 11
+  },
+  "pages_where_all_runs_identical": "0/11",
+  "top_substitutions_all_runs": {
+   "一->ー": 155,
+   "ー->―": 106,
+   "一->―": 86,
+   "力->カ": 72,
+   "工->エ": 69,
+   "夕->タ": 66,
+   "口->ロ": 58,
+   "二->ニ": 53,
+   "一->—": 17,
+   "八->ハ": 15
+  },
+  "usd": 0.038,
+  "usd_per_page": 0.0011,
+  "seconds_per_page": 6.9,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": true
+ },
+ "ja | opus-5-5 | lookalike-ja | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 4207,
+    "correct": 3990,
+    "substituted": 197,
+    "unassigned": 14,
+    "missing": 6,
+    "extra": 6
+   },
+   "2": {
+    "truth_chars": 4207,
+    "correct": 4001,
+    "substituted": 192,
+    "unassigned": 8,
+    "missing": 6,
+    "extra": 7
+   },
+   "3": {
+    "truth_chars": 4207,
+    "correct": 3993,
+    "substituted": 203,
+    "unassigned": 5,
+    "missing": 6,
+    "extra": 7
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 11,
+   "2": 11,
+   "3": 11
+  },
+  "pages_where_all_runs_identical": "0/11",
+  "top_substitutions_all_runs": {
+   "一->ー": 148,
+   "ー->一": 101,
+   "力->カ": 81,
+   "工->エ": 80,
+   "夕->タ": 65,
+   "口->ロ": 60,
+   "二->ニ": 47,
+   "八->ハ": 8,
+   "ニ->二": 1,
+   "-->ー": 1
+  },
+  "usd": 1.442,
+  "usd_per_page": 0.0437,
+  "seconds_per_page": 15.1,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": true
+ },
+ "ja | sonnet-5-5 | lookalike-ja | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 4207,
+    "correct": 3989,
+    "substituted": 210,
+    "unassigned": 0,
+    "missing": 8,
+    "extra": 9
+   },
+   "2": {
+    "truth_chars": 4207,
+    "correct": 3981,
+    "substituted": 222,
+    "unassigned": 0,
+    "missing": 4,
+    "extra": 5
+   },
+   "3": {
+    "truth_chars": 4207,
+    "correct": 3975,
+    "substituted": 210,
+    "unassigned": 18,
+    "missing": 4,
+    "extra": 4
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 11,
+   "2": 11,
+   "3": 11
+  },
+  "pages_where_all_runs_identical": "0/11",
+  "top_substitutions_all_runs": {
+   "一->ー": 196,
+   "力->カ": 81,
+   "工->エ": 77,
+   "夕->タ": 66,
+   "二->ニ": 65,
+   "口->ロ": 56,
+   "一->―": 45,
+   "ー->―": 43,
+   "ー->一": 9,
+   "ー->-": 2
+  },
+  "usd": 0.655,
+  "usd_per_page": 0.0198,
+  "seconds_per_page": 10.6,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": true
+ },
+ "jitter0.05 | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5194,
+    "substituted": 10,
+    "unassigned": 55,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 5
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {
+   "l->I": 8,
+   "I->l": 2
+  },
+  "usd": 0.313,
+  "usd_per_page": 0.0284,
+  "seconds_per_page": 7.5,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ },
+ "jitter0.1 | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5190,
+    "substituted": 12,
+    "unassigned": 57,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 4
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {
+   "l->I": 11,
+   "I->l": 1
+  },
+  "usd": 0.329,
+  "usd_per_page": 0.0299,
+  "seconds_per_page": 8.0,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ },
+ "liberation-mono | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5259,
+    "substituted": 0,
+    "unassigned": 0,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 0
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {},
+  "usd": 0.266,
+  "usd_per_page": 0.0242,
+  "seconds_per_page": 5.2,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ },
+ "liberation-serif | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5258,
+    "substituted": 1,
+    "unassigned": 0,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 1
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {
+   "I->l": 1
+  },
+  "usd": 0.267,
+  "usd_per_page": 0.0242,
+  "seconds_per_page": 5.0,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ },
+ "outline | fable-5-2 | lookalike | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5234,
+    "substituted": 13,
+    "unassigned": 12,
+    "missing": 0,
+    "extra": 0
+   },
+   "2": {
+    "truth_chars": 5259,
+    "correct": 5211,
+    "substituted": 14,
+    "unassigned": 34,
+    "missing": 0,
+    "extra": 0
+   },
+   "3": {
+    "truth_chars": 5259,
+    "correct": 5228,
+    "substituted": 18,
+    "unassigned": 13,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 7,
+   "2": 6,
+   "3": 8
+  },
+  "pages_where_all_runs_identical": "2/11",
+  "top_substitutions_all_runs": {
+   "l->I": 32,
+   "I->l": 13
+  },
+  "usd": 3.015,
+  "usd_per_page": 0.0914,
+  "seconds_per_page": 16.6,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": false
+ },
+ "outline | haiku-5-5 | lookalike | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5155,
+    "substituted": 6,
+    "unassigned": 98,
+    "missing": 0,
+    "extra": 0
+   },
+   "2": {
+    "truth_chars": 5259,
+    "correct": 5152,
+    "substituted": 13,
+    "unassigned": 94,
+    "missing": 0,
+    "extra": 0
+   },
+   "3": {
+    "truth_chars": 5259,
+    "correct": 5151,
+    "substituted": 7,
+    "unassigned": 101,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 2,
+   "2": 3,
+   "3": 3
+  },
+  "pages_where_all_runs_identical": "0/11",
+  "top_substitutions_all_runs": {
+   "l->I": 21,
+   "I->l": 5
+  },
+  "usd": 0.035,
+  "usd_per_page": 0.0011,
+  "seconds_per_page": 6.6,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": false
+ },
+ "outline | opus-5-5 | lookalike | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5166,
+    "substituted": 13,
+    "unassigned": 80,
+    "missing": 0,
+    "extra": 0
+   },
+   "2": {
+    "truth_chars": 5259,
+    "correct": 5184,
+    "substituted": 15,
+    "unassigned": 60,
+    "missing": 0,
+    "extra": 0
+   },
+   "3": {
+    "truth_chars": 5259,
+    "correct": 5164,
+    "substituted": 11,
+    "unassigned": 84,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 5,
+   "2": 7,
+   "3": 5
+  },
+  "pages_where_all_runs_identical": "2/11",
+  "top_substitutions_all_runs": {
+   "l->I": 36,
+   "I->l": 3
+  },
+  "usd": 1.022,
+  "usd_per_page": 0.031,
+  "seconds_per_page": 8.8,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": false
+ },
+ "outline | sonnet-5-5 | lookalike | 150dpi": {
+  "runs": 3,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5196,
+    "substituted": 49,
+    "unassigned": 14,
+    "missing": 0,
+    "extra": 21
+   },
+   "2": {
+    "truth_chars": 5259,
+    "correct": 5183,
+    "substituted": 54,
+    "unassigned": 22,
+    "missing": 0,
+    "extra": 0
+   },
+   "3": {
+    "truth_chars": 5259,
+    "correct": 5193,
+    "substituted": 52,
+    "unassigned": 14,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 10,
+   "2": 9,
+   "3": 10
+  },
+  "pages_where_all_runs_identical": "1/11",
+  "top_substitutions_all_runs": {
+   "l->I": 155
+  },
+  "usd": 0.532,
+  "usd_per_page": 0.0161,
+  "seconds_per_page": 7.7,
+  "stop_reasons": {
+   "end_turn": 33
+  },
+  "nfkc": false
+ },
+ "quotes | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5534,
+    "correct": 5439,
+    "substituted": 9,
+    "unassigned": 86,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 5
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {
+   "l->I": 9
+  },
+  "usd": 0.352,
+  "usd_per_page": 0.032,
+  "seconds_per_page": 9.3,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ },
+ "rules-separate | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5155,
+    "substituted": 8,
+    "unassigned": 96,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 4
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {
+   "l->I": 6,
+   "I->l": 2
+  },
+  "usd": 0.351,
+  "usd_per_page": 0.032,
+  "seconds_per_page": 8.9,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ },
+ "tight | opus-5-5 | lookalike | 150dpi": {
+  "runs": 1,
+  "months": 11,
+  "per_run": {
+   "1": {
+    "truth_chars": 5259,
+    "correct": 5179,
+    "substituted": 8,
+    "unassigned": 72,
+    "missing": 0,
+    "extra": 0
+   }
+  },
+  "pages_with_silent_error_per_run": {
+   "1": 3
+  },
+  "pages_where_all_runs_identical": null,
+  "top_substitutions_all_runs": {
+   "l->I": 8
+  },
+  "usd": 0.351,
+  "usd_per_page": 0.0319,
+  "seconds_per_page": 9.2,
+  "stop_reasons": {
+   "end_turn": 11
+  },
+  "nfkc": false
+ }
+}

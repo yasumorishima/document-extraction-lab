@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-opus-5-5",
+ "model_served": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1448,
+ "usd_estimate": 0.0411,
+ "seconds": 13.5,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年09月 口座 4471-0098\n日付 品番 品名 数量 金額\n09/03 エエ一205 ケーブル２ｍ 5 9,035\n09/22 エ八一614 ラベル 3 7,035\n09/10 ニニ一469 デスクライト 7 25,277\n09/17 ニエ一283 ケーブル２ｍ 10 4,220\n09/27 八ロ一653 ケーブル２ｍ 10 37,390\n09/06 カロ一270 ホワイトボード 12 2,244\n09/25 ロロー749 ケーブル２ｍ 3 10,503\n09/03 ニロー139 マーカー 11 42,636\n09/02 ニエー964 ホワイトボード 10 27,840\n09/07 エハ一483 デスクライト 3 10,278\n09/01 カエー215 ＵＳＢハブ 7 20,888\n09/15 八タ一561 ホッチキス 12 27,120\n09/07 タエ一836 ケーブル２ｍ 10 38,830\n09/01 八八一171 インク赤 12 27,660\n備考：税込（１０％）\n返品 －１，２００（返品分）\n合計 290,956"
+}

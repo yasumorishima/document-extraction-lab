@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "plain",
+ "model_requested": "claude-sonnet-5-5",
+ "model_served": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 2938,
+ "output_tokens": 195,
+ "usd_estimate": 0.0078,
+ "seconds": 2.1,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription.",
+ "text": "人口推計\n◆ 「人口推計」の詳しい結果を御覧になる場合は、次のURLを参照ください。\nhttps://www.stat.go.jp/data/jinsui/index.html\n◆ 結果の利用・転載について\n統計データを引用する場合には、出典の表記をお願いします。\n出典 :「人口推計」(総務省統計局)\n【問合せ先】\n総務省統計局統計調査部国勢統計課\n〒162－8668\n東京都新宿区若松町19番 1 号\nTEL： 03 (5273) 1009\n総務省統計局"
+}

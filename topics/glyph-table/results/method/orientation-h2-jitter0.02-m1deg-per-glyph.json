@@ -1,0 +1,119 @@
+{
+ "prefix": "jitter0.02",
+ "months_read": [
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09",
+  "2026-10",
+  "2026-11",
+  "2026-12"
+ ],
+ "upright_threshold": {
+  "how": "no gap: just below the least similar copies",
+  "size_tol_px": 1,
+  "same_char_least_similar": [
+   0.8754,
+   [
+    "s",
+    9
+   ]
+  ],
+  "different_chars_most_similar": [
+   0.9159,
+   [
+    "i",
+    10
+   ],
+   [
+    "l",
+    10
+   ]
+  ],
+  "threshold": 0.8704
+ },
+ "-1 deg": {
+  "same_table": {
+   "threshold": {
+    "how": "no gap: just below the least similar copies",
+    "size_tol_px": 1,
+    "same_char_least_similar": [
+     0.8731,
+     [
+      "a",
+      9
+     ]
+    ],
+    "different_chars_most_similar": [
+     0.9015,
+     [
+      "l",
+      9
+     ],
+     [
+      "i",
+      9
+     ]
+    ],
+    "threshold": 0.8681
+   },
+   "groups": 81,
+   "ambiguous_groups": [
+    [
+     "i",
+     "l"
+    ],
+    [
+     "i",
+     "l"
+    ]
+   ],
+   "glyphs_right": 4808,
+   "glyphs_wrong": 0,
+   "glyphs_unknown": 451,
+   "unknown_share_min_max": [
+    0.06,
+    0.1
+   ],
+   "wrong_pairs": {},
+   "text_order_free": {
+    "short": 451,
+    "over": 0,
+    "unassigned": 451
+   },
+   "text_in_order": {
+    "correct": 4808,
+    "substituted": 0,
+    "missing": 1,
+    "extra": 0
+   }
+  },
+  "upright_table": {
+   "groups": 82,
+   "glyphs_right": 3748,
+   "glyphs_wrong": 0,
+   "glyphs_unknown": 1511,
+   "unknown_share_min_max": [
+    0.261,
+    0.315
+   ],
+   "wrong_pairs": {},
+   "text_order_free": {
+    "short": 1511,
+    "over": 0,
+    "unassigned": 1511
+   },
+   "text_in_order": {
+    "correct": 3676,
+    "substituted": 0,
+    "missing": 132,
+    "extra": 72
+   }
+  },
+  "seconds": 21.7
+ }
+}

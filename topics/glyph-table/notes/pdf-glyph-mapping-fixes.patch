@@ -1,0 +1,29 @@
+diff --git a/pdf-glyph-mapping/src/pdf_visit.rs b/pdf-glyph-mapping/src/pdf_visit.rs
+index a621fc9..8b26d98 100644
+--- a/pdf-glyph-mapping/src/pdf_visit.rs
++++ b/pdf-glyph-mapping/src/pdf_visit.rs
+@@ -445,7 +445,7 @@ fn visit_ops_in_object(
+     }
+     // The calls to `visit_op` may have changed `content`, so incorporate those changes.
+     ok!(ok!(document.get_object_mut(content_stream_object_id)).as_stream_mut())
+-        .set_content(ok!(content.encode()));
++        .set_plain_content(ok!(content.encode()));
+     Ok(())
+ }
+ 
+diff --git a/pdf-glyph-mapping/src/text_state.rs b/pdf-glyph-mapping/src/text_state.rs
+index de1264d..d346f5f 100644
+--- a/pdf-glyph-mapping/src/text_state.rs
++++ b/pdf-glyph-mapping/src/text_state.rs
+@@ -93,7 +93,10 @@ impl TextState {
+         maps_dir: &std::path::PathBuf,
+         files: &mut TjFiles,
+     ) {
+-        let glyph_hexes: Vec<String> = glyph_ids.iter().map(|n| format!("{:?} ", n)).collect();
++        let glyph_hexes: Vec<String> = glyph_ids
++            .iter()
++            .map(|n| n.0.iter().map(|b| format!("{:02X}", b)).collect::<String>() + " ")
++            .collect();
+         let file = {
+             files
+                 .file

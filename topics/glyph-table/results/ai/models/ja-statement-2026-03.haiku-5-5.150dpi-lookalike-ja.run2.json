@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-haiku-5-5",
+ "model_served": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1648,
+ "usd_estimate": 0.0011,
+ "seconds": 6.6,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年03月 口座 4471-0098\n日付 品番 品名 数量 金額\n03/15 カ八ー534 トナー黒 2 9,480\n03/12 エター145 ホッチキス 6 12,498\n03/22 エ二ー558 ホッチキス 8 18,808\n03/24 タカー307 ホワイトボード 3 5,955\n03/06 タエー425 チェアマット 8 29,512\n03/24 カロー355 ＵＳＢハブ 11 30,811\n03/14 ロエー574 ホワイトボード 8 38,376\n03/23 タカー110 ラベル 2 6,864\n03/15 エロー912 ケーブル２ｍ 5 10,090\n03/20 ニロー381 ホワイトボード 12 40,224\n03/14 ロカー579 ＵＳＢハブ 2 4,190\n03/23 ニ八ー437 ホッチキス 7 23,303\n03/26 ロカー342 コピー用紙Ａ４ 3 1,419\n03/14 ロハー227 ラベル 2 6,268\n備考：税込（８％）\n参照 ＃Ｑ７（新しい品番）\n合計 237,798"
+}

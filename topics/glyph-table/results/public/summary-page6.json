@@ -1,0 +1,268 @@
+{
+ "OCRmyPDF --force-ocr (CUNY)": {
+  "pages": 11,
+  "counts": {
+   "correct": 6024,
+   "extra": 1825,
+   "missing": 3773,
+   "substituted": 47,
+   "moved": 1438,
+   "truth_chars": 9844,
+   "bag_matched": 7472,
+   "bag_short": 2372,
+   "bag_over": 424,
+   "bag_unassigned": 0
+  },
+  "substituted_top": {
+   "口->日": 10,
+   "木->A": 9,
+   "◆->@": 6,
+   "(->C": 5,
+   "火->k": 5,
+   "4->5": 4,
+   "7->8": 3,
+   "-->一": 2,
+   "都->者": 1,
+   "号->呈": 1,
+   "勢->ぺ": 1
+  },
+  "by_page": {
+   "6": {
+    "correct": 6024,
+    "extra": 1825,
+    "missing": 3773,
+    "substituted": 47,
+    "moved": 1438,
+    "truth_chars": 9844
+   }
+  },
+  "usd": 0,
+  "seconds": 0
+ },
+ "fable-5-2 run1": {
+  "pages": 0,
+  "counts": {},
+  "substituted_top": {},
+  "by_page": {},
+  "usd": 0,
+  "seconds": 0
+ },
+ "glyph-table cumulative": {
+  "pages": 11,
+  "counts": {
+   "correct": 8552,
+   "missing": 1273,
+   "unassigned": 132,
+   "extra": 1083,
+   "moved": 1083,
+   "truth_chars": 9844,
+   "bag_matched": 9643,
+   "bag_short": 201,
+   "bag_over": 0,
+   "bag_unassigned": 132,
+   "substituted": 8
+  },
+  "substituted_top": {
+   "1->6": 1,
+   "6->1": 1,
+   "2->7": 1,
+   "7->2": 1,
+   "3->8": 1,
+   "8->3": 1,
+   "4->9": 1,
+   "9->4": 1
+  },
+  "by_page": {
+   "6": {
+    "correct": 8552,
+    "missing": 1273,
+    "unassigned": 132,
+    "extra": 1083,
+    "moved": 1083,
+    "truth_chars": 9844,
+    "substituted": 8
+   }
+  },
+  "usd": 0,
+  "seconds": 0
+ },
+ "glyph-table first_only": {
+  "pages": 11,
+  "counts": {
+   "correct": 7691,
+   "missing": 1702,
+   "unassigned": 1003,
+   "extra": 1011,
+   "substituted": 70,
+   "moved": 1011,
+   "truth_chars": 9844,
+   "bag_matched": 8772,
+   "bag_short": 1072,
+   "bag_over": 0,
+   "bag_unassigned": 1003
+  },
+  "substituted_top": {
+   "1->6": 10,
+   "6->1": 10,
+   "2->7": 10,
+   "7->2": 10,
+   "4->9": 10,
+   "9->4": 10,
+   "3->8": 5,
+   "8->3": 5
+  },
+  "by_page": {
+   "6": {
+    "correct": 7691,
+    "missing": 1702,
+    "unassigned": 1003,
+    "extra": 1011,
+    "substituted": 70,
+    "moved": 1011,
+    "truth_chars": 9844
+   }
+  },
+  "usd": 0,
+  "seconds": 0
+ },
+ "haiku-5-5 run1": {
+  "pages": 11,
+  "counts": {
+   "correct": 8632,
+   "missing": 1158,
+   "extra": 1224,
+   "moved": 1149,
+   "truth_chars": 9844,
+   "bag_matched": 9844,
+   "bag_short": 0,
+   "bag_over": 66,
+   "bag_unassigned": 0,
+   "substituted": 54
+  },
+  "substituted_top": {
+   "3->4": 9,
+   "4->5": 9,
+   "5->6": 9,
+   "6->7": 9,
+   "7->8": 9,
+   "8->9": 9
+  },
+  "by_page": {
+   "6": {
+    "correct": 8632,
+    "missing": 1158,
+    "extra": 1224,
+    "moved": 1149,
+    "truth_chars": 9844,
+    "substituted": 54
+   }
+  },
+  "usd": 0.014,
+  "seconds": 70.6
+ },
+ "opus-5-5 run1": {
+  "pages": 11,
+  "counts": {
+   "correct": 8676,
+   "extra": 1216,
+   "missing": 1150,
+   "moved": 1147,
+   "truth_chars": 9844,
+   "bag_matched": 9844,
+   "bag_short": 0,
+   "bag_over": 66,
+   "bag_unassigned": 0,
+   "substituted": 18
+  },
+  "substituted_top": {
+   "3->4": 3,
+   "4->5": 3,
+   "5->6": 3,
+   "6->7": 3,
+   "7->8": 3,
+   "8->9": 3
+  },
+  "by_page": {
+   "6": {
+    "correct": 8676,
+    "extra": 1216,
+    "missing": 1150,
+    "moved": 1147,
+    "truth_chars": 9844,
+    "substituted": 18
+   }
+  },
+  "usd": 0.39,
+  "seconds": 102.5
+ },
+ "opus-5-5 run2": {
+  "pages": 11,
+  "counts": {
+   "correct": 8814,
+   "extra": 1078,
+   "missing": 1012,
+   "moved": 1009,
+   "truth_chars": 9844,
+   "bag_matched": 9844,
+   "bag_short": 0,
+   "bag_over": 66,
+   "bag_unassigned": 0,
+   "substituted": 18
+  },
+  "substituted_top": {
+   "3->4": 3,
+   "4->5": 3,
+   "5->6": 3,
+   "6->7": 3,
+   "7->8": 3,
+   "8->9": 3
+  },
+  "by_page": {
+   "6": {
+    "correct": 8814,
+    "extra": 1078,
+    "missing": 1012,
+    "moved": 1009,
+    "truth_chars": 9844,
+    "substituted": 18
+   }
+  },
+  "usd": 0.413,
+  "seconds": 112.9
+ },
+ "sonnet-5-5 run1": {
+  "pages": 11,
+  "counts": {
+   "correct": 8580,
+   "extra": 1270,
+   "missing": 1204,
+   "substituted": 60,
+   "moved": 1194,
+   "truth_chars": 9844,
+   "bag_matched": 9844,
+   "bag_short": 0,
+   "bag_over": 66,
+   "bag_unassigned": 0
+  },
+  "substituted_top": {
+   "3->4": 10,
+   "4->5": 10,
+   "5->6": 10,
+   "6->7": 10,
+   "7->8": 10,
+   "8->9": 10
+  },
+  "by_page": {
+   "6": {
+    "correct": 8580,
+    "extra": 1270,
+    "missing": 1204,
+    "substituted": 60,
+    "moved": 1194,
+    "truth_chars": 9844
+   }
+  },
+  "usd": 0.155,
+  "seconds": 52.5
+ }
+}

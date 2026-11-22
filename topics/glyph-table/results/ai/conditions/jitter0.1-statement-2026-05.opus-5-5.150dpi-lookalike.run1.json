@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike",
+ "model_requested": "claude-opus-5-5",
+ "model_served": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3001,
+ "output_tokens": 1046,
+ "usd_estimate": 0.0329,
+ "seconds": 9.4,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: product codes mix look-alike characters (zero 0 and capital O; one 1, lowercase l and capital I). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "MONTHLY STATEMENT (SAMPLE)\nPeriod 2026-05\nAccount 4471-0098\nDate\nCode\nItem\nQty\nAmount\n05/20\nI0-414\nToner black\n9\n7,047\n05/03\n1O-986\nStapler\n1\n3,911\n05/02\nIl-775\nChair mat\n11\n42,944\n05/28\nOl-311\nUSB hub\n1\n3,331\n05/15\nOO-342\nPaper A4 box\n3\n3,870\n05/05\n0l-415\nWhiteboard\n2\n2,172\n05/08\nOI-952\nStapler\n9\n23,328\n05/01\n1l-346\nCable 2m\n5\n4,060\n05/05\n10-718\nLabel roll\n9\n24,687\n05/14\nIO-176\nLabel roll\n8\n27,080\n05/04\nOl-426\nPaper A4 box\n3\n8,757\n05/04\nIl-877\nLabel roll\n3\n11,733\n05/22\n00-292\nPaper A4 box\n3\n3,765\n05/23\n01-886\nUSB hub\n11\n20,933\nNote: rate 8% applies\nRef #Q7 (new code)\nTotal\n187,618"
+}

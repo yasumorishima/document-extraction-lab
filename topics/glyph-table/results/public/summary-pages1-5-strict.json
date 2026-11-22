@@ -1,0 +1,536 @@
+{
+ "OCRmyPDF --force-ocr (CUNY)": {
+  "pages": 55,
+  "counts": {
+   "correct": 142966,
+   "missing": 8761,
+   "extra": 6389,
+   "substituted": 1520,
+   "moved": 3070,
+   "truth_chars": 153247,
+   "bag_matched": 146151,
+   "bag_short": 7096,
+   "bag_over": 4724,
+   "bag_unassigned": 93,
+   "unassigned": 93
+  },
+  "substituted_top": {
+   "-->ー": 317,
+   "-->—": 235,
+   "人->A": 65,
+   "+->十": 62,
+   "▲->A": 54,
+   "月->4": 41,
+   "年->4": 40,
+   "=->三": 38,
+   "3->8": 32,
+   "5->0": 32,
+   ",->.": 27,
+   "-->一": 25,
+   "歳->蔵": 25,
+   "<->く": 23,
+   "口->日": 21
+  },
+  "by_page": {
+   "1": {
+    "correct": 31795,
+    "missing": 1252,
+    "extra": 1385,
+    "substituted": 461,
+    "moved": 483,
+    "truth_chars": 33508
+   },
+   "2": {
+    "missing": 666,
+    "extra": 841,
+    "correct": 34185,
+    "substituted": 388,
+    "unassigned": 23,
+    "moved": 286,
+    "truth_chars": 35239
+   },
+   "3": {
+    "correct": 41227,
+    "extra": 1019,
+    "missing": 890,
+    "unassigned": 42,
+    "substituted": 180,
+    "moved": 538,
+    "truth_chars": 42297
+   },
+   "4": {
+    "substituted": 277,
+    "correct": 28529,
+    "extra": 1243,
+    "missing": 1085,
+    "unassigned": 28,
+    "moved": 752,
+    "truth_chars": 29891
+   },
+   "5": {
+    "correct": 7230,
+    "missing": 4868,
+    "extra": 1901,
+    "substituted": 214,
+    "moved": 1011,
+    "truth_chars": 12312
+   }
+  },
+  "usd": 0,
+  "seconds": 0
+ },
+ "fable-5-2 run1": {
+  "pages": 22,
+  "counts": {
+   "correct": 68049,
+   "extra": 698,
+   "missing": 698,
+   "moved": 698,
+   "truth_chars": 68747,
+   "bag_matched": 68747,
+   "bag_short": 0,
+   "bag_over": 0,
+   "bag_unassigned": 0
+  },
+  "substituted_top": {},
+  "by_page": {
+   "1": {
+    "correct": 33210,
+    "extra": 298,
+    "missing": 298,
+    "moved": 298,
+    "truth_chars": 33508
+   },
+   "2": {
+    "correct": 34839,
+    "extra": 400,
+    "missing": 400,
+    "moved": 400,
+    "truth_chars": 35239
+   }
+  },
+  "usd": 4.737,
+  "seconds": 743.8
+ },
+ "glyph-table cumulative": {
+  "pages": 55,
+  "counts": {
+   "correct": 142559,
+   "extra": 3247,
+   "missing": 7408,
+   "moved": 3247,
+   "truth_chars": 153247,
+   "bag_matched": 145806,
+   "bag_short": 7441,
+   "bag_over": 0,
+   "bag_unassigned": 9344,
+   "unassigned": 9344
+  },
+  "substituted_top": {},
+  "by_page": {
+   "1": {
+    "correct": 29764,
+    "missing": 2760,
+    "unassigned": 4340,
+    "extra": 289,
+    "moved": 289,
+    "truth_chars": 33508
+   },
+   "2": {
+    "correct": 31906,
+    "extra": 486,
+    "missing": 1500,
+    "moved": 486,
+    "truth_chars": 35239,
+    "unassigned": 2847
+   },
+   "3": {
+    "correct": 41408,
+    "extra": 695,
+    "missing": 719,
+    "moved": 695,
+    "truth_chars": 42297,
+    "unassigned": 194
+   },
+   "4": {
+    "correct": 28990,
+    "extra": 884,
+    "missing": 898,
+    "moved": 884,
+    "truth_chars": 29891,
+    "unassigned": 17
+   },
+   "5": {
+    "correct": 10491,
+    "missing": 1531,
+    "unassigned": 1946,
+    "extra": 893,
+    "moved": 893,
+    "truth_chars": 12312
+   }
+  },
+  "usd": 0,
+  "seconds": 0
+ },
+ "glyph-table first_only": {
+  "pages": 55,
+  "counts": {
+   "correct": 135098,
+   "extra": 4045,
+   "missing": 15388,
+   "unassigned": 15994,
+   "moved": 4045,
+   "truth_chars": 153247,
+   "bag_matched": 139156,
+   "bag_short": 14091,
+   "bag_over": 0,
+   "bag_unassigned": 15994,
+   "substituted": 13
+  },
+  "substituted_top": {
+   "5->P": 3,
+   "1->6": 1,
+   "6->1": 1,
+   "2->7": 1,
+   "7->2": 1,
+   "3->8": 1,
+   "8->3": 1,
+   "4->9": 1,
+   "9->4": 1,
+   "4->-": 1,
+   "-->,": 1
+  },
+  "by_page": {
+   "1": {
+    "correct": 29252,
+    "unassigned": 4866,
+    "missing": 2573,
+    "extra": 275,
+    "moved": 275,
+    "truth_chars": 33508
+   },
+   "2": {
+    "correct": 31426,
+    "extra": 840,
+    "missing": 3641,
+    "unassigned": 2973,
+    "moved": 840,
+    "truth_chars": 35239
+   },
+   "3": {
+    "unassigned": 3605,
+    "correct": 37734,
+    "missing": 4205,
+    "extra": 958,
+    "moved": 958,
+    "truth_chars": 42297
+   },
+   "4": {
+    "correct": 26428,
+    "extra": 1071,
+    "missing": 3237,
+    "moved": 1071,
+    "truth_chars": 29891,
+    "unassigned": 2390,
+    "substituted": 2
+   },
+   "5": {
+    "correct": 10258,
+    "missing": 1732,
+    "unassigned": 2160,
+    "extra": 901,
+    "moved": 901,
+    "truth_chars": 12312,
+    "substituted": 11
+   }
+  },
+  "usd": 0,
+  "seconds": 0
+ },
+ "haiku-5-5 run1": {
+  "pages": 55,
+  "counts": {
+   "correct": 145610,
+   "extra": 9899,
+   "missing": 7587,
+   "moved": 7250,
+   "truth_chars": 153247,
+   "bag_matched": 152929,
+   "bag_short": 318,
+   "bag_over": 2630,
+   "bag_unassigned": 0,
+   "substituted": 50
+  },
+  "substituted_top": {
+   "P->月": 5,
+   "P->比": 5,
+   "P->(": 5,
+   "P->%": 5,
+   "P->)": 5,
+   "4->5": 2,
+   "・->•": 2,
+   "+->|": 2,
+   "(->|": 1,
+   ")->|": 1,
+   "+->=": 1,
+   "3->4": 1,
+   "5->6": 1,
+   "6->7": 1,
+   "7->8": 1
+  },
+  "by_page": {
+   "1": {
+    "correct": 32349,
+    "extra": 1106,
+    "missing": 1153,
+    "substituted": 6,
+    "moved": 1071,
+    "truth_chars": 33508
+   },
+   "2": {
+    "correct": 34129,
+    "extra": 1288,
+    "missing": 1110,
+    "moved": 1080,
+    "truth_chars": 35239
+   },
+   "3": {
+    "correct": 40295,
+    "extra": 2164,
+    "missing": 1993,
+    "substituted": 9,
+    "moved": 1849,
+    "truth_chars": 42297
+   },
+   "4": {
+    "correct": 27717,
+    "extra": 3736,
+    "missing": 2172,
+    "moved": 2118,
+    "truth_chars": 29891,
+    "substituted": 2
+   },
+   "5": {
+    "correct": 11120,
+    "missing": 1159,
+    "extra": 1605,
+    "moved": 1132,
+    "truth_chars": 12312,
+    "substituted": 33
+   }
+  },
+  "usd": 0.134,
+  "seconds": 723.5
+ },
+ "opus-5-5 run1": {
+  "pages": 55,
+  "counts": {
+   "correct": 148927,
+   "extra": 3169,
+   "missing": 3169,
+   "moved": 3098,
+   "truth_chars": 153247,
+   "bag_matched": 152029,
+   "bag_short": 1218,
+   "bag_over": 1218,
+   "bag_unassigned": 0,
+   "substituted": 1151
+  },
+  "substituted_top": {
+   "-->−": 1129,
+   "・->•": 18,
+   "-->―": 2,
+   "n->e": 1,
+   "y->h": 1
+  },
+  "by_page": {
+   "1": {
+    "correct": 33208,
+    "extra": 298,
+    "missing": 298,
+    "moved": 298,
+    "truth_chars": 33508,
+    "substituted": 2
+   },
+   "2": {
+    "correct": 34263,
+    "extra": 480,
+    "missing": 480,
+    "substituted": 496,
+    "moved": 475,
+    "truth_chars": 35239
+   },
+   "3": {
+    "correct": 40978,
+    "extra": 742,
+    "missing": 742,
+    "substituted": 577,
+    "moved": 737,
+    "truth_chars": 42297
+   },
+   "4": {
+    "correct": 28977,
+    "extra": 912,
+    "missing": 912,
+    "moved": 899,
+    "truth_chars": 29891,
+    "substituted": 2
+   },
+   "5": {
+    "correct": 11501,
+    "missing": 737,
+    "extra": 737,
+    "substituted": 74,
+    "moved": 689,
+    "truth_chars": 12312
+   }
+  },
+  "usd": 4.241,
+  "seconds": 1258.3
+ },
+ "opus-5-5 run2": {
+  "pages": 55,
+  "counts": {
+   "correct": 148714,
+   "extra": 3322,
+   "missing": 3322,
+   "moved": 3236,
+   "truth_chars": 153247,
+   "bag_matched": 151962,
+   "bag_short": 1285,
+   "bag_over": 1285,
+   "bag_unassigned": 0,
+   "substituted": 1211
+  },
+  "substituted_top": {
+   "-->−": 1185,
+   "・->•": 18,
+   "-->―": 2,
+   "5->0": 1,
+   "P->月": 1,
+   "P->比": 1,
+   "P->(": 1,
+   "P->%": 1,
+   "P->)": 1
+  },
+  "by_page": {
+   "1": {
+    "correct": 33208,
+    "extra": 298,
+    "missing": 298,
+    "moved": 298,
+    "truth_chars": 33508,
+    "substituted": 2
+   },
+   "2": {
+    "correct": 34142,
+    "extra": 407,
+    "missing": 407,
+    "moved": 400,
+    "truth_chars": 35239,
+    "substituted": 690
+   },
+   "3": {
+    "correct": 41001,
+    "extra": 838,
+    "missing": 838,
+    "moved": 834,
+    "truth_chars": 42297,
+    "substituted": 458
+   },
+   "4": {
+    "correct": 28973,
+    "extra": 918,
+    "missing": 918,
+    "moved": 907,
+    "truth_chars": 29891
+   },
+   "5": {
+    "correct": 11390,
+    "extra": 861,
+    "missing": 861,
+    "moved": 797,
+    "truth_chars": 12312,
+    "substituted": 61
+   }
+  },
+  "usd": 4.077,
+  "seconds": 1200.5
+ },
+ "sonnet-5-5 run1": {
+  "pages": 55,
+  "counts": {
+   "correct": 144515,
+   "extra": 6024,
+   "missing": 5989,
+   "substituted": 2743,
+   "moved": 5863,
+   "truth_chars": 153247,
+   "bag_matched": 150529,
+   "bag_short": 2718,
+   "bag_over": 2753,
+   "bag_unassigned": 0
+  },
+  "substituted_top": {
+   "-->−": 2648,
+   "・->•": 12,
+   "P->月": 10,
+   "P->比": 10,
+   "P->(": 10,
+   "P->%": 10,
+   "P->)": 10,
+   "5->0": 3,
+   "8->1": 3,
+   "9->2": 3,
+   "入->人": 2,
+   "3->2": 2,
+   "-->―": 2,
+   "年->7": 1,
+   "3->4": 1
+  },
+  "by_page": {
+   "1": {
+    "correct": 33059,
+    "extra": 449,
+    "missing": 447,
+    "moved": 447,
+    "truth_chars": 33508,
+    "substituted": 2
+   },
+   "2": {
+    "correct": 33472,
+    "extra": 689,
+    "missing": 695,
+    "substituted": 1072,
+    "moved": 676,
+    "truth_chars": 35239
+   },
+   "3": {
+    "correct": 39393,
+    "extra": 1774,
+    "missing": 1760,
+    "moved": 1741,
+    "truth_chars": 42297,
+    "substituted": 1144
+   },
+   "4": {
+    "correct": 27742,
+    "extra": 1726,
+    "missing": 1701,
+    "moved": 1672,
+    "truth_chars": 29891,
+    "substituted": 448
+   },
+   "5": {
+    "correct": 10849,
+    "missing": 1386,
+    "extra": 1386,
+    "substituted": 77,
+    "moved": 1327,
+    "truth_chars": 12312
+   }
+  },
+  "usd": 1.551,
+  "seconds": 635.1
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "ok": true,
+ "msg": "OCR font mapping mapped 72 of 89 codes in 1 fonts; 17 stay unmapped",
+ "stats": {
+  "fonts_targeted": 1,
+  "codes_targeted": 89,
+  "codes_mapped": 72,
+  "codes_unresolved": 17,
+  "pages_read": 1,
+  "unresolved_examples": [
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 5,
+    "readings": {}
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 6,
+    "readings": {
+     "書": 1
+    }
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 7,
+    "readings": {
+     "(": 1
+    }
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 20,
+    "readings": {
+     "ロ": 2,
+     "口": 1
+    }
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 45,
+    "readings": {
+     "ー": 5,
+     "1": 1,
+     "—": 1
+    }
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 48,
+    "readings": {
+     "2": 1
+    }
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 50,
+    "readings": {
+     "カ": 3,
+     "A": 1
+    }
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 51,
+    "readings": {
+     "ニ": 2,
+     "=": 2
+    }
+   }
+  ]
+ }
+}

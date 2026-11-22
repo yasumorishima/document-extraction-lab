@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-fable-5-2",
+ "model_served": "claude-fable-5-2",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1865,
+ "usd_estimate": 0.099,
+ "seconds": 18.0,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年07月 口座 4471-0098\n日付 品番 品名 数量 金額\n07/20 エカー452 ラベル 8 3,728\n07/07 タロ一513 ケーブル２ｍ 6 16,050\n07/16 エエー922 ラベル 10 30,490\n07/27 ニカー470 ラベル 9 31,239\n07/13 タカー559 デスクライト 9 42,453\n07/05 ニター683 インク赤 7 25,228\n07/19 タター448 ファイル青 9 4,320\n07/20 二ハー904 ケーブル２ｍ 11 45,188\n07/03 八ター631 ホワイトボ一ド 2 4,508\n07/17 ハカ一631 インク赤 3 1,512\n07/27 エタ一897 ＵＳＢハブ 7 25,053\n07/10 ロロー950 インク赤 7 1,918\n07/11 エ八ー988 コピ一用紙Ａ４ 3 6,543\n07/22 八ニー440 デスクライト 6 25,014\n備考：税込（１０％）\n振込 銀行（参照 Ｊ－２０２６）\n合計 263,244"
+}

@@ -1,0 +1,279 @@
+{
+ "prefix": "jitter0.1",
+ "threshold": {
+  "how": "no gap: just below the least similar copies",
+  "size_tol_px": 3,
+  "same_char_least_similar": [
+   0.7433,
+   [
+    "5",
+    9
+   ]
+  ],
+  "different_chars_most_similar": [
+   0.9169,
+   [
+    "I",
+    9
+   ],
+   [
+    "l",
+    9
+   ]
+  ],
+  "threshold": 0.7383
+ },
+ "hold_above": 0.3,
+ "months_read": [
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09",
+  "2026-10",
+  "2026-11",
+  "2026-12"
+ ],
+ "0 deg": {
+  "counts": {
+   "correct": 2851,
+   "substituted": 23,
+   "extra": 3,
+   "missing": 14,
+   "unassigned": 2382
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.4205,
+   0.4807
+  ],
+  "seconds": 38.4
+ },
+ "90 deg": {
+  "counts": {
+   "correct": 2851,
+   "substituted": 23,
+   "extra": 3,
+   "missing": 14,
+   "unassigned": 2382
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "turn_chosen": {
+   "90": 11
+  },
+  "unknown_share_min_max": [
+   0.4205,
+   0.4807
+  ],
+  "seconds": 40.1
+ },
+ "180 deg": {
+  "counts": {
+   "correct": 2851,
+   "substituted": 23,
+   "extra": 3,
+   "missing": 14,
+   "unassigned": 2382
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "turn_chosen": {
+   "180": 11
+  },
+  "unknown_share_min_max": [
+   0.4205,
+   0.4807
+  ],
+  "seconds": 39.2
+ },
+ "270 deg": {
+  "counts": {
+   "correct": 2851,
+   "substituted": 23,
+   "extra": 3,
+   "missing": 14,
+   "unassigned": 2382
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "turn_chosen": {
+   "270": 11
+  },
+  "unknown_share_min_max": [
+   0.4205,
+   0.4807
+  ],
+  "seconds": 40.7
+ },
+ "2 deg": {
+  "counts": {
+   "correct": 1490,
+   "substituted": 39,
+   "extra": 988,
+   "missing": 2680,
+   "unassigned": 2742
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.4906,
+   0.5419
+  ],
+  "seconds": 41.4
+ },
+ "45 deg": {
+  "counts": {
+   "correct": 6,
+   "substituted": 0,
+   "extra": 1,
+   "missing": 5253,
+   "unassigned": 5252
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "turn_chosen": {
+   "0": 5,
+   "90": 6
+  },
+  "unknown_share_min_max": [
+   0.9959,
+   1.0
+  ],
+  "seconds": 31.4
+ },
+ "-1 deg": {
+  "counts": {
+   "correct": 2779,
+   "substituted": 24,
+   "extra": 17,
+   "missing": 43,
+   "unassigned": 2439
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [
+   "2026-02",
+   "2026-03",
+   "2026-04",
+   "2026-05",
+   "2026-06",
+   "2026-07",
+   "2026-08",
+   "2026-09",
+   "2026-10",
+   "2026-11",
+   "2026-12"
+  ],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.4366,
+   0.4892
+  ],
+  "seconds": 39.5
+ }
+}

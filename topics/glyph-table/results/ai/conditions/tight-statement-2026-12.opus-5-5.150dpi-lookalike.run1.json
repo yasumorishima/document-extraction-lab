@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike",
+ "model_requested": "claude-opus-5-5",
+ "model_served": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3001,
+ "output_tokens": 842,
+ "usd_estimate": 0.0288,
+ "seconds": 7.1,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: product codes mix look-alike characters (zero 0 and capital O; one 1, lowercase l and capital I). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "MONTHLY STATEMENT (SAMPLE)\nPeriod 2026-12\nAccount 4471-0098\nDate\nCode\nItem\nQty\nAmount\n12/26\n1?-348\nUSB hub\n3\n7,275\n12/13\n?1-597\nWhiteboard\n8\n28,128\n12/10\n??-858\nToner black\n10\n36,360\n12/10\n?O-927\nMarker set\n4\n18,984\n12/07\n?0-672\nWhiteboard\n12\n24,696\n12/16\n?0-666\nUSB hub\n2\n7,836\n12/09\n?1-481\nChair mat\n8\n37,464\n12/05\n?0-471\nWhiteboard\n10\n12,500\n12/18\nO0-553\nLabel roll\n2\n330\n12/04\nO?-928\nFolder blue\n9\n32,364\n12/04\nO1-812\nChair mat\n1\n1,940\n12/23\n?0-117\nLabel roll\n3\n13,425\n12/19\n?O-844\nToner black\n11\n48,477\n12/24\n1?-972\nCable 2m\n6\n18,222\nNote: rate 8% applies\nTotal\n288,001"
+}

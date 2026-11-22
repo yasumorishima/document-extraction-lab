@@ -1,0 +1,46 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period    2026-05                        Account   4471-0098
+
+
+
+
+Date           Code       Item              Qty         Amount
+
+
+05/20          I0-414     Toner black       9           7,047
+
+05/03          10-986     Stapler           1           3,911
+
+05/02          IL-775     Chair mat         14          42,944
+
+05/28          O1L-311    USB hub           1           3,331
+
+05/15          00-342     Paper A4 box      3           3,870
+
+05/05          O1L-415    Whiteboard        2           2,172
+
+05/08          OI-952     Stapler           9           23,328
+
+05/01          11-346     Cable 2m          5           4,060
+
+05/05          10-718     Label   roll      9           24,687
+
+05/14          10-176     Label   roll      8           27,080
+
+05/04          OL-426     Paper A4 box      3           8,757
+
+05/04          II-877     Label   roll      3           11,733
+
+05/22          00-292     Paper A4 box      3           3,765
+
+05/23          01-886     USB hub           11          20,933
+
+Note:   rate 8% applies
+
+Ref #Q7   (new code)
+
+
+
+                                            Total       187,618
+

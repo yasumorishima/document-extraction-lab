@@ -1,0 +1,172 @@
+{
+ "prefix": "ja-vertical",
+ "threshold": {
+  "how": "gap: midpoint",
+  "size_tol_px": 0,
+  "same_char_least_similar": [
+   1.0,
+   [
+    ",",
+    9
+   ]
+  ],
+  "different_chars_most_similar": [
+   0.7259,
+   [
+    "9",
+    9
+   ],
+   [
+    "6",
+    9
+   ]
+  ],
+  "threshold": 0.8629
+ },
+ "hold_above": 0.3,
+ "months_read": [
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07",
+  "2026-08",
+  "2026-09",
+  "2026-10",
+  "2026-11",
+  "2026-12"
+ ],
+ "0 deg": {
+  "counts": {
+   "correct": 3893,
+   "substituted": 0,
+   "extra": 0,
+   "missing": 0,
+   "unassigned": 314
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.0401,
+   0.0962
+  ],
+  "seconds": 13.7
+ },
+ "0.5 deg": {
+  "counts": {
+   "correct": 3893,
+   "substituted": 0,
+   "extra": 0,
+   "missing": 0,
+   "unassigned": 314
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.0401,
+   0.0962
+  ],
+  "seconds": 13.7
+ },
+ "-2.5 deg": {
+  "counts": {
+   "correct": 3893,
+   "substituted": 0,
+   "extra": 0,
+   "missing": 0,
+   "unassigned": 314
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.0401,
+   0.0962
+  ],
+  "seconds": 14.6
+ },
+ "7 deg": {
+  "counts": {
+   "correct": 3893,
+   "substituted": 0,
+   "extra": 0,
+   "missing": 0,
+   "unassigned": 314
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.0401,
+   0.0962
+  ],
+  "seconds": 14.8
+ },
+ "40 deg": {
+  "counts": {
+   "correct": 3749,
+   "substituted": 0,
+   "extra": 0,
+   "missing": 0,
+   "unassigned": 458
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [],
+  "turn_chosen": {
+   "0": 11
+  },
+  "unknown_share_min_max": [
+   0.0401,
+   0.2098
+  ],
+  "seconds": 14.2
+ },
+ "130 deg": {
+  "counts": {
+   "correct": 3749,
+   "substituted": 0,
+   "extra": 0,
+   "missing": 0,
+   "unassigned": 458
+  },
+  "errors_on_pages_not_held": {
+   "substituted": 0,
+   "extra": 0
+  },
+  "held_pages": [],
+  "turn_chosen": {
+   "90": 11
+  },
+  "unknown_share_min_max": [
+   0.0401,
+   0.2098
+  ],
+  "seconds": 13.1
+ }
+}

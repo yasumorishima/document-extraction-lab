@@ -1,0 +1,30 @@
+{
+ "ok": true,
+ "msg": "OCR font mapping mapped 51 of 53 codes in 1 fonts; 2 stay unmapped",
+ "stats": {
+  "fonts_targeted": 1,
+  "codes_targeted": 53,
+  "codes_mapped": 51,
+  "codes_unresolved": 2,
+  "pages_read": 1,
+  "unresolved_examples": [
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 2,
+    "readings": {
+     "O": 3,
+     "0": 2
+    }
+   },
+   {
+    "font": "/ABCDEF+Sample",
+    "code": 36,
+    "readings": {
+     "I": 7,
+     "1": 3,
+     "l": 2
+    }
+   }
+  ]
+ }
+}

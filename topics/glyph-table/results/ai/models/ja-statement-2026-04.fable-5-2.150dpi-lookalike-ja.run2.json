@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-fable-5-2",
+ "model_served": "claude-fable-5-2",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1977,
+ "usd_estimate": 0.1035,
+ "seconds": 19.7,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年04月 口座 4471-0098\n日付 品番 品名 数量 金額\n04/05 タエ一527 マ一カ一 3 6,438\n04/17 ニロ一303 コピー用紙Ａ４ 6 17,712\n04/25 エニ一501 ホッチキス 5 2,795\n04/19 ロカー440 ファイル青 3 9,012\n04/12 カタ一995 ファイル青 5 13,405\n04/02 カター612 ＵＳＢハブ 10 5,130\n04/20 エニー587 ファイル青 2 640\n04/01 タロ一567 ファイル青 2 4,562\n04/13 八エ一671 ラベル 2 9,462\n04/17 タカ一574 ラベル 5 12,790\n04/25 工二一664 トナ一黒 4 17,200\n04/05 カカ一365 デスクライト 7 15,624\n04/18 力力一853 ケ一ブル２ｍ 1 804\n04/10 ハタ一121 ホワイトボード 9 32,697\n備考：税込（８％）\n合計 148,271"
+}

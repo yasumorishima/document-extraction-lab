@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-sonnet-5-5",
+ "model_served": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1782,
+ "usd_estimate": 0.0239,
+ "seconds": 13.8,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年02月　口座 4471-0098\n日付　品番　品名　数量　金額\n02/01　ロロー409　ファイル青　8　22,840\n02/01　エニ一795　ファイル青　3　9,153\n02/18　ロ八一499　ラベル　12　35,748\n02/24　ニター950　トナー黒　4　18,980\n02/28　ハカ一769　トナー黒　9　10,908\n02/07　タカ一549　デスクライト　5　4,175\n02/14　タハ一733　ラベル　8　24,360\n02/21　ニニ一362　マーカー　6　17,436\n02/25　エハ一103　マーカー　2　2,324\n02/22　ニハ一685　ラベル　5　10,240\n02/16　八エー157　ホワイトボード　12　17,508\n02/25　八ニ一878　ＵＳＢハブ　8　31,248\n02/25　カカー148　ホワイトボード　1　162\n02/25　タエ一998　ケーブル２ｍ　8　14,632\n備考：税込（８％）\n合計　219,714"
+}

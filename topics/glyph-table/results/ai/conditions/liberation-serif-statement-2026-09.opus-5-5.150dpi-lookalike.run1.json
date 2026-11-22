@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike",
+ "model_requested": "claude-opus-5-5",
+ "model_served": "claude-opus-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3001,
+ "output_tokens": 655,
+ "usd_estimate": 0.0251,
+ "seconds": 5.3,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: product codes mix look-alike characters (zero 0 and capital O; one 1, lowercase l and capital I). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "MONTHLY STATEMENT (SAMPLE)\nPeriod 2026-09 Account 4471-0098\nDate Code Item Qty Amount\n09/03 ll-267 Toner black 5 9,035\n09/22 1l-702 Stapler 3 3,504\n09/26 l1-398 Folder blue 9 28,710\n09/07 I0-640 Stapler 2 6,074\n09/06 OI-557 Label roll 7 28,847\n09/18 O0-285 Toner black 4 1,108\n09/06 Ol-873 Desk lamp 4 11,396\n09/21 Ol-167 Stapler 4 16,500\n09/02 I1-154 Folder blue 3 5,052\n09/28 Ol-296 USB hub 8 22,744\n09/12 Ol-760 Stapler 9 33,399\n09/13 I1-215 USB hub 1 448\n09/15 Il-561 Stapler 12 27,120\n09/07 lI-583 Marker set 10 38,830\nNote: rate 10% applies\nCredit: -1,200 (returned item)\nTotal 232,767"
+}

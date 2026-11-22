@@ -1,0 +1,640 @@
+{
+ "prefix": "ja-vertical",
+ "threshold": {
+  "how": "gap: midpoint",
+  "size_tol_px": 0,
+  "same_char_least_similar": [
+   1.0,
+   [
+    ",",
+    9
+   ]
+  ],
+  "different_chars_most_similar": [
+   0.7259,
+   [
+    "9",
+    9
+   ],
+   [
+    "6",
+    9
+   ]
+  ],
+  "threshold": 0.8629
+ },
+ "table": {
+  "groups": 90,
+  "thin_groups(<3)": 57,
+  "one_glyph_per_fill": true,
+  "stray_subpaths": 0,
+  "ambiguous_groups": [],
+  "build_seconds": 0.25
+ },
+ "first_only 2026-02": {
+  "counts": {
+   "correct": 359,
+   "unassigned": 15,
+   "moved": 0,
+   "truth_chars": 374
+  },
+  "substituted": {},
+  "missing": {
+   "フ(?)": 2,
+   "ァ(?)": 2,
+   "青(?)": 2,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.3,
+  "groups_in_table": 90
+ },
+ "first_only 2026-03": {
+  "counts": {
+   "correct": 357,
+   "unassigned": 38,
+   "moved": 0,
+   "truth_chars": 395
+  },
+  "substituted": {},
+  "missing": {
+   "ッ(?)": 4,
+   "チ(?)": 4,
+   "キ(?)": 3,
+   "（(?)": 2,
+   "）(?)": 2,
+   "ェ(?)": 1,
+   "ア(?)": 1,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "参(?)": 1,
+   "照(?)": 1,
+   "＃(?)": 1,
+   "Ｑ(?)": 1,
+   "７(?)": 1,
+   "新(?)": 1,
+   "し(?)": 1,
+   "い(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.31,
+  "groups_in_table": 90
+ },
+ "first_only 2026-04": {
+  "counts": {
+   "correct": 341,
+   "unassigned": 30,
+   "moved": 0,
+   "truth_chars": 371
+  },
+  "substituted": {},
+  "missing": {
+   "フ(?)": 4,
+   "ァ(?)": 4,
+   "青(?)": 4,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "ッ(?)": 1,
+   "チ(?)": 1,
+   "キ(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.28,
+  "groups_in_table": 90
+ },
+ "first_only 2026-05": {
+  "counts": {
+   "correct": 353,
+   "unassigned": 31,
+   "moved": 0,
+   "truth_chars": 384
+  },
+  "substituted": {},
+  "missing": {
+   "コ(?)": 3,
+   "ピ(?)": 3,
+   "用(?)": 3,
+   "紙(?)": 3,
+   "Ａ(?)": 3,
+   "４(?)": 3,
+   "チ(?)": 1,
+   "ェ(?)": 1,
+   "ア(?)": 1,
+   "ッ(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.3,
+  "groups_in_table": 90
+ },
+ "first_only 2026-06": {
+  "counts": {
+   "correct": 350,
+   "unassigned": 26,
+   "moved": 0,
+   "truth_chars": 376
+  },
+  "substituted": {},
+  "missing": {
+   "チ(?)": 3,
+   "ッ(?)": 3,
+   "ェ(?)": 2,
+   "ア(?)": 2,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "キ(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.25,
+  "groups_in_table": 90
+ },
+ "first_only 2026-07": {
+  "counts": {
+   "correct": 361,
+   "unassigned": 31,
+   "moved": 0,
+   "truth_chars": 392
+  },
+  "substituted": {},
+  "missing": {
+   "込(?)": 2,
+   "（(?)": 2,
+   "０(?)": 2,
+   "）(?)": 2,
+   "フ(?)": 1,
+   "ァ(?)": 1,
+   "青(?)": 1,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "１(?)": 1,
+   "％(?)": 1,
+   "振(?)": 1,
+   "銀(?)": 1,
+   "行(?)": 1,
+   "参(?)": 1,
+   "照(?)": 1,
+   "Ｊ(?)": 1,
+   "－(?)": 1,
+   "６(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.25,
+  "groups_in_table": 90
+ },
+ "first_only 2026-08": {
+  "counts": {
+   "correct": 344,
+   "unassigned": 35,
+   "moved": 0,
+   "truth_chars": 379
+  },
+  "substituted": {},
+  "missing": {
+   "フ(?)": 4,
+   "ァ(?)": 4,
+   "青(?)": 4,
+   "チ(?)": 2,
+   "ェ(?)": 2,
+   "ア(?)": 2,
+   "ッ(?)": 2,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.27,
+  "groups_in_table": 90
+ },
+ "first_only 2026-09": {
+  "counts": {
+   "correct": 384,
+   "unassigned": 23,
+   "moved": 0,
+   "truth_chars": 407
+  },
+  "substituted": {},
+  "missing": {
+   "０(?)": 3,
+   "（(?)": 2,
+   "１(?)": 2,
+   "）(?)": 2,
+   "返(?)": 2,
+   "ッ(?)": 1,
+   "チ(?)": 1,
+   "キ(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "％(?)": 1,
+   "－(?)": 1,
+   "，(?)": 1,
+   "分(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.26,
+  "groups_in_table": 90
+ },
+ "first_only 2026-10": {
+  "counts": {
+   "correct": 343,
+   "unassigned": 24,
+   "moved": 0,
+   "truth_chars": 367
+  },
+  "substituted": {},
+  "missing": {
+   "ッ(?)": 2,
+   "チ(?)": 2,
+   "キ(?)": 2,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "フ(?)": 1,
+   "ァ(?)": 1,
+   "青(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.24,
+  "groups_in_table": 90
+ },
+ "first_only 2026-11": {
+  "counts": {
+   "correct": 353,
+   "unassigned": 36,
+   "moved": 0,
+   "truth_chars": 389
+  },
+  "substituted": {},
+  "missing": {
+   "チ(?)": 3,
+   "ッ(?)": 3,
+   "キ(?)": 2,
+   "１(?)": 2,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "ェ(?)": 1,
+   "ア(?)": 1,
+   "フ(?)": 1,
+   "ァ(?)": 1,
+   "青(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "０(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1,
+   "次(?)": 1,
+   "回(?)": 1,
+   "訪(?)": 1,
+   "問(?)": 1,
+   "月(?)": 1,
+   "３(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.23,
+  "groups_in_table": 90
+ },
+ "first_only 2026-12": {
+  "counts": {
+   "correct": 348,
+   "unassigned": 25,
+   "moved": 0,
+   "truth_chars": 373
+  },
+  "substituted": {},
+  "missing": {
+   "ッ(?)": 2,
+   "チ(?)": 2,
+   "フ(?)": 1,
+   "ァ(?)": 1,
+   "青(?)": 1,
+   "キ(?)": 1,
+   "ェ(?)": 1,
+   "ア(?)": 1,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.22,
+  "groups_in_table": 90
+ },
+ "cumulative 2026-02": {
+  "counts": {
+   "correct": 359,
+   "unassigned": 15,
+   "moved": 0,
+   "truth_chars": 374
+  },
+  "substituted": {},
+  "missing": {
+   "フ(?)": 2,
+   "ァ(?)": 2,
+   "青(?)": 2,
+   "備(?)": 1,
+   "考(?)": 1,
+   "：(?)": 1,
+   "税(?)": 1,
+   "込(?)": 1,
+   "（(?)": 1,
+   "８(?)": 1,
+   "％(?)": 1,
+   "）(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.23,
+  "groups_in_table": 90
+ },
+ "cumulative 2026-03": {
+  "counts": {
+   "correct": 368,
+   "unassigned": 27,
+   "moved": 0,
+   "truth_chars": 395
+  },
+  "substituted": {},
+  "missing": {
+   "ッ(?)": 4,
+   "チ(?)": 4,
+   "キ(?)": 3,
+   "ェ(?)": 1,
+   "ア(?)": 1,
+   "コ(?)": 1,
+   "ピ(?)": 1,
+   "用(?)": 1,
+   "紙(?)": 1,
+   "Ａ(?)": 1,
+   "４(?)": 1,
+   "参(?)": 1,
+   "照(?)": 1,
+   "＃(?)": 1,
+   "Ｑ(?)": 1,
+   "７(?)": 1,
+   "新(?)": 1,
+   "し(?)": 1,
+   "い(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.27,
+  "groups_in_table": 102
+ },
+ "cumulative 2026-04": {
+  "counts": {
+   "correct": 371,
+   "moved": 0,
+   "truth_chars": 371
+  },
+  "substituted": {},
+  "missing": {},
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.24,
+  "groups_in_table": 121
+ },
+ "cumulative 2026-05": {
+  "counts": {
+   "correct": 384,
+   "moved": 0,
+   "truth_chars": 384
+  },
+  "substituted": {},
+  "missing": {},
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.29,
+  "groups_in_table": 121
+ },
+ "cumulative 2026-06": {
+  "counts": {
+   "correct": 376,
+   "moved": 0,
+   "truth_chars": 376
+  },
+  "substituted": {},
+  "missing": {},
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.28,
+  "groups_in_table": 121
+ },
+ "cumulative 2026-07": {
+  "counts": {
+   "correct": 383,
+   "unassigned": 9,
+   "moved": 0,
+   "truth_chars": 392
+  },
+  "substituted": {},
+  "missing": {
+   "０(?)": 2,
+   "１(?)": 1,
+   "振(?)": 1,
+   "銀(?)": 1,
+   "行(?)": 1,
+   "Ｊ(?)": 1,
+   "－(?)": 1,
+   "６(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.25,
+  "groups_in_table": 121
+ },
+ "cumulative 2026-08": {
+  "counts": {
+   "correct": 379,
+   "moved": 0,
+   "truth_chars": 379
+  },
+  "substituted": {},
+  "missing": {},
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.26,
+  "groups_in_table": 129
+ },
+ "cumulative 2026-09": {
+  "counts": {
+   "correct": 403,
+   "unassigned": 4,
+   "moved": 0,
+   "truth_chars": 407
+  },
+  "substituted": {},
+  "missing": {
+   "返(?)": 2,
+   "，(?)": 1,
+   "分(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.31,
+  "groups_in_table": 129
+ },
+ "cumulative 2026-10": {
+  "counts": {
+   "correct": 367,
+   "moved": 0,
+   "truth_chars": 367
+  },
+  "substituted": {},
+  "missing": {},
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.27,
+  "groups_in_table": 132
+ },
+ "cumulative 2026-11": {
+  "counts": {
+   "correct": 383,
+   "unassigned": 6,
+   "moved": 0,
+   "truth_chars": 389
+  },
+  "substituted": {},
+  "missing": {
+   "次(?)": 1,
+   "回(?)": 1,
+   "訪(?)": 1,
+   "問(?)": 1,
+   "月(?)": 1,
+   "３(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.26,
+  "groups_in_table": 132
+ },
+ "cumulative 2026-12": {
+  "counts": {
+   "correct": 373,
+   "moved": 0,
+   "truth_chars": 373
+  },
+  "substituted": {},
+  "missing": {},
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.37,
+  "groups_in_table": 138
+ }
+}

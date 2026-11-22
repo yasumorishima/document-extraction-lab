@@ -1,0 +1,44 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period   2026-08                              Account   4471-0098
+
+
+
+
+Date           Code       Item                   Qty         Amount
+
+
+08/23          11-962     Marker       set       11          27,533
+
+08/10          11-284     Stapler                8           32,024
+
+08/22          II-323     Stapler                5           5,685
+
+08/04          10-108     Folder       blue      9           19,557
+
+08/07          IL-209     Folder       blue      2           594
+
+08/08         00-579      Label    roll          4           17,052
+
+08/16          I1-547     Toner black            1           3,377
+
+08/14          11-998     Whiteboard             10          10,540
+
+08/28         00-296      Toner black            7           25,046
+
+08/23          I1-479     Ink    red             1           1,152
+
+08/18          O1L-305    Chair mat              5           20,185
+
+08/18          II-792     Ink    red             11          12,210
+
+08/18          LI-875     Stapler                6           26,976
+
+08/06          O01L-128   Toner black            1           3,535
+
+Note:   rate 8% applies
+
+
+
+                                                 Total       205, 466
+

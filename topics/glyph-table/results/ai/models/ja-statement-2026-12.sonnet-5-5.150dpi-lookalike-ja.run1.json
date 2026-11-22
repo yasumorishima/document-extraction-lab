@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-sonnet-5-5",
+ "model_served": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1890,
+ "usd_estimate": 0.025,
+ "seconds": 13.9,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年12月 口座 4471-0098\n日付 品番 品名 数量 金額\n12/26 ニター348 ＵＳＢハブ 3 7,275\n12/13 八ニ一782 ラベル 8 28,128\n12/14 エタ一352 ラベル 7 18,438\n12/10 エロー323 インク赤 12 56,952\n12/22 カタ一590 マーカー 1 4,662\n12/18 エエ一521 ファイル青 10 3,130\n12/19 ロロー153 ホッチキス 6 27,270\n12/01 ハロー553 ラベル 11 11,011\n12/04 ロハー113 デスクライト 9 32,364\n12/09 タハー785 マーカー 2 3,694\n12/02 カ八一251 マーカー 9 38,178\n12/12 タニー929 チェアマット 2 5,300\n12/09 タニ一588 コピー用紙Ａ４ 3 7,479\n12/09 ハ八一149 デスクライト 5 2,110\n備考：税込（８％）\n合計 245,991"
+}

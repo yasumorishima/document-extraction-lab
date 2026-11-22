@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-fable-5-2",
+ "model_served": "claude-fable-5-2",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 3463,
+ "usd_estimate": 0.1629,
+ "seconds": 35.5,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年11月 口座 4471-0098\n日付 品番 品名 数量 金額\n11/12 タカー187 コピ―用紙Ａ４ 8 27,768\n11/15 タ八ー577 ＵＳＢハブ 11 42,834\n11/05 八ター178 インク赤 5 19,025\n11/07 エター402 ＵＳＢハブ 7 8,652\n11/08 力エ―473 チェアマット 7 868\n11/28 タニー317 ＵＳＢハブ 3 9,606\n11/27 二エー695 マ―カ― 9 39,087\n11/21 ロニー225 ホワイトボード 4 7,764\n11/21 二ロー883 ホワイトボ―ド 11 13,431\n11/24 ロニー116 ホッチキス 1 494\n11/21 カエー659 ファイル青 3 7,356\n11/23 カター972 インク赤 3 1,926\n11/03 二二ー527 ホッチキス 2 6,910\n11/28 二ロー972 ホワイトボード 10 13,330\n備考：税込（１０％）\n次回訪問 １２月３日\n合計 199,051"
+}

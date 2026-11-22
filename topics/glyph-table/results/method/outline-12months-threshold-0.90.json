@@ -1,0 +1,500 @@
+{
+ "prefix": "outline",
+ "threshold": {
+  "how": "gap: midpoint",
+  "size_tol_px": 0,
+  "same_char_least_similar": [
+   0.9981,
+   [
+    "8",
+    9
+   ]
+  ],
+  "different_chars_most_similar": [
+   0.9167,
+   [
+    "l",
+    9
+   ],
+   [
+    "i",
+    9
+   ]
+  ],
+  "threshold": 0.9574,
+  "given": 0.9
+ },
+ "table": {
+  "groups": 81,
+  "thin_groups(<3)": 43,
+  "one_glyph_per_fill": true,
+  "stray_subpaths": 0,
+  "ambiguous_groups": [
+   [
+    "i",
+    "l"
+   ],
+   [
+    "i",
+    "l"
+   ]
+  ],
+  "build_seconds": 0.27
+ },
+ "first_only 2026-02": {
+  "counts": {
+   "correct": 438,
+   "unassigned": 32,
+   "truth_chars": 470
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 22,
+   "i(?)": 3,
+   "L(?)": 2,
+   "T(?)": 1,
+   "c(?)": 1,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.35,
+  "groups_in_table": 81
+ },
+ "first_only 2026-03": {
+  "counts": {
+   "correct": 453,
+   "unassigned": 36,
+   "truth_chars": 489
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 18,
+   "i(?)": 8,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1,
+   "R(?)": 1,
+   "f(?)": 1,
+   "#(?)": 1,
+   "((?)": 1,
+   "w(?)": 1,
+   "c(?)": 1,
+   ")(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.35,
+  "groups_in_table": 81
+ },
+ "first_only 2026-04": {
+  "counts": {
+   "correct": 444,
+   "unassigned": 24,
+   "truth_chars": 468
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 13,
+   "i(?)": 5,
+   "L(?)": 1,
+   "T(?)": 1,
+   "c(?)": 1,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.37,
+  "groups_in_table": 81
+ },
+ "first_only 2026-05": {
+  "counts": {
+   "correct": 443,
+   "unassigned": 40,
+   "truth_chars": 483
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 21,
+   "i(?)": 4,
+   "L(?)": 3,
+   "c(?)": 2,
+   "T(?)": 1,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1,
+   "R(?)": 1,
+   "f(?)": 1,
+   "#(?)": 1,
+   "((?)": 1,
+   "w(?)": 1,
+   ")(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.38,
+  "groups_in_table": 81
+ },
+ "first_only 2026-06": {
+  "counts": {
+   "correct": 435,
+   "unassigned": 27,
+   "truth_chars": 462
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 14,
+   "i(?)": 6,
+   "T(?)": 2,
+   "c(?)": 2,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.35,
+  "groups_in_table": 81
+ },
+ "first_only 2026-07": {
+  "counts": {
+   "correct": 458,
+   "unassigned": 39,
+   "truth_chars": 497
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 20,
+   "i(?)": 8,
+   "L(?)": 1,
+   "T(?)": 1,
+   "c(?)": 1,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1,
+   "v(?)": 1,
+   "((?)": 1,
+   "f(?)": 1,
+   "J(?)": 1,
+   ")(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.36,
+  "groups_in_table": 81
+ },
+ "first_only 2026-08": {
+  "counts": {
+   "correct": 437,
+   "unassigned": 34,
+   "truth_chars": 471
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 20,
+   "i(?)": 4,
+   "T(?)": 3,
+   "c(?)": 3,
+   "L(?)": 1,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.41,
+  "groups_in_table": 81
+ },
+ "first_only 2026-09": {
+  "counts": {
+   "correct": 449,
+   "unassigned": 42,
+   "truth_chars": 491
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 27,
+   "i(?)": 4,
+   "T(?)": 2,
+   "c(?)": 2,
+   ":(?)": 2,
+   "L(?)": 1,
+   "N(?)": 1,
+   "%(?)": 1,
+   "((?)": 1,
+   ")(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.38,
+  "groups_in_table": 81
+ },
+ "first_only 2026-10": {
+  "counts": {
+   "correct": 431,
+   "unassigned": 40,
+   "truth_chars": 471
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 22,
+   "i(?)": 4,
+   "T(?)": 4,
+   "c(?)": 4,
+   "L(?)": 3,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.4,
+  "groups_in_table": 81
+ },
+ "first_only 2026-11": {
+  "counts": {
+   "correct": 440,
+   "unassigned": 41,
+   "truth_chars": 481
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 23,
+   "i(?)": 4,
+   "c(?)": 2,
+   "L(?)": 2,
+   "T(?)": 1,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1,
+   "R(?)": 1,
+   "f(?)": 1,
+   "#(?)": 1,
+   ";(?)": 1,
+   "v(?)": 1,
+   ".(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.35,
+  "groups_in_table": 81
+ },
+ "first_only 2026-12": {
+  "counts": {
+   "correct": 439,
+   "unassigned": 37,
+   "truth_chars": 476
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 21,
+   "i(?)": 7,
+   "T(?)": 2,
+   "c(?)": 2,
+   "L(?)": 2,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.35,
+  "groups_in_table": 81
+ },
+ "cumulative 2026-02": {
+  "counts": {
+   "correct": 438,
+   "unassigned": 32,
+   "truth_chars": 470
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 22,
+   "i(?)": 3,
+   "L(?)": 2,
+   "T(?)": 1,
+   "c(?)": 1,
+   "N(?)": 1,
+   ":(?)": 1,
+   "%(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.36,
+  "groups_in_table": 81
+ },
+ "cumulative 2026-03": {
+  "counts": {
+   "correct": 457,
+   "unassigned": 32,
+   "truth_chars": 489
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 18,
+   "i(?)": 8,
+   "R(?)": 1,
+   "f(?)": 1,
+   "#(?)": 1,
+   "((?)": 1,
+   "w(?)": 1,
+   ")(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.38,
+  "groups_in_table": 87
+ },
+ "cumulative 2026-04": {
+  "counts": {
+   "correct": 450,
+   "unassigned": 18,
+   "truth_chars": 468
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 13,
+   "i(?)": 5
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.34,
+  "groups_in_table": 93
+ },
+ "cumulative 2026-05": {
+  "counts": {
+   "correct": 458,
+   "unassigned": 25,
+   "truth_chars": 483
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 21,
+   "i(?)": 4
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.48,
+  "groups_in_table": 93
+ },
+ "cumulative 2026-06": {
+  "counts": {
+   "correct": 442,
+   "unassigned": 20,
+   "truth_chars": 462
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 14,
+   "i(?)": 6
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.37,
+  "groups_in_table": 93
+ },
+ "cumulative 2026-07": {
+  "counts": {
+   "correct": 467,
+   "unassigned": 30,
+   "truth_chars": 497
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 20,
+   "i(?)": 8,
+   "v(?)": 1,
+   "J(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.37,
+  "groups_in_table": 93
+ },
+ "cumulative 2026-08": {
+  "counts": {
+   "correct": 447,
+   "unassigned": 24,
+   "truth_chars": 471
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 20,
+   "i(?)": 4
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.41,
+  "groups_in_table": 95
+ },
+ "cumulative 2026-09": {
+  "counts": {
+   "correct": 460,
+   "unassigned": 31,
+   "truth_chars": 491
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 27,
+   "i(?)": 4
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.38,
+  "groups_in_table": 95
+ },
+ "cumulative 2026-10": {
+  "counts": {
+   "correct": 445,
+   "unassigned": 26,
+   "truth_chars": 471
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 22,
+   "i(?)": 4
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.41,
+  "groups_in_table": 95
+ },
+ "cumulative 2026-11": {
+  "counts": {
+   "correct": 452,
+   "unassigned": 29,
+   "truth_chars": 481
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 23,
+   "i(?)": 4,
+   ";(?)": 1,
+   ".(?)": 1
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.35,
+  "groups_in_table": 95
+ },
+ "cumulative 2026-12": {
+  "counts": {
+   "correct": 448,
+   "unassigned": 28,
+   "truth_chars": 476
+  },
+  "substituted": {},
+  "missing": {
+   "l(?)": 21,
+   "i(?)": 7
+  },
+  "extra": {},
+  "flagged_thin": 0,
+  "read_seconds": 0.35,
+  "groups_in_table": 97
+ }
+}

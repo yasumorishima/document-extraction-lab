@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-haiku-5-5",
+ "model_served": "claude-haiku-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1763,
+ "usd_estimate": 0.0012,
+ "seconds": 7.6,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年06月　　　　　　　　　　　　　　　　口座 4471-0098\n日付\t品番\t品名\t数量\t金額\n06/25\tエタ―218\tＵＳＢハブ\t9\t10,791\n06/01\tエロ―547\tトナー黒\t7\t24,864\n06/22\tカロー844\tチェアマット\t4\t3,056\n06/18\tエカ―147\tインク赤\t2\t6,136\n06/20\tハニー615\tマ―カ―\t1\t4,432\n06/14\tエニー222\tケーブル２ｍ\t2\t1,942\n06/21\tエニー334\tラベル\t2\t7,836\n06/10\t力エー211\tデスクライト\t6\t5,250\n06/10\tニハ―121\tトナ―黒\t5\t9,380\n06/15\t八ハー965\tケーブル２ｍ\t3\t12,954\n06/24\tエニー210\tコピ―用紙Ａ４\t3\t4,101\n06/04\tロロー522\tＵＳＢハブ\t9\t23,373\n06/26\t力エー117\tホッチキス\t6\t12,222\n06/11\tニエー767\tチェアマット\t11\t14,245\n備考：税込（８%）\n合計 140,582"
+}

@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-sonnet-5-5",
+ "model_served": "claude-sonnet-5-5",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 1037,
+ "usd_estimate": 0.0165,
+ "seconds": 8.2,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年10月 口座 4471-0098\n日付 品番 品名 数量 金額\n10/03 カニー646 ラベル 5 1,920\n10/25 ロニー448 ケーブル２ｍ 9 22,878\n10/08 カニー508 ホッチキス 6 5,442\n10/19 エハー163 ラベル 1 803\n10/16 ロター797 トナー黒 1 583\n10/12 ロカー230 ホッチキス 8 12,592\n10/17 八エー253 ＵＳＢハブ 2 5,488\n10/07 カニー201 ラベル 12 36,912\n10/11 カニー583 トナー黒 2 7,906\n10/20 ニタ―592 ラベル 3 10,029\n10/22 ハエー967 コピー用紙Ａ４ 5 16,325\n10/25 八エー922 デスクライト 7 8,561\n10/09 ニロー821 ケーブル２ｍ 6 2,178\n10/27 ロカー854 ファイル青 11 35,112\n備考：税込（８％）\n合計 166,729"
+}

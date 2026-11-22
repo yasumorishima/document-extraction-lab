@@ -1,0 +1,13 @@
+{
+ "dpi": 150,
+ "prompt_variant": "lookalike-ja",
+ "model_requested": "claude-fable-5-2",
+ "model_served": "claude-fable-5-2",
+ "stop_reason": "end_turn",
+ "input_tokens": 3047,
+ "output_tokens": 2256,
+ "usd_estimate": 0.1146,
+ "seconds": 20.9,
+ "prompt": "Transcribe every piece of text on this page exactly as printed, top to bottom, one printed line per output line, left to right within a line. Copy each character as it appears; do not correct, normalise or complete anything. If you cannot tell which character it is, write ? for that character. Output only the transcription. Be careful: this is a Japanese statement and the product codes mix katakana with kanji that look alike (カ/力, ロ/口, ニ/二, エ/工, ハ/八, タ/夕, and the long-vowel mark ー versus the kanji 一). Decide each one from its shape; if a shape could be either, write ?.",
+ "text": "月次明細書（サンプル）\n期間 2026年08月 口座 4471-0098\n日付 品番 品名 数量 金額\n08/23 タニー962 マ一カ一 11 27,533\n08/10 二ニー453 ファイル青 8 32,024\n08/25 ハロー657 ファイル青 3 12,561\n08/23 ロカ一213 コピー用紙Ａ４ 2 6,088\n08/04 ニロ一331 トナ一黒 4 16,624\n08/22 八エ一619 ファイル青 8 3,880\n08/19 力エー783 チェアマット 7 5,607\n08/14 ロター296 トナー黒 11 35,992\n08/23 八二一944 インク赤 1 1,152\n08/18 タカ一305 チェアマット 5 20,185\n08/18 タ八ー457 ラベル 11 12,210\n08/15 ハニー915 インク赤 9 40,329\n08/14 カカー631 ケ一ブル２ｍ 3 2,586\n08/23 タ八一232 ファイル青 11 13,761\n備考：税込（８％）\n合計 230,532"
+}
