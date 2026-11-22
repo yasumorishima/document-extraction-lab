@@ -23,6 +23,7 @@ from trying related OSS projects.
   exact text first.
 - Reply to the owner in Japanese (です/ます). Do not claim anything not run.
 - Record progress and next steps in this file before ending a session.
+- Git author: `yasumorishima <90467955+yasumorishima@users.noreply.github.com>`. Check `git config user.email` before committing; never a personal address.
 
 ## Progress log
 - 2026-11-21: repo created by the owner's local Claude.
@@ -44,11 +45,13 @@ from trying related OSS projects.
 - 2026-11-22 (cloud): skew correction, pre-registered (`results/preregistration-skew-2026-11.md`, committed before runs; `read_page.skew`/`rotate`: median angle between each contour and its nearest same-size contour, folded by 90°, turned back before orientation). Check `method/check_skew.py` → `results/method/skew-check.json`: H8 pass (0° unchanged); **H5/H6/H7 fail**. Small tilts (0.5/-2.5/7°) read like 0° except the 2 rules conditions (+154 "?" = tilted rules not removed, because `is_rule` runs before deskew); public report at 1.5°/178°: 0 extra chars, right pages held, but "?" +6% (tilted table rules); 40/130°: skew estimate off by 0.02–0.8° → more "?" and held pages; silent errors outside held pages only jitter0.05 at 40/130° (2 each). Next: rule removal after deskew + skew refinement (or hold large tilts), new pre-registration.
 - 2026-11-22 (cloud): skew round 3, pre-registered (`results/preregistration-skew2-2026-11.md`; owner OK'd holding large tilts). Rules removed again after deskew/orientation; tilt over 10° → page held. Held-out angles 0.3/-4/9/95/25/-60° on 18 conditions + public report at -0.8°/93°: **H9–H13 all pass** (`method/check_skew2.py` → `results/method/skew2-check.json`): 0 errors outside held pages, small tilts identical to 0° in 15 non-jitter conditions, 25/-60° all held, public report 0 extra chars ("?" +68 = +0.4%, within the 1% limit), 0° unchanged. Evaluation doc v8 and explainer updated.
 
+- 2026-11-22: published. The repository was re-created as public with a single commit (`71d8c11`) by the owner's local Claude; the earlier private copy keeps the old history and is not public. LICENSE holder: yasumorishima. Profile README link no longer marked private.
+
 ## Next task
 0. (Tilt/orientation issues resolved 2026-11-22, round 3 all pass.) Owner to review `topics/glyph-table/results/evaluation-2026-11.md` (v8), `oss-evaluation-2026-11.md`, `public-evaluation-2026-11.md`. Still open there: real-PDF jitter size, real human checking effort, unseen side-by-side characters in one path, other OCR engines and AI models.
 1. (Drafted 2026-11-22, `notes/post-drafts-2026-11.md`; posting on hold until the owner OKs the exact text) Draft the two posts (pdf-glyph-mapping #10 report; CUNY results + proposals) from `topics/glyph-table/notes/oss-verification-2026-11.md`, in English, and get the owner's OK on the exact text before posting.
 2. (Done 2026-11-21) Method implemented and measured; generative-AI comparison done. Key for further API runs: `SCOREBOOK_API_KEY` (never print it). **API budget: USD 43.25 remained on 2026-11-22 (owner)**, shared with the owner's other projects. Use it as needed without asking each time, but never go over it: estimate each batch before running, keep a running total from the `usd_estimate` fields, and stop well before the remainder runs out.
 3. (Done 2026-11-22) Non-engineer explainer: `topics/glyph-table/explainer-ja.md` — owner to review the wording.
    Civic tech: ask Code for Japan (Slack / events) whether people struggle with text-less government PDFs — needs the owner in person.
-4. Switch the repo to public after the owner reviews it.
+4. (Done 2026-11-22) Public. Do not push anything based on the old history (re-clone if a working copy predates `71d8c11`).
 
