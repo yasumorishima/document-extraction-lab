@@ -1,0 +1,10 @@
+pypdfium2 5.6.0 pdfium 147.0.7713.0
+page chars  pdfium: 361  pdfminer: 377
+font /F1 /MPDFAA+Occulta
+   <0001> Tj                        -> pdfium reads ''
+   <0001> Tj 10 0 Td <0002> Tj      -> pdfium reads ''
+   <00010002> Tj                    -> pdfium reads '月次'
+font /F2 /MPDFAA+NotoSans
+   <0001> Tj                        -> pdfium reads '2'
+   <0001> Tj 10 0 Td <0002> Tj      -> pdfium reads '2 0'
+   <00010002> Tj                    -> pdfium reads '20'

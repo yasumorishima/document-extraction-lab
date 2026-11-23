@@ -1,0 +1,27 @@
+{
+ "smoke + synthetic EN/JA (22 docs)": {
+  "calls": 105,
+  "usd": 0.1073,
+  "in_tokens": 751366,
+  "out_tokens": 64329,
+  "prompt_heads": {
+   "You are a PDF accessibility semantic adjudication assistant.": 41,
+   "You are reviewing multiple figure candidates from the same P": 23,
+   "Describe this retained figure for a screen reader. A screens": 23,
+   "You are a PDF accessibility table-semantics assistant.\n\nYou ": 18
+  }
+ },
+ "public report (55 pages)": {
+  "calls": 523,
+  "usd": 0.8597,
+  "in_tokens": 6404598,
+  "out_tokens": 438500,
+  "prompt_heads": {
+   "You are a PDF accessibility semantic adjudication assistant.": 440,
+   "You are a PDF accessibility table-semantics assistant.\n\nYou ": 43,
+   "You are reviewing multiple figure candidates from the same P": 25,
+   "Describe this retained figure for a screen reader. A screens": 15
+  }
+ },
+ "model": "claude-haiku-5-5 (list price USD 0.10 / 0.50 per MTok), standing in for the app's default model"
+}

@@ -49,7 +49,8 @@ Unrelated to the breaks: I could not reproduce #5 with a 12,000-page PDF (my sel
 **日本語の要約**：
 - 文字情報の無いフォントの字形を OCR の多数決で決める処理（PR #82）は、英語で誤り 0 だったこと（決めきれない字は未確定のまま残す）。
 - 一方、文字が図形で描かれたページはページ全体の OCR に回り、そこでは似た字（O/0、l/1、I/1）や金額の数字が別の字になること。自作サンプルと、公開されている実在の統計資料の両方で測った。
-- 英語では、OCR の後の「怪しい文字列」の確認にも 1 行も当たらず、**何の印も付かない**こと（アプリ自身の判定関数で確かめた）。日本語は多くの行がその確認を通るが、比べるのは英数字だけで、結果も止めない確認依頼になること（コードを読んで確認、生成 AI を含めた実行はしていない）。
+- アプリ全体を生成 AI 込みで通しても（アプリの既定のモデルには届かないので Claude Haiku 5.5 で代用）、英語では文字の確認依頼が 1 件も付かず、読み上げの文字は OCR の誤りそのままであること。公開の月報では 55 ページ中 30 ページに止めない確認依頼が付き、自動で直ったのは 2 か所だけ。残り 25 ページは依頼なしで誤りが残ること。
+- 日本語では、アプリの読み上げの採点（pdfium）が、OCRmyPDF の日本語フォントで 1 字だけ書いた字を読まないこと（アプリの外の問題かもしれないので、付け足しとして書く）。
 - 提案は 2 つ（図形のページでも「同じ形をまとめて投票し、決めきれない字は未確定のまま残す」ようにする。確認済みの対応表を文書をまたいで使えるようにする）。手伝えるかも聞く。
 
 **タイトル案**：`Outline-only pages go to full-page OCR, which swaps look-alike characters without a flag in English text (measurements + a suggestion)`
@@ -75,10 +76,17 @@ Leaving undecided glyphs unmapped instead of guessing worked: every English case
 - Self-made Japanese (4,207 characters, OCR language set to `jpn+eng`; the default is `eng`, and an outline-only document gives language detection nothing to go on): 249 replaced, including a digit (0→9).
 - The public report (pages 1–5 of 11 monthly issues, 153,247 characters, outlined with Ghostscript `-dNoOutputFonts`): 4,145 extra or wrong characters and 6,812 missing. Examples: ー→-, 人→A, ＋→十, 月→4.
 
-I also checked whether anything after OCR would flag these (by reading the code and running your `suspicious_text_signals` on the OCR outputs above; I did not run the LLM steps):
+I then checked whether anything after OCR catches these. First I ran your `suspicious_text_signals` on the OCR outputs above, then the whole app end to end: `scripts/corpus_benchmark.py --profile full` (sqlite, veraPDF 1.28.2). Your default model endpoint was not reachable from my machine, so the app's LLM calls went to Claude Haiku 5.5 through a small local OpenAI-compatible adapter. I also ran it once with an endpoint that always fails (no LLM). The screen-reader text below is your `scripts/tagged_text.py`.
 
-- English: none of the 2,151 OCR lines (or whole pages) triggers a signal, so the grounded-text review never sees them. A screen-reader user gets the wrong words and numbers with nothing to show they might be wrong.
-- Japanese: many lines do trigger "mixed scripts" (57 of 239 in the self-made set, 1,404 of 3,728 in the public report). But the second opinion is a crop OCR with the default `eng` (`text_grounding.py:43`), and only a-z0-9 are compared (`page_intelligence.py:58-64`), so a kana/kanji swap such as 力→カ cannot itself show up as a difference. A confirmed candidate becomes a non-blocking review task (`release_policy.py`). I have not measured end to end which Japanese lines get such a task.
+- English (11 self-made documents): none of the 2,151 OCR lines triggers a signal. Every document finished `complete` / compliant. The only review tasks were figure and alt-text checks. The screen-reader text carries the same substitutions as the OCR: 116 in reading order, against 126 for the OCR alone (the gap is one table read column by column). The order-free counts are identical, and they are the same with or without the LLM. A screen-reader user gets the wrong words and numbers, `5,583` → `5,983` included, with nothing to show they might be wrong.
+- Japanese, self-made (11 documents, `jpn+eng`): many lines trigger "mixed scripts" (57 of 239). Still, no text review task was created. The second opinion is a crop OCR in the default `eng` (`text_grounding.py:43`), and only a-z0-9 are compared (`page_intelligence.py:58-64`), so a swap such as 力→カ cannot show up as a difference.
+- The public report (55 pages, `jpn+eng`): all 55 finished `complete` / compliant / fidelity passed.
+  - 30 pages got a non-blocking "Verify readable text on flagged blocks" task (95 blocks; the model's proposed readings are in the task). Only 2 short blocks were applied as `/ActualText`; the rest stay as OCR'd until someone reviews them.
+  - The other 25 pages got no text task at all, yet their glyphs still have 1,330 extra or wrong characters and 1,182 missing.
+  - In total, the glyphs in the output (read with pdfminer) are exactly the OCR's: 4,145 extra or wrong, 6,812 missing.
+  - LLM cost: 523 calls, about USD 0.86 at Haiku list price.
+
+One more thing I ran into, which may belong upstream rather than here. In Japanese, the text that `tagged_text.py` (pdfium 147.0.7713.0 via pypdfium2 5.6.0) reads is much shorter than what the PDF draws. On the public report it is 14,413 characters short, against 6,812 for the glyphs themselves. The cause: OCRmyPDF 17.4.0 writes CJK words with its `Occulta` font, often one glyph per `Tj`, and pdfium returns nothing for a `Tj` that draws a single glyph in that font. Two glyphs in one `Tj` are read, and a single glyph in the `NotoSans` font used for Latin text is read too. A small script that shows this on any OCRmyPDF output: `tools/cuny-e2e/check_pdfium_single_glyph.py` in the repo below. English is not affected (identical counts). I have not checked what Chrome's own PDF viewer or a screen reader in Chrome reads.
 
 **Suggestion.**
 On an outline page, the same character is drawn as (almost) the same path every time, so the idea behind `ocr_unicode` can carry over:
