@@ -5,8 +5,11 @@ Usage: python summarize_docling.py <runs-dir> <samples-dir> <out.json>
 <stem>.txt and run.json from run_docling.py. Months 2-12 only. Also scores A0 (empty text)
 and runs a scorer self-check (known substitutions injected into the truth text).
 EN is scored strict, JA with nfkc, as in the main evaluation.
+Each arm is scored twice: as written ("raw"), and with Markdown table rules removed ("strip":
+lines made only of | - : and spaces dropped, other "|" turned into spaces). The strip variant
+was added after seeing the output (docling writes tables as Markdown), not pre-registered.
 """
-import json, sys, unicodedata
+import json, re, sys, unicodedata
 from collections import Counter
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -27,7 +30,11 @@ def stems(lang):
     pre = "font" if lang == "en" else "ja-font"
     return [(f"{pre}-statement-{m}", samples / f"{pre}-truth-{m}.json") for m in MONTHS]
 
-def total(arm_dir, lang, empty=False):
+SEP = re.compile(r"^\s*\|?[\s|:\-]+\|?\s*$")
+def strip_md(t):
+    return "\n".join(l for l in t.splitlines() if not SEP.match(l)).replace("|", " ")
+
+def total(arm_dir, lang, empty=False, strip=False):
     nfkc = lang == "ja"
     c = Counter(); subs = Counter(); flags = []
     for stem, truth in stems(lang):
@@ -35,6 +42,7 @@ def total(arm_dir, lang, empty=False):
         if empty: text = ""
         elif not f.exists(): flags.append(stem); continue
         else: text = f.read_text(encoding="utf-8")
+        if strip: text = strip_md(text)
         r = score(text, truth, nfkc=nfkc)
         c.update(r["counts"]); subs.update(r["substituted"])
     by_cls = Counter()
@@ -56,6 +64,7 @@ out = {"self_check": self_check(),
 for d in sorted(p for p in runs.iterdir() if p.is_dir() and p.name != "test"):
     lang = "ja" if d.name.endswith("-ja") or "-ja-" in d.name else "en"
     out[d.name] = total(d, lang)
+    out[d.name + " (strip)"] = total(d, lang, strip=True)
     rj = d / "run.json"
     if rj.exists():
         run = json.loads(rj.read_text())

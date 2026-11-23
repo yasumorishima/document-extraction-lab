@@ -1,0 +1,495 @@
+{
+ "self_check": {
+  "injected_substitutions": 5,
+  "scored": 5,
+  "extra": 0,
+  "missing": 0,
+  "ok": true
+ },
+ "A0-empty-en": {
+  "counts": {
+   "missing": 5259,
+   "moved": 0,
+   "truth_chars": 5259
+  },
+  "substituted_by_truth_class": {},
+  "top_substitutions": {},
+  "flagged_missing_output": []
+ },
+ "A0-empty-ja": {
+  "counts": {
+   "missing": 4207,
+   "moved": 0,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {},
+  "top_substitutions": {},
+  "flagged_missing_output": []
+ },
+ "default-en": {
+  "counts": {
+   "missing": 5117,
+   "extra": 5153,
+   "correct": 139,
+   "moved": 433,
+   "truth_chars": 5259,
+   "substituted": 3
+  },
+  "substituted_by_truth_class": {
+   "punct/other": 1,
+   "digit": 2
+  },
+  "top_substitutions": {
+   ",->*": 1,
+   "2->�": 1,
+   "4->�": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {},
+   "date": "2026-11-23 23:52:59",
+   "flags": [],
+   "seconds_total": 15.7
+  }
+ },
+ "default-en (strip)": {
+  "counts": {
+   "missing": 5115,
+   "extra": 4974,
+   "correct": 141,
+   "moved": 431,
+   "truth_chars": 5259,
+   "substituted": 3
+  },
+  "substituted_by_truth_class": {
+   "punct/other": 1,
+   "digit": 2
+  },
+  "top_substitutions": {
+   ",->*": 1,
+   "2->�": 1,
+   "4->�": 1
+  },
+  "flagged_missing_output": []
+ },
+ "default-ja": {
+  "counts": {
+   "missing": 3959,
+   "extra": 6204,
+   "correct": 208,
+   "unassigned": 18,
+   "substituted": 40,
+   "moved": 477,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "digit": 13,
+   "kanji": 2,
+   "punct/other": 2,
+   "kana": 22,
+   "latin": 1
+  },
+  "top_substitutions": {
+   "ン->�": 5,
+   "プ->�": 5,
+   "ル->|": 5,
+   "サ->�": 4,
+   "1->�": 2,
+   "2->�": 2,
+   "合->S": 1,
+   "計->T": 1,
+   "9->�": 1,
+   ",->+": 1,
+   "7->�": 1,
+   "4->�": 1,
+   "サ->%": 1,
+   "B->T": 1,
+   "ハ->U": 1,
+   "ブ->�": 1,
+   "1->V": 1,
+   "1->W": 1,
+   "4->X": 1,
+   ",->|": 1,
+   "8->|": 1,
+   "3->|": 1,
+   "4->|": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {},
+   "date": "2026-11-23 23:53:19",
+   "flags": [],
+   "seconds_total": 51.1
+  }
+ },
+ "default-ja (strip)": {
+  "counts": {
+   "missing": 3939,
+   "extra": 4378,
+   "correct": 218,
+   "unassigned": 18,
+   "substituted": 50,
+   "moved": 468,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "digit": 39,
+   "kanji": 5,
+   "punct/other": 3,
+   "kana": 3
+  },
+  "top_substitutions": {
+   "2->�": 7,
+   "4->�": 7,
+   "1->�": 4,
+   "9->�": 4,
+   "7->�": 4,
+   "6->�": 4,
+   "0->�": 3,
+   "一->�": 2,
+   "8->�": 2,
+   "合->S": 1,
+   "計->T": 1,
+   ",->+": 1,
+   ",->0": 1,
+   "5->�": 1,
+   "/->�": 1,
+   "タ->�": 1,
+   "力->%": 1,
+   "5->(": 1,
+   "0->+": 1,
+   "エ->+": 1,
+   "エ->:": 1,
+   "5->+": 1
+  },
+  "flagged_missing_output": []
+ },
+ "fullocr-en-r1": {
+  "counts": {
+   "correct": 5104,
+   "substituted": 137,
+   "missing": 18,
+   "extra": 606,
+   "moved": 4,
+   "truth_chars": 5259
+  },
+  "substituted_by_truth_class": {
+   "latin": 132,
+   "digit": 5
+  },
+  "top_substitutions": {
+   "O->0": 43,
+   "l->1": 33,
+   "I->1": 30,
+   "I->l": 15,
+   "l->I": 8,
+   "0->O": 4,
+   "l->[": 2,
+   "l->\\": 1,
+   "0->o": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "do_ocr": true,
+    "do_table_structure": false,
+    "images_scale": 2.0,
+    "ocr": "TesseractCliOcrOptions",
+    "force_full_page_ocr": true,
+    "lang": [
+     "eng"
+    ]
+   },
+   "date": "2026-11-23 23:54:14",
+   "flags": [],
+   "seconds_total": 32.7
+  }
+ },
+ "fullocr-en-r1 (strip)": {
+  "counts": {
+   "correct": 5104,
+   "substituted": 137,
+   "missing": 18,
+   "extra": 12,
+   "moved": 4,
+   "truth_chars": 5259
+  },
+  "substituted_by_truth_class": {
+   "latin": 132,
+   "digit": 5
+  },
+  "top_substitutions": {
+   "O->0": 43,
+   "l->1": 33,
+   "I->1": 30,
+   "I->l": 15,
+   "l->I": 8,
+   "0->O": 4,
+   "l->[": 2,
+   "l->\\": 1,
+   "0->o": 1
+  },
+  "flagged_missing_output": []
+ },
+ "fullocr-en-r2": {
+  "counts": {
+   "correct": 5104,
+   "substituted": 137,
+   "missing": 18,
+   "extra": 606,
+   "moved": 4,
+   "truth_chars": 5259
+  },
+  "substituted_by_truth_class": {
+   "latin": 132,
+   "digit": 5
+  },
+  "top_substitutions": {
+   "O->0": 43,
+   "l->1": 33,
+   "I->1": 30,
+   "I->l": 15,
+   "l->I": 8,
+   "0->O": 4,
+   "l->[": 2,
+   "l->\\": 1,
+   "0->o": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "do_ocr": true,
+    "do_table_structure": false,
+    "images_scale": 2.0,
+    "ocr": "TesseractCliOcrOptions",
+    "force_full_page_ocr": true,
+    "lang": [
+     "eng"
+    ]
+   },
+   "date": "2026-11-23 23:55:28",
+   "flags": [],
+   "seconds_total": 30.6
+  }
+ },
+ "fullocr-en-r2 (strip)": {
+  "counts": {
+   "correct": 5104,
+   "substituted": 137,
+   "missing": 18,
+   "extra": 12,
+   "moved": 4,
+   "truth_chars": 5259
+  },
+  "substituted_by_truth_class": {
+   "latin": 132,
+   "digit": 5
+  },
+  "top_substitutions": {
+   "O->0": 43,
+   "l->1": 33,
+   "I->1": 30,
+   "I->l": 15,
+   "l->I": 8,
+   "0->O": 4,
+   "l->[": 2,
+   "l->\\": 1,
+   "0->o": 1
+  },
+  "flagged_missing_output": []
+ },
+ "fullocr-ja-r1": {
+  "counts": {
+   "correct": 3815,
+   "substituted": 330,
+   "extra": 7108,
+   "missing": 62,
+   "moved": 0,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "digit": 110,
+   "kanji": 213,
+   "punct/other": 7
+  },
+  "top_substitutions": {
+   "0->9": 89,
+   "一->ー": 82,
+   "力->カ": 27,
+   "二->ニ": 24,
+   "工->エ": 23,
+   "夕->タ": 22,
+   "0->6": 21,
+   "口->ロ": 20,
+   "八->ハ": 13,
+   ",->.": 4,
+   "考->者": 2,
+   "/->7": 1,
+   "-->ー": 1,
+   "-->一": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "do_ocr": true,
+    "do_table_structure": false,
+    "images_scale": 2.0,
+    "ocr": "TesseractCliOcrOptions",
+    "force_full_page_ocr": true,
+    "lang": [
+     "jpn"
+    ]
+   },
+   "date": "2026-11-23 23:54:51",
+   "flags": [],
+   "seconds_total": 33.0
+  }
+ },
+ "fullocr-ja-r1 (strip)": {
+  "counts": {
+   "correct": 3815,
+   "substituted": 330,
+   "missing": 62,
+   "extra": 36,
+   "moved": 0,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "digit": 110,
+   "kanji": 213,
+   "punct/other": 7
+  },
+  "top_substitutions": {
+   "0->9": 89,
+   "一->ー": 82,
+   "力->カ": 27,
+   "二->ニ": 24,
+   "工->エ": 23,
+   "夕->タ": 22,
+   "0->6": 21,
+   "口->ロ": 20,
+   "八->ハ": 13,
+   ",->.": 4,
+   "考->者": 2,
+   "/->7": 1,
+   "-->ー": 1,
+   "-->一": 1
+  },
+  "flagged_missing_output": []
+ },
+ "fullocr-ja-r2": {
+  "counts": {
+   "correct": 3815,
+   "substituted": 330,
+   "extra": 7108,
+   "missing": 62,
+   "moved": 0,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "digit": 110,
+   "kanji": 213,
+   "punct/other": 7
+  },
+  "top_substitutions": {
+   "0->9": 89,
+   "一->ー": 82,
+   "力->カ": 27,
+   "二->ニ": 24,
+   "工->エ": 23,
+   "夕->タ": 22,
+   "0->6": 21,
+   "口->ロ": 20,
+   "八->ハ": 13,
+   ",->.": 4,
+   "考->者": 2,
+   "/->7": 1,
+   "-->ー": 1,
+   "-->一": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "do_ocr": true,
+    "do_table_structure": false,
+    "images_scale": 2.0,
+    "ocr": "TesseractCliOcrOptions",
+    "force_full_page_ocr": true,
+    "lang": [
+     "jpn"
+    ]
+   },
+   "date": "2026-11-23 23:56:03",
+   "flags": [],
+   "seconds_total": 31.9
+  }
+ },
+ "fullocr-ja-r2 (strip)": {
+  "counts": {
+   "correct": 3815,
+   "substituted": 330,
+   "missing": 62,
+   "extra": 36,
+   "moved": 0,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "digit": 110,
+   "kanji": 213,
+   "punct/other": 7
+  },
+  "top_substitutions": {
+   "0->9": 89,
+   "一->ー": 82,
+   "力->カ": 27,
+   "二->ニ": 24,
+   "工->エ": 23,
+   "夕->タ": 22,
+   "0->6": 21,
+   "口->ロ": 20,
+   "八->ハ": 13,
+   ",->.": 4,
+   "考->者": 2,
+   "/->7": 1,
+   "-->ー": 1,
+   "-->一": 1
+  },
+  "flagged_missing_output": []
+ }
+}
