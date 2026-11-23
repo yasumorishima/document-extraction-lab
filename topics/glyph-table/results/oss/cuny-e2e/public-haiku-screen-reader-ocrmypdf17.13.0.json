@@ -1,0 +1,53 @@
+{
+ "pages": 55,
+ "app": {
+  "seq_missing": 20314,
+  "seq_correct": 131736,
+  "seq_extra": 17008,
+  "seq_substituted": 1197,
+  "seq_moved": 13914,
+  "seq_truth_chars": 153247,
+  "bag_matched": 145975,
+  "bag_short": 7272,
+  "bag_over": 3966,
+  "bag_unassigned": 93,
+  "seq_unassigned": 93
+ },
+ "replica_ocr": {
+  "seq_correct": 143220,
+  "seq_extra": 6066,
+  "seq_missing": 8731,
+  "seq_substituted": 1294,
+  "seq_moved": 3063,
+  "seq_truth_chars": 153247,
+  "bag_matched": 146435,
+  "bag_short": 6812,
+  "bag_over": 4145,
+  "bag_unassigned": 93,
+  "seq_unassigned": 93
+ },
+ "app_substituted_top": {
+  "-->ー": 240,
+  "+->十": 62,
+  "▲->A": 47,
+  "5->0": 39,
+  "=->三": 38,
+  "月->4": 36,
+  "人->A": 34,
+  "年->4": 34,
+  "3->8": 29,
+  ",->.": 27,
+  "-->一": 26,
+  "<->く": 21,
+  "▲->4": 20,
+  "口->ロ": 19,
+  ".->,": 18
+ },
+ "review_tasks": {
+  "content_fidelity | Verify readable text on flagged blocks | blocking=0": 19,
+  "table_semantics | Review complex table semantics | blocking=0": 43,
+  "figure_semantics | Verify figure semantics | blocking=0": 33,
+  "alt_text | Spot-check generated alt text | blocking=0": 33,
+  "table_semantics | Verify table semantics | blocking=0": 2
+ }
+}

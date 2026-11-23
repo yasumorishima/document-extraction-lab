@@ -1,0 +1,39 @@
+{
+ "ocr_language": {
+  "jpn+eng": 55
+ },
+ "pages_with_content_fidelity_task": 19,
+ "flagged_blocks": 76,
+ "app_output_pdfminer": {
+  "flagged": {
+   "pages": 19,
+   "seq_substituted": 569,
+   "bag_over": 2220,
+   "bag_short": 4287
+  },
+  "not_flagged": {
+   "pages": 36,
+   "seq_substituted": 704,
+   "bag_over": 1925,
+   "bag_short": 2525
+  }
+ },
+ "replica_ocr": {
+  "bag_over": 4145,
+  "bag_short": 6812
+ },
+ "substituted_top": {
+  "-->ー": 309,
+  "人->A": 64,
+  "+->十": 62,
+  "▲->A": 52,
+  "月->4": 41,
+  "年->4": 39,
+  "=->三": 38,
+  "5->0": 32,
+  "3->8": 32,
+  ",->.": 27,
+  "歳->蔵": 25,
+  ".->,": 21
+ }
+}
