@@ -14,8 +14,8 @@ It removes the garbage, but Tesseract then swaps look-alike characters, with no 
 | default conversion | unusable (5,115 missing) | unusable (3,939 missing) |
 | `force_full_page_ocr` + Tesseract (`eng` / `jpn`) | **137 substituted** | **330 substituted** |
 
-- English: O→0 (43), l→1 (33), I→1 (30), I→l (15), l→I (8), mostly in item codes (`0I-979` came out as `Ol-979`).
-- Japanese: 0→9 (89), 一→ー (82), 力→カ (27), 0→6 (21) and other kanji→katakana pairs; one amount went from `10,908` to `19,908`.
+- English: O→0 (43), l→1 (33), I→1 (30), I→l (15), l→I (8); for example the item code `0I-979` came out as `Ol-979`.
+- Japanese: digits 0→9 (89) and 0→6 (21), and kanji read as look-alike katakana, such as 一→ー (82) and 力→カ (27); one amount went from `10,908` to `19,908`.
 - Two runs gave byte-identical output, so the same characters are swapped every time.
 
 So a detector for broken text layers (as proposed above) would help, but the fallback it switches to is not error-free on this kind of document: codes and numbers can change silently. It may be worth saying so in the troubleshooting docs requested in this issue.
