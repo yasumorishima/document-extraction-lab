@@ -253,7 +253,7 @@
 sh samples/make_variants.sh /tmp/variants                           # 17 種類 × 12 か月
 python3 method/run_method.py /tmp/variants outline 12 /tmp/out      # 帳簿方式（条件名を変えて）
 python3 tools/score_text.py <出力> <truth.json> [--nfkc]            # 共通の採点
-python3 tools/run_claude_vision.py <pdf> <出力先> <回> 150 lookalike  # 生成 AI（SCOREBOOK_API_KEY）
+python3 tools/run_claude_vision.py <pdf> <出力先> <回> 150 lookalike  # 生成 AI（ANTHROPIC_API_KEY）
 python3 tools/ai_batch.py <jobs.json> 8                             # 生成 AI の一括実行（並列）
 python3 tools/summarize_ai.py results/ai /tmp/variants              # 生成 AI の集計
 python3 tools/draft_table_with_claude.py /tmp/variants <out.json> ja "<ヒント>" claude-fable-5-2 context

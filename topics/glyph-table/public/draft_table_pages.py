@@ -45,7 +45,7 @@ def strip(i):
     c = img.crop((int(L * k), int(H - top * k), int(R * k), int(H - bot * k)))
     ImageDraw.Draw(c).rectangle((int((x0 - L) * k) - 3, int((top - y1) * k) - 3, int((x1 - L) * k) + 3, int((top - y0) * k) + 3), outline=(220, 0, 0), width=2)
     return c
-client = anthropic.Anthropic(api_key=os.environ.get("SCOREBOOK_API_KEY") or os.environ["ANTHROPIC_API_KEY"], max_retries=6)
+client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=6)
 def ask(ids):
     crops = [strip(i) for i in ids]
     crops = [c.resize((max(1, int(c.width * STRIP_H / c.height)), STRIP_H), Image.LANCZOS) for c in crops]

@@ -1,6 +1,6 @@
 """Local OpenAI-style /v1/chat/completions endpoint that forwards to the Claude Messages API.
 Usage: adapter.py <port> <model> <log.jsonl> <cap-usd> [effort]
-Key from SCOREBOOK_API_KEY (never printed). Stops answering (HTTP 503) once the logged spend reaches the cap.
+Key from ANTHROPIC_API_KEY (never printed). Stops answering (HTTP 503) once the logged spend reaches the cap.
 """
 import json, os, sys, threading, time
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -8,7 +8,7 @@ import anthropic
 PORT, MODEL, LOG, CAP = int(sys.argv[1]), sys.argv[2], sys.argv[3], float(sys.argv[4])
 EFFORT = sys.argv[5] if len(sys.argv) > 5 else None
 PRICE = {"claude-haiku-5-5": (0.10, 0.50), "claude-sonnet-5-5": (2.0, 10.0), "claude-opus-5-5": (4.0, 20.0)}[MODEL]
-client = anthropic.Anthropic(api_key=os.environ["SCOREBOOK_API_KEY"], max_retries=3)
+client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=3)
 lock = threading.Lock()
 spent = sum(json.loads(l).get("usd", 0) for l in open(LOG)) if os.path.exists(LOG) else 0.0
 

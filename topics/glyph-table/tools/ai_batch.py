@@ -3,7 +3,7 @@
 Jobs come from a JSON list: [{"pdf": ..., "out": ..., "model": ..., "prompt": ..., "dpi": 150, "run": 1}, ...]
 Replies already on disk are skipped, so the batch can be re-run after a failure.
 Usage: python ai_batch.py <jobs.json> [workers]
-Key: SCOREBOOK_API_KEY (or ANTHROPIC_API_KEY).
+Key: ANTHROPIC_API_KEY.
 """
 import base64, json, os, subprocess, sys, tempfile, time
 from concurrent.futures import ThreadPoolExecutor
@@ -14,7 +14,7 @@ from run_claude_vision_prompts import PROMPTS
 
 PRICE = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.10, 0.50),
          "claude-fable-5-2": (8, 40)}                       # USD per 1M tokens (input, output), list price
-client = anthropic.Anthropic(api_key=os.environ.get("SCOREBOOK_API_KEY") or os.environ["ANTHROPIC_API_KEY"], max_retries=6)
+client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"], max_retries=6)
 
 def dest_of(job):
     pdf = Path(job["pdf"]); m = job["model"].replace("claude-", "")
