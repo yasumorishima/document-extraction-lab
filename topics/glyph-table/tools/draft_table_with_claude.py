@@ -65,7 +65,7 @@ prompt = (prompt +
           f"{hint}; glyphs come in a few sizes. For each number, "
           "give the single character the glyph is. If you cannot tell, give \"?\". Answer with JSON only: "
           '{"0": "M", "1": "O", ...}')
-client = anthropic.Anthropic(api_key=os.environ.get("SCOREBOOK_API_KEY") or os.environ["ANTHROPIC_API_KEY"])
+client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 t0 = time.time()
 kw = dict(model=MODEL, max_tokens=16000, output_config={"effort": "high"},
     messages=[{"role": "user", "content": [

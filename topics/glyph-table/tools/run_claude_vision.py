@@ -3,7 +3,7 @@
 Usage: python run_claude_vision.py <pdf> <out-dir> <run-id> [dpi] [prompt]
   prompt: "plain" (default), "lookalike" (adds a warning about 0/O and 1/l/I)
           or "lookalike-ja" (the Japanese look-alikes used in the Japanese sample)
-Key: SCOREBOOK_API_KEY (or ANTHROPIC_API_KEY). Replies already on disk are skipped.
+Key: ANTHROPIC_API_KEY. Replies already on disk are skipped.
 The page is rendered with `pdftoppm -r 150` (1240 x 1754 px for A4).
 """
 import base64, json, os, subprocess, sys, tempfile, time
@@ -25,7 +25,7 @@ if dest.exists(): print("skip", dest); sys.exit()
 with tempfile.TemporaryDirectory() as td:
     subprocess.run(["pdftoppm", "-r", str(dpi), "-png", "-singlefile", str(pdf), f"{td}/p"], check=True)
     img = base64.standard_b64encode(open(f"{td}/p.png", "rb").read()).decode()
-client = anthropic.Anthropic(api_key=os.environ.get("SCOREBOOK_API_KEY") or os.environ["ANTHROPIC_API_KEY"])
+client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 t0 = time.time()
 r = client.beta.messages.create(
     model=MODEL, max_tokens=16000,
