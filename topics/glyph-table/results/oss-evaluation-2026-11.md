@@ -1,7 +1,12 @@
 # 評価：関連 OSS 2 件を、帳簿方式と同じものさしで（2026-11-22）
 
 `results/evaluation-2026-11.md` と同じ自作サンプル（12 か月）・同じ採点（`tools/score_text.py`、日本語は全角半角を同一視）で、
-**2〜12 月（11 か月分）** を比べた。実行場所：Claude Code クラウド（x86_64）。どちらのプロジェクトにもまだ何も投稿していない。
+**2〜12 月（11 か月分）** を比べた。実行場所：Claude Code クラウド（x86_64）。
+
+**投稿済み（2026-11-23、文面は `notes/post-drafts-2026-11.md`）**：
+- pdf-glyph-mapping：issue #10 へのコメント（https://github.com/shreevatsa/pdf-glyph-mapping/issues/10#issuecomment-7093906215）
+- CUNY：#92 図形のページの似た字の置き換え（https://github.com/CUNY-AI-Lab/pdf-accessibility-app/issues/92、下の 2・2a・2b）
+- CUNY：#93 OCRmyPDF のロックを 17.13.0 に上げる提案（https://github.com/CUNY-AI-Lab/pdf-accessibility-app/issues/93、下の 2b の pdfium の項）
 
 ## 結論
 | 方式 | 英語 5,259 字の黙った誤り | 日本語 4,207 字の黙った誤り | 人の手間 |
