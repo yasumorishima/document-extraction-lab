@@ -11,7 +11,7 @@ It removes the garbage, but Tesseract then swaps look-alike characters, with no 
 
 | | English, 5,259 chars | Japanese, 4,207 chars |
 | --- | --- | --- |
-| default conversion | unusable (5,115 missing) | unusable (3,939 missing) |
+| default conversion | unusable (5,117 missing) | unusable (3,959 missing) |
 | `force_full_page_ocr` + Tesseract (`eng` / `jpn`) | **137 substituted** | **330 substituted** |
 
 - English: O→0 (43), l→1 (33), I→1 (30), I→l (15), l→I (8); for example the item code `0I-979` came out as `Ol-979`.
