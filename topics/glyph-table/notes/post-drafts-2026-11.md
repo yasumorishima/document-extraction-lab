@@ -1,4 +1,4 @@
-# 投稿文の下書き（未投稿、2026-11-22 作成、2026-11-23 監査を受けて改訂）
+# 投稿文の下書き（投稿済み 2026-11-23、A https://github.com/shreevatsa/pdf-glyph-mapping/issues/10#issuecomment-7093906215 ／ B1 https://github.com/CUNY-AI-Lab/pdf-accessibility-app/issues/92 ／ B2 https://github.com/CUNY-AI-Lab/pdf-accessibility-app/issues/93、2026-11-22 作成、2026-11-23 監査を受けて改訂）
 
 関連 OSS に出す文面の下書き。**オーナーが文面を確認して OK を出すまで投稿しない。**
 根拠は `oss-verification-2026-11.md` と `../results/oss-evaluation-2026-11.md`（どちらも実測）。
@@ -103,7 +103,7 @@ I ran `scripts/corpus_benchmark.py --profile full` before and after the bump on 
 
 The glyphs themselves were identical in every output, and every job finished `complete` in both runs. OCR errors stay as they were; the fix only makes pdfium read what OCRmyPDF wrote. The backend test suite passes with both versions (2,216 passed; run with a dummy `LLM_API_KEY`).
 
-A small script that shows the problem on any OCRmyPDF output: `tools/cuny-e2e/check_pdfium_single_glyph.py` in https://github.com/yasumorishima/document-extraction-lab. I only tested 17.13.0, and I did not check what Chrome's viewer reads (upstream's commit message says selection and copy work in Chromium after the fix).
+A small script that shows the problem on any OCRmyPDF output: `topics/glyph-table/tools/cuny-e2e/check_pdfium_single_glyph.py` in https://github.com/yasumorishima/document-extraction-lab. I only tested 17.13.0, and I did not check what Chrome's viewer reads (upstream's commit message says selection and copy work in Chromium after the fix).
 ```
 
 ---
