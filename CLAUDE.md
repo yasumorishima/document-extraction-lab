@@ -56,10 +56,23 @@ from trying related OSS projects.
   - Found: pdfium 147.0.7713.0 does not read a `Tj` that draws one glyph in OCRmyPDF's `Occulta` font, so the app's screen-reader text for Japanese lacks many characters (public report: 14,413 short vs 6,812 for the glyphs). English unaffected; Chrome itself not checked. Repro `tools/cuny-e2e/check_pdfium_single_glyph.py`.
   - Post draft B revised. Nothing posted.
   - API: 628 Haiku calls, about USD 0.97 in total (list price).
+- 2026-11-23 (cloud): owner: "don't stop at reporting, resolve it". pdfium/Occulta resolved: Occulta in OCRmyPDF 17.4.0 has glyphs without extents, and pdfium drops zero-width text objects (`cpdf_textpage.cpp`). The fix is upstream in OCRmyPDF `56f7282`, first released in v17.13.0. CUNY's `pyproject.toml` already allows it, so only `uv.lock` needs bumping (`uv lock --upgrade-package ocrmypdf` → 17.13.0; 17.14.x would pull a newer docling).
+  - Full app rerun with 17.13.0, same Haiku setup:
+    - Japanese 11 docs: pdfium reads 3,984 → 4,193 of 4,193.
+    - Public report 55 pages: 143,348 → 150,962 of 150,968.
+    - English: unchanged.
+    - Glyphs are identical in every output, and all runs completed.
+    - CUNY tests pass on both versions: 2,216, with a dummy `LLM_API_KEY`.
+    - The content_fidelity tasks on the public report vary between runs: 30 vs 19 pages.
+  - Fable 5.2 audited both post drafts (read-only) and found errors:
+    - A: "278 exact" was wrong, and the IndexError was not deterministic.
+    - B: `5,583→5,983` is January only; `ー→-` was reversed; the "eng crop OCR" explanation was wrong for the run.
+  - The drafts were fixed, and B was split into B1 (look-alike substitution) and B2 (lock bump). Nothing posted.
+  - API: 657 more Haiku calls, about USD 0.96 (CUNY e2e total about USD 1.93).
 ## Next task
 0. (Tilt/orientation issues resolved 2026-11-22, round 3 all pass.) Owner to review `topics/glyph-table/results/evaluation-2026-11.md` (v8), `oss-evaluation-2026-11.md`, `public-evaluation-2026-11.md`. Still open there: real-PDF jitter size, real human checking effort, unseen side-by-side characters in one path, other OCR engines and AI models.
-1. (Drafted 2026-11-22, `notes/post-drafts-2026-11.md`; posting on hold until the owner OKs the exact text) Draft the two posts (pdf-glyph-mapping #10 report; CUNY results + proposals) from `topics/glyph-table/notes/oss-verification-2026-11.md`, in English, and get the owner's OK on the exact text before posting.
-2. (Done 2026-11-21) Method implemented and measured; generative-AI comparison done. Key for further API runs: `SCOREBOOK_API_KEY` (never print it). **API budget: USD 42.42 remained on 2026-11-22 (owner, said during the Haiku runs; about USD 0.97 used by them in total)**, shared with the owner's other projects. Use it as needed without asking each time, but never go over it: estimate each batch before running, keep a running total from the `usd_estimate` fields, and stop well before the remainder runs out.
+1. (Drafted 2026-11-22, audited and revised 2026-11-23 — A, B1, B2; posting on hold until the owner OKs the exact text and whether to split B) Draft the two posts (pdf-glyph-mapping #10 report; CUNY results + proposals) from `topics/glyph-table/notes/oss-verification-2026-11.md`, in English, and get the owner's OK on the exact text before posting.
+2. (Done 2026-11-21) Method implemented and measured; generative-AI comparison done. Key for further API runs: `SCOREBOOK_API_KEY` (never print it). **API budget: USD 42.42 remained on 2026-11-22 (owner, said during the Haiku runs); since then about USD 1.93 used by the CUNY Haiku runs (0.97 + 0.96 on 2026-11-23)**, shared with the owner's other projects. Use it as needed without asking each time, but never go over it: estimate each batch before running, keep a running total from the `usd_estimate` fields, and stop well before the remainder runs out.
 3. (Done 2026-11-22) Non-engineer explainer: `topics/glyph-table/explainer-ja.md` — owner to review the wording.
    Civic tech: ask Code for Japan (Slack / events) whether people struggle with text-less government PDFs — needs the owner in person.
 4. (Done 2026-11-22) Public. Do not push anything based on the old history (re-clone if a working copy predates `71d8c11`).
