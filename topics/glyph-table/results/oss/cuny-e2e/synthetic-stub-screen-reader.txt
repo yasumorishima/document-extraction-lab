@@ -1,0 +1,12 @@
+outline app: {'correct': 4840, 'substituted': 116, 'moved': 291, 'truth_chars': 5259, 'missing': 303, 'extra': 298}
+outline replica OCR: {'correct': 5124, 'substituted': 126, 'moved': 3, 'truth_chars': 5259, 'missing': 9, 'extra': 4}
+per month (app, replica): [('2026-12', 15, 15), ('2026-11', 11, 11), ('2026-10', 9, 9), ('2026-09', 8, 8), ('2026-08', 11, 11), ('2026-07', 12, 12), ('2026-06', 14, 14), ('2026-05', 1, 11), ('2026-04', 9, 9), ('2026-03', 15, 15), ('2026-02', 11, 11)]
+top substitutions: [('O->0', 32), ('I->1', 28), ('l->1', 24), ('I->l', 16), ('l->I', 7), ('0->O', 7), ('l->|', 2)]
+review tasks: {('figure_semantics', 'Verify figure semantics', 0): 11, ('table_semantics', 'Review complex table semantics', 0): 6}
+
+ja app: {'missing': 335, 'correct': 3655, 'extra': 106, 'substituted': 217, 'moved': 25, 'truth_chars': 4207}
+ja replica OCR: {'extra': 166, 'correct': 3778, 'missing': 180, 'substituted': 249, 'moved': 72, 'truth_chars': 4207}
+per month (app, replica): [('2026-12', 19, 21), ('2026-11', 19, 20), ('2026-10', 18, 18), ('2026-09', 23, 31), ('2026-08', 14, 19), ('2026-07', 27, 31), ('2026-06', 22, 18), ('2026-05', 22, 23), ('2026-04', 17, 21), ('2026-03', 24, 29), ('2026-02', 12, 18)]
+top substitutions: [('一->ー', 61), ('力->カ', 24), ('二->ニ', 17), ('工->エ', 15), ('夕->タ', 14), ('口->ロ', 14), ('0->9', 11), ('八->ハ', 7)]
+review tasks: {('table_semantics', 'Add headers to table 1 on page 1', 1): 10, ('figure_semantics', 'Verify figure semantics', 0): 11, ('table_semantics', 'Review complex table semantics', 0): 11}
+
