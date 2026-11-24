@@ -15,7 +15,7 @@ I measured it on docling 2.152.0, mostly with self-made monthly statements whose
 - Two-page documents with a good page 1 and a no-ToUnicode page 2: in all 11, only page 2 was re-read.
 - Good text layers: 0 judged broken among 55 Japanese pages (Japan's Statistics Bureau monthly report), 95 English pages from docling's own `tests/data/pdf/sources` and 11 self-made English pages. The only test-data pages judged broken (`redp5110_sampled` p3, and the same page of `skipped_1page` / `skipped_2pages`, which are Korean) also show many `(cid:N)` in pdfminer, so they look really broken.
 - A ToUnicode that maps every glyph 3 code points too high (`Period` came out as `Shulrg`):
-  - spaces kept as spaces: caught on the longer pages (11/11), missed on the short ones (0/11). The vowel-share check from #4654 needs at least 200 letters in 3–20-letter words; the short pages have about 160–180.
+  - spaces kept as spaces: caught on the longer pages (11/11), missed on the short ones (0/11). The vowel-share check from #4654 needs at least 200 letters in 3–20-letter words; the short pages have 156–182.
   - spaces shifted as well (space → `#`): missed on both (0/11 each), because the words run together into tokens longer than 20 letters, which the check skips.
 
 **The OCR it falls back to** (characters silently replaced by a different one, with no flag in the output; Markdown table rules removed before scoring; short pages)
