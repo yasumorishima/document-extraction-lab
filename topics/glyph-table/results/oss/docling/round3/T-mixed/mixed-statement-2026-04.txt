@@ -1,0 +1,51 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-04 Account 4471-0098
+
+| Date                  | Code                  | Item         |   Qty |   Amount |
+|-----------------------|-----------------------|--------------|-------|----------|
+| 04/05                 | l0-527                | Marker set   |     3 |    6,438 |
+| 04/17                 | 1O-744                | Marker set   |     6 |   17,712 |
+| 04/07                 | 01-159                | Ink red      |    10 |   33,750 |
+| 04/13                 | 1O-465                | Label roll   |     5 |    3,570 |
+| 04/20                 | IO-440                | Folder blue  |     3 |    2,151 |
+| 04/12                 | 00-995                | Folder blue  |     5 |   13,405 |
+| 04/02                 | 00-612                | USB hub      |    10 |    5,130 |
+| 04/20                 | l1-970                | Chair mat    |     2 |      640 |
+| 04/09                 | 01-131                | Whiteboard   |     6 |   23,886 |
+| 04/15                 | 10-681                | Ink red      |     3 |    9,882 |
+| 04/26                 | II-179                | Chair mat    |    10 |   39,830 |
+| 04/10                 | I0-733                | USB hub      |    10 |   23,970 |
+| 04/07                 | Il-462                | Toner black  |     8 |   38,216 |
+| 04/13                 | 1O-941                | Paper A4 box |     9 |    9,594 |
+| Note: rate 8% applies | Note: rate 8% applies |              |       |          |
+
+Total 228,174
+
+Please check every line of this statement and tell us about any mistake within thirty days. Prices include the sales tax that applied on the date of delivery shown in the first column. Returned items are credited on the next statement once the warehouse has received them. Orders placed after five in the afternoon are packed and shipped on the following working day. Payment is due at the end of the month after the month in which the goods were delivered. We keep a copy of this statement for seven years and can send it again if you need it later. For questions about an item code, quote the code and the date exactly as they appear above. Thank you for your order; this sample statement was made by hand and lists no real business.
+
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-04 Account 4471-0098
+
+| Date                  | Code                  | Item         |   Qty |   Amount |
+|-----------------------|-----------------------|--------------|-------|----------|
+| 04/05                 | 10-527                | Marker set   |     3 |    6,438 |
+| 04/17                 | 10-744                | Marker set   |     6 |   17,712 |
+| 04/07                 | 01-159                | Ink red      |    10 |   33,750 |
+| 04/13                 | 10-465                | Label roll   |     5 |    3,570 |
+| 04/20                 | 10-440                | Folder blue  |     3 |    2,151 |
+| 04/12                 | 00-995                | Folder blue  |     5 |   13,405 |
+| 04/02                 | 00-612                | USB hub      |    10 |    5,130 |
+| 04/20                 | 11-970                | Chair mat    |     2 |      640 |
+| 04/09                 | 01-131                | Whiteboard   |     6 |   23,886 |
+| 04/15                 | 10-681                | Ink red      |     3 |    9,882 |
+| 04/26                 | 1-179                 | Chair mat    |    10 |   39,830 |
+| 04/10                 | 10-733                | USB hub      |    10 |   23,970 |
+| 04/07                 | 11-462                | Toner black  |     8 |   38,216 |
+| 04/13                 | 10-941                | Paper A4 box |     9 |    9,594 |
+| Note: rate 8% applies | Note: rate 8% applies |              |       |          |
+
+Total 228,174
+
+Please check every line of this statement and tell us about any mistake within thirty days. Prices include the sales tax that applied on the date of delivery shown in the first column. Returned items are credited on the next statement once the warehouse has received them. Orders placed after five in the afternoon are packed and shipped on the following working day. Payment is due at the end of the month after the month in which the goods were delivered. We keep a copy of this statement for seven years and can send it again if you need it later. For questions about an item code, quote the code and the date exactly as they appear above. Thank you for your order; this sample statement was made by hand and lists no real business.

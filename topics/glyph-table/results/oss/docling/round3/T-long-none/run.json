@@ -1,0 +1,126 @@
+{
+ "arm": "replace-tess",
+ "options": {
+  "ocr": "TesseractCliOcrOptions",
+  "mode": "default",
+  "lang": [
+   "eng"
+  ],
+  "scale": 3.0,
+  "replace_broken_text_layer": true,
+  "tesseract_cmd": "tesseract",
+  "path": null,
+  "psm": null,
+  "force_full_page_ocr": false
+ },
+ "date": "2026-11-24 02:00:02",
+ "python": "3.13.18",
+ "versions": {
+  "docling": "2.152.0",
+  "docling-core": "2.108.0",
+  "docling-parse": "7.27.1",
+  "docling-ibm-models": "4.0.4"
+ },
+ "files": [
+  {
+   "pdf": "long-none-statement-2026-02.pdf",
+   "sha256": "168859b45904e1ebf3d07dcbf100376c59cbc949a602137d26fb4fd71e85ae45",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2224,
+   "seconds": 10.3
+  },
+  {
+   "pdf": "long-none-statement-2026-03.pdf",
+   "sha256": "c7903deaa454fdccf496181640fb43ed7cace27d2e1ae6cd4d47d13a4893bd99",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1330,
+   "seconds": 2.9
+  },
+  {
+   "pdf": "long-none-statement-2026-04.pdf",
+   "sha256": "2676f7dff063eef80324c4bdad76bc828f77a5eb536dcc2b336590cc719b08ce",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2241,
+   "seconds": 5.8
+  },
+  {
+   "pdf": "long-none-statement-2026-05.pdf",
+   "sha256": "a661c74b2a553ac70dca9e93683f8ee2f54c8f9cfc1ba889243ce7a986b7988a",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1414,
+   "seconds": 2.9
+  },
+  {
+   "pdf": "long-none-statement-2026-06.pdf",
+   "sha256": "ec86ba6f2a48b2df10aca6f247b5cfd638283a3fe71452e4a50812017e6f5ed9",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2241,
+   "seconds": 5.8
+  },
+  {
+   "pdf": "long-none-statement-2026-07.pdf",
+   "sha256": "4a7efda18a1db4f022798e0163b438aa46ed0be6c84b1c476d660b2f4ce0eedb",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1418,
+   "seconds": 2.7
+  },
+  {
+   "pdf": "long-none-statement-2026-08.pdf",
+   "sha256": "85a32175f80646e97b9e1e8f2f24aec8eecc2c06bbb806dab5ea2dcb01fb63b0",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2224,
+   "seconds": 6.1
+  },
+  {
+   "pdf": "long-none-statement-2026-09.pdf",
+   "sha256": "35b0612969cdbf7e5aad189651368c8f7365b4205e834e7f6b98b197a370a664",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1331,
+   "seconds": 3.0
+  },
+  {
+   "pdf": "long-none-statement-2026-10.pdf",
+   "sha256": "942f0be7ff37ce4c0493937db7d4ff3493ea3b93c8d2c507e78aa17ac58cac60",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2887,
+   "seconds": 5.7
+  },
+  {
+   "pdf": "long-none-statement-2026-11.pdf",
+   "sha256": "65525386ce145f59e3d09378e69ba76544f15fd6071e321a26cf4679d23efaca",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1331,
+   "seconds": 2.7
+  },
+  {
+   "pdf": "long-none-statement-2026-12.pdf",
+   "sha256": "7f32609a150f592013e22859932dce4fb04fb055eb29e250dfd44247779c5ff2",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2224,
+   "seconds": 5.9
+  }
+ ],
+ "auto_ocr_log": []
+}

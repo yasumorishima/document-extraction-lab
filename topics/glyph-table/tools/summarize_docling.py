@@ -64,16 +64,24 @@ out = {"self_check": self_check(),
 for d in sorted(p for p in runs.iterdir() if p.is_dir() and p.name != "test"):
     lang = "ja" if d.name.endswith("-ja") or "-ja-" in d.name else "en"
     pre = "shift3-font" if "-shift" in d.name else None
+    for key, p in (("-long-shiftks", "long-shift3ks"), ("X-shiftks", "shift3ks-font"),  # round 3, not pre-registered
+                   ("-long-shift", "long-shift3"), ("-long-good", "long-good"),   # round 3
+                   ("-long-none", "long-none"), ("-mixed", "mixed")):
+        if key in d.name: pre = p; break
+    if d.name.endswith("-en-public"):     # detection only: no truth
+        d_name_detect_only = True
+    else:
+        d_name_detect_only = False
     rj = d / "run.json"
     run = json.loads(rj.read_text()) if rj.exists() else None
-    if not d.name.startswith("control"):
+    if not d.name.startswith("control") and not d_name_detect_only:
         out[d.name] = total(d, lang, pre=pre)
         out[d.name + " (strip)"] = total(d, lang, strip=True, pre=pre)
     else:
         out[d.name] = {"counts": {}, "substituted_by_truth_class": {}}
     if run:
         pages = [(f["pdf"], pg, sc) for f in run["files"] for pg, sc in (f.get("parse_score") or {}).items()]
-        if d.name.startswith("control"):   # pages 1-5 of each monthly report
+        if d.name.startswith("control"):   # pages 1-5 of each monthly report (round 2)
             pages = [x for x in pages if int(x[1]) <= 5]
         out[d.name]["run"] = {"versions": run["versions"], "options": run["options"], "date": run["date"],
                               "auto_ocr_log": run.get("auto_ocr_log"),

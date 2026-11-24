@@ -19,7 +19,10 @@ Options (after the positional arguments, all off by default):
                    rows become columns (right to left), characters top to bottom, the font's
                    'vert' forms for ー、。「」（） etc. Half-width digits stay upright, one per cell.
   --tounicode-shift=N  (font mode) add a ToUnicode CMap that maps every glyph to the character N code
-                   points above the right one ("the" -> "wkh" for N=3): a broken text layer that looks like text
+                   points above the right one ("the" -> "wkh" for N=3): a broken text layer that looks like text.
+                   N=0 writes a correct ToUnicode (a normal, extractable text layer)
+  --keep-space     (with --tounicode-shift) map the space glyph to a space, shift only the other glyphs
+  --notes=N        (English) N lines of fixed self-made English sentences under the total (a longer page)
   --stable-codes   (font mode) keep each glyph's code from month to month; by default
                    every file numbers its glyphs afresh in first-use order, as print drivers do
 Writes <out>/<prefix>-statement-2026-MM.pdf and <out>/<prefix>-truth-2026-MM.json (text and position of every character)."""
@@ -152,7 +155,19 @@ def page(year, month, r, extra):
         draw_text(ops, truth, t, 50, y, 9); y -= 18
     ops.append(f"0.5 w 50 {y+8} m 545 {y+8} l S")
     draw_text(ops, truth, "Total", 420, y - 8, 10); draw_text(ops, truth, f"{total:,}", 480, y - 8, 10)
+    y -= 34
+    for t in NOTES[:int(OPTS.get("notes", 0))]:
+        draw_text(ops, truth, t, 50, y, 9); y -= 13
     return "\n".join(ops).encode(), truth
+
+NOTES = ["Please check every line of this statement and tell us about any mistake within thirty days.",
+         "Prices include the sales tax that applied on the date of delivery shown in the first column.",
+         "Returned items are credited on the next statement once the warehouse has received them.",
+         "Orders placed after five in the afternoon are packed and shipped on the following working day.",
+         "Payment is due at the end of the month after the month in which the goods were delivered.",
+         "We keep a copy of this statement for seven years and can send it again if you need it later.",
+         "For questions about an item code, quote the code and the date exactly as they appear above.",
+         "Thank you for your order; this sample statement was made by hand and lists no real business."]
 
 ITEMS_JA = ["コピー用紙Ａ４", "トナー黒", "ケーブル２ｍ", "デスクライト", "ファイル青", "ホッチキス",
             "インク赤", "ＵＳＢハブ", "チェアマット", "ラベル", "ホワイトボード", "マーカー"]
@@ -213,15 +228,17 @@ def font_objs():
     buf = io.BytesIO(); f.save(buf); data = buf.getvalue()
     widths = " ".join(str(round(tt["hmtx"][g][0] * 1000 / UPM)) for g in order[1:])
     shift = int(OPTS.get("tounicode-shift", 0))
-    tu = b" /ToUnicode 9 0 R" if shift else b""
+    has_tu = "tounicode-shift" in OPTS
+    tu = b" /ToUnicode 9 0 R" if has_tu else b""
     objs = [b"<< /Type /Font /Subtype /Type0 /BaseFont /ABCDEF+Sample /Encoding /Identity-H /DescendantFonts [6 0 R]" + tu + b" >>",
             b"<< /Type /Font /Subtype /CIDFontType2 /BaseFont /ABCDEF+Sample /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> /FontDescriptor 7 0 R /CIDToGIDMap /Identity /DW 500 /W [1 [" + widths.encode() + b"]] >>",
             b"<< /Type /FontDescriptor /FontName /ABCDEF+Sample /Flags 32 /FontBBox [-200 -300 1200 1000] /ItalicAngle 0 /Ascent 905 /Descent -212 /CapHeight 716 /StemV 80 /FontFile2 8 0 R >>",
             b"<< /Length %d >>\nstream\n" % len(data) + data + b"\nendstream"]
-    if shift:
+    if has_tu:
         rev = {}
         for u, g in cmap.items(): rev.setdefault(g, u)
-        pairs = "".join(f"<{cid:04X}> <{rev[g] + shift:04X}>\n" for g, cid in sorted(USED.items(), key=lambda kv: kv[1]))
+        sh = lambda u: u if ("keep-space" in OPTS and u == 0x20) else u + shift
+        pairs = "".join(f"<{cid:04X}> <{sh(rev[g]):04X}>\n" for g, cid in sorted(USED.items(), key=lambda kv: kv[1]))
         cm = ("/CIDInit /ProcSet findresource begin 12 dict begin begincmap /CMapName /Shifted def /CMapType 2 def\n"
               "1 begincodespacerange <0000> <FFFF> endcodespacerange\n"
               f"{len(USED)} beginbfchar\n{pairs}endbfchar endcmap CMapName currentdict /CMap defineresource pop end end").encode()

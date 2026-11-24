@@ -1,0 +1,267 @@
+{
+ "arm": "replace-auto",
+ "options": {
+  "ocr": "OcrAutoOptions",
+  "mode": "default",
+  "lang": [
+   "en"
+  ],
+  "scale": 3.0,
+  "replace_broken_text_layer": true,
+  "force_full_page_ocr": false
+ },
+ "date": "2026-11-24 01:51:08",
+ "python": "3.13.18",
+ "versions": {
+  "docling": "2.152.0",
+  "docling-core": "2.108.0",
+  "docling-parse": "7.27.1",
+  "docling-ibm-models": "4.0.4"
+ },
+ "files": [
+  {
+   "pdf": "2203.01017v2.pdf",
+   "sha256": "4fa8dff93d74a84069210c84a38d14d62a39ec8f4e4c90bf955fdebdebcf6636",
+   "parse_score": {
+    "4": 1.0,
+    "1": 1.0,
+    "2": 1.0,
+    "5": 1.0,
+    "7": 1.0,
+    "6": 1.0,
+    "10": 1.0,
+    "9": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "8": 1.0,
+    "3": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "16": 1.0,
+    "15": 1.0
+   },
+   "chars": 54342,
+   "seconds": 162.4
+  },
+  {
+   "pdf": "2206.01062.pdf",
+   "sha256": "5dfbd8c115a15fd3396b68409124cfee29fc8efac7b5c846634ff924e635e0dc",
+   "parse_score": {
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "2": 1.0,
+    "7": 1.0,
+    "6": 1.0,
+    "1": 1.0,
+    "8": 1.0,
+    "9": 1.0
+   },
+   "chars": 52347,
+   "seconds": 57.1
+  },
+  {
+   "pdf": "2305.03393v1-pg9.pdf",
+   "sha256": "a07f5c34601ba2c234d898cbfaa9e29a7045996ccd82ccab3012516220a1f3a4",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 2749,
+   "seconds": 3.9
+  },
+  {
+   "pdf": "2305.03393v1.pdf",
+   "sha256": "62f2a2163d768d5b125a207967797aefa6c9cc113de8bb5c725c582595dd0c1d",
+   "parse_score": {
+    "1": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "2": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "8": 1.0,
+    "12": 1.0,
+    "14": 1.0,
+    "13": 1.0,
+    "11": 1.0,
+    "5": 1.0
+   },
+   "chars": 31727,
+   "seconds": 70.9
+  },
+  {
+   "pdf": "acroform_sample.pdf",
+   "sha256": "a4c3afbd5f7bf5d9ba7c13b84772e072f451b275bf4a7f05f6750b9a46548ddc",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 104,
+   "seconds": 1.3
+  },
+  {
+   "pdf": "amt_handbook_sample.pdf",
+   "sha256": "7099fe05ade36067cf66e72b23277972a1a2b7d2da1cb82c8d690efd70143fe0",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 3532,
+   "seconds": 5.7
+  },
+  {
+   "pdf": "code_and_formula.pdf",
+   "sha256": "6cb63fba2ad42dd0e0afe6a26dcf3b3bff5a86919c4c06157c71c65ebc0fc9e6",
+   "parse_score": {
+    "1": 1.0,
+    "2": 1.0
+   },
+   "chars": 5523,
+   "seconds": 2.5
+  },
+  {
+   "pdf": "elsevier-00.pdf",
+   "sha256": "519d4e8d7dde865ea5a9bfb7328c23b286299c1752365f0ce7c724a0ebb8a491",
+   "parse_score": {
+    "2": 1.0,
+    "1": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "7": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "11": 1.0,
+    "15": 1.0,
+    "14": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "19": 1.0,
+    "18": 1.0
+   },
+   "chars": 114384,
+   "seconds": 59.2
+  },
+  {
+   "pdf": "multi_page.pdf",
+   "sha256": "956846c28f9ed9d3b5cbe071865c082bd415f56e3e299c479aeea1f615eefa61",
+   "parse_score": {
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "1": 1.0,
+    "5": 1.0
+   },
+   "chars": 9333,
+   "seconds": 3.9
+  },
+  {
+   "pdf": "newspaper-00.pdf",
+   "sha256": "ba5f7a78792369ea36dbf2a554aa1635fa9f25983664ff17b406dca326279019",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 8929,
+   "seconds": 13.9
+  },
+  {
+   "pdf": "normal_4pages.pdf",
+   "sha256": "ca9c83b1653221a66b30cdb543c1ef7b116827762ae65fca36b87b332532b51e",
+   "parse_score": {
+    "3": 1.0,
+    "4": 1.0,
+    "1": 1.0,
+    "2": 1.0
+   },
+   "chars": 8277,
+   "seconds": 24.7
+  },
+  {
+   "pdf": "picture_classification.pdf",
+   "sha256": "dc38947ee802b7bcf82915804ccb8d04c4611e1b17491c415972821a329352fb",
+   "parse_score": {
+    "2": 1.0,
+    "1": 1.0
+   },
+   "chars": 3422,
+   "seconds": 4.5
+  },
+  {
+   "pdf": "redp5110_sampled.pdf",
+   "sha256": "2f6bc92861997d1434c069040dc63447c3e415e8e9eadbd1a8129ba2327ddba5",
+   "parse_score": {
+    "1": 1.0,
+    "2": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "3": 0.0,
+    "8": 1.0,
+    "10": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "11": 1.0,
+    "13": 1.0,
+    "12": 1.0,
+    "9": 1.0,
+    "17": NaN,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "18": 1.0
+   },
+   "chars": 35795,
+   "seconds": 55.0
+  },
+  {
+   "pdf": "skipped_1page.pdf",
+   "sha256": "827288488d4497fc02adc18313c6bffe9d43c2e73256b0330ce4d33da9ba57dc",
+   "parse_score": {
+    "3": 1.0,
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 205,
+   "seconds": 7.6
+  },
+  {
+   "pdf": "skipped_2pages.pdf",
+   "sha256": "63c849bc5a6a3e452e4ff06b823288c4b138cde24e7dc5ca57eb19b3c00635e9",
+   "parse_score": {
+    "4": 1.0,
+    "3": 0.0,
+    "1": 1.0,
+    "2": 1.0
+   },
+   "chars": 229,
+   "seconds": 8.8
+  },
+  {
+   "pdf": "table_misidentified_as_form.pdf",
+   "sha256": "7e8e895d8b1d97676bbddf4274fe83b0c17ce1f3238078d0d705392ef81256ff",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 2199,
+   "seconds": 10.4
+  },
+  {
+   "pdf": "table_mislabeled_as_picture.pdf",
+   "sha256": "a0d1ed0063db208ccad7ebd54cf549987deaf8f53948d95c3755f6b515925ce7",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 6257,
+   "seconds": 4.5
+  }
+ ],
+ "auto_ocr_log": [
+  "Auto OCR model selected rapidocr with torch.",
+  "Nemotron cannot be used because it is not installed.",
+  "easyocr cannot be used because it is not installed.",
+  "rapidocr cannot be used because onnxruntime is not installed."
+ ]
+}

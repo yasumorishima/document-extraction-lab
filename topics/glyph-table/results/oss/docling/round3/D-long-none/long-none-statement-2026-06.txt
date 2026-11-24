@@ -1,0 +1,25 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-06 Account 4471-0098
+
+| Date                  | Code                  | Item         |   Qty |   Amount |
+|-----------------------|-----------------------|--------------|-------|----------|
+| 06/25                 | IO-218                | USB hub      |     9 |   10,791 |
+| 06/01                 | IO-569                | Ink red      |     7 |   24,864 |
+| 06/23                 | 00-887                | Desk lamp    |     2 |    3,242 |
+| 06/03                 | 1I-583                | Toner black  |     6 |   26,832 |
+| 06/13                 | 0I-711                | Chair mat    |     8 |    3,672 |
+| 06/17                 | 00-517                | Ink red      |     6 |   16,956 |
+| 06/04                 | O0-579                | Whiteboard   |     5 |    6,735 |
+| 60/90                 | OI-468                | Toner black  |     8 |   20,032 |
+| 06/16                 | O0-338                | Folder blue  |     5 |    4,155 |
+| 06/09                 | II-196                | Paper A4 box |     4 |    9,740 |
+| 06/17                 | II-878                | Chair mat    |     2 |    2,366 |
+| 06/06                 | Ol-413                | Chair mat    |     3 |    4,563 |
+| 06/01                 | I1-227                | Cable 2m     |     6 |    5,802 |
+| 06/14                 | I1-901                | Desk lamp    |     3 |    1,017 |
+| Note: rate 8% applies | Note: rate 8% applies |              |       |          |
+
+Total 140,767
+
+Please check every line of this statement and tell us about any mistake within thirty days. Prices include the sales tax that applied on the date of delivery shown in the first column. Returned items are credited on the next statement once the warehouse has received them. Orders placed after five in the afternoon are packed and shipped on the following working day. Payment is due at the end of the month after the month in which the goods were delivered. Wwv  n n  n s s  n s ss  s s  n   ter. For questions about an item code, quote the code and the date exactly as they appear above. Thank you for your order; this sample statement was made by hand and lists no real business.

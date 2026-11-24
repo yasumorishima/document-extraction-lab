@@ -1,0 +1,9 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-07 Account 4471-0098
+
+Date Code Item Qty Amount 07/20 10-424 Stapler 8 3,728 07/22 10-793 Desk lamp 10 30,570 07/13 01-722 Stapler 10 41,070 07/25 I1-922 Label roll 26,048 07/27 Chair mat 9 07/12 I1-679 Ink red 11 23,540 07/21 I1-324 Ink red 12 10,416 07/05 10-683 Ink red 11 39,644 07/19 I1-417 Whiteboard 9 4,320 07/18 00-877 Toner black 22,872 07/03 11-631 Whiteboard 11 24,794 07/17 I0-481 Chair mat 3 1,512 07/22 I1-801 Marker set 7 07/25 I1-124 Folder blue 12 21,348 Note: rate 10% applies
+
+Paid via Bank (ref J-2026)
+
+Total 304,488

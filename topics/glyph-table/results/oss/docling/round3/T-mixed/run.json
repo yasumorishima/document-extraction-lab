@@ -1,0 +1,137 @@
+{
+ "arm": "replace-tess",
+ "options": {
+  "ocr": "TesseractCliOcrOptions",
+  "mode": "default",
+  "lang": [
+   "eng"
+  ],
+  "scale": 3.0,
+  "replace_broken_text_layer": true,
+  "tesseract_cmd": "tesseract",
+  "path": null,
+  "psm": null,
+  "force_full_page_ocr": false
+ },
+ "date": "2026-11-24 02:00:59",
+ "python": "3.13.18",
+ "versions": {
+  "docling": "2.152.0",
+  "docling-core": "2.108.0",
+  "docling-parse": "7.27.1",
+  "docling-ibm-models": "4.0.4"
+ },
+ "files": [
+  {
+   "pdf": "mixed-statement-2026-02.pdf",
+   "sha256": "761210bb160bb7a3c70e1708071f1b96a57af029bd8e346327cc10b6bd56e041",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 4450,
+   "seconds": 12.1
+  },
+  {
+   "pdf": "mixed-statement-2026-03.pdf",
+   "sha256": "1e0689debe163c183a4513dc8778e9d9f37a3abc2a78e1d3a74bdac83ce82c1d",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 2661,
+   "seconds": 3.4
+  },
+  {
+   "pdf": "mixed-statement-2026-04.pdf",
+   "sha256": "d34b44aa8c24537f93c52209e258bc2649a2a64c96786cafb755b2f3c304d215",
+   "parse_score": {
+    "2": 0.0,
+    "1": 1.0
+   },
+   "chars": 4484,
+   "seconds": 8.8
+  },
+  {
+   "pdf": "mixed-statement-2026-05.pdf",
+   "sha256": "7f44631c7b7e6818e0be071f3d82acf115a4ae54b9bf05f0f9071b54f5391453",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 2816,
+   "seconds": 3.6
+  },
+  {
+   "pdf": "mixed-statement-2026-06.pdf",
+   "sha256": "77b0779e4261c0fea6bbb014b84af4e9aa4aa641437efa3365f6c26421cd530e",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 4484,
+   "seconds": 9.0
+  },
+  {
+   "pdf": "mixed-statement-2026-07.pdf",
+   "sha256": "7333c722758ca205a091b25bd3f4b5eb9ea620de46d3ff1f9b1007aea3566a8f",
+   "parse_score": {
+    "2": 0.0,
+    "1": 1.0
+   },
+   "chars": 2831,
+   "seconds": 3.0
+  },
+  {
+   "pdf": "mixed-statement-2026-08.pdf",
+   "sha256": "1b93abccc6efdedb508cdcaec0c1c5f649a6a9d3b5d9d694f164f247eee15ccc",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 4450,
+   "seconds": 8.8
+  },
+  {
+   "pdf": "mixed-statement-2026-09.pdf",
+   "sha256": "7a30f1699883a9a5fe1205736dbb1b80c081df0b8cb3ae2ded74734878668822",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 2664,
+   "seconds": 3.6
+  },
+  {
+   "pdf": "mixed-statement-2026-10.pdf",
+   "sha256": "4a64ee01001e20a6839f749bc81eee48a32ce900468077946e2de3efb00bbff8",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 5776,
+   "seconds": 9.1
+  },
+  {
+   "pdf": "mixed-statement-2026-11.pdf",
+   "sha256": "a6279a94ce360dc5ffbd4e92a997aad5d971e19722dd06cd1ac91502814c75e0",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 2661,
+   "seconds": 3.2
+  },
+  {
+   "pdf": "mixed-statement-2026-12.pdf",
+   "sha256": "c65ea59be7d22053380d3df4c4f697dfe9517602706a987683bad9d00986ae43",
+   "parse_score": {
+    "1": 1.0,
+    "2": 0.0
+   },
+   "chars": 4450,
+   "seconds": 9.6
+  }
+ ],
+ "auto_ocr_log": []
+}

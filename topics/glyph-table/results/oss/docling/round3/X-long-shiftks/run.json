@@ -1,0 +1,128 @@
+{
+ "arm": "replace-auto",
+ "options": {
+  "ocr": "OcrAutoOptions",
+  "mode": "default",
+  "lang": [
+   "en"
+  ],
+  "scale": 3.0,
+  "replace_broken_text_layer": true,
+  "force_full_page_ocr": false
+ },
+ "date": "2026-11-24 02:03:02",
+ "python": "3.13.18",
+ "versions": {
+  "docling": "2.152.0",
+  "docling-core": "2.108.0",
+  "docling-parse": "7.27.1",
+  "docling-ibm-models": "4.0.4"
+ },
+ "files": [
+  {
+   "pdf": "long-shift3ks-statement-2026-02.pdf",
+   "sha256": "1714b43c872e183fb7dd98efd7a2192db28f365601dc99ad98cc7d211d982f1f",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2170,
+   "seconds": 14.1
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-03.pdf",
+   "sha256": "406006a6f8149126d49dab2b8ed82fdbd07d1575b6f9f9ed3e67c9a0d7bcae48",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1212,
+   "seconds": 6.8
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-04.pdf",
+   "sha256": "e4dedfe7123f7c37dd36269dda7f033e8bd7994dde30532d7769b5e11ad504b8",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2187,
+   "seconds": 9.6
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-05.pdf",
+   "sha256": "712e66c343c7af667aa7b033a0b4329378749c7d32eac98cdd98585a9a3a71f0",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1336,
+   "seconds": 6.9
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-06.pdf",
+   "sha256": "0b5d57addb86ba76737017e3342987e9f21d82a1453e3c64d919d32735d79c90",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2187,
+   "seconds": 9.4
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-07.pdf",
+   "sha256": "7ec959f6a0bf478ff9e2eb12ab64dae5251e6be0d14529a55b726a064cd131e4",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1294,
+   "seconds": 6.5
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-08.pdf",
+   "sha256": "f76c37f3e10c0a2d27a0951d5c8939ad915c9664b494b6a21bd828766abe1c05",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2170,
+   "seconds": 9.8
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-09.pdf",
+   "sha256": "f86e0a3b7e0657e37aed7058873dd4727b664e90c3a295167724324d00f976ae",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1214,
+   "seconds": 6.6
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-10.pdf",
+   "sha256": "252d8c15d8a1770e170d9525ba110e29fa4864168911adcde705a30886c4f573",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2833,
+   "seconds": 9.5
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-11.pdf",
+   "sha256": "9f7d0167d87b0544b8ec0db2d33b4b424b1073fe3836b45ba8a4a33ec51488a1",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1211,
+   "seconds": 6.4
+  },
+  {
+   "pdf": "long-shift3ks-statement-2026-12.pdf",
+   "sha256": "165006a2b231a7b08ec5ef879c77569d47b61785accc1e3908cdb49bda879ce6",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 2170,
+   "seconds": 10.4
+  }
+ ],
+ "auto_ocr_log": [
+  "Auto OCR model selected rapidocr with torch.",
+  "Nemotron cannot be used because it is not installed.",
+  "easyocr cannot be used because it is not installed.",
+  "rapidocr cannot be used because onnxruntime is not installed."
+ ]
+}

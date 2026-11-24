@@ -1,0 +1,1069 @@
+{
+ "self_check": {
+  "injected_substitutions": 5,
+  "scored": 5,
+  "extra": 0,
+  "missing": 0,
+  "ok": true
+ },
+ "A0-empty-en": {
+  "counts": {
+   "missing": 5259,
+   "moved": 0,
+   "truth_chars": 5259
+  },
+  "substituted_by_truth_class": {},
+  "top_substitutions": {},
+  "flagged_missing_output": []
+ },
+ "A0-empty-ja": {
+  "counts": {
+   "missing": 4207,
+   "moved": 0,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {},
+  "top_substitutions": {},
+  "flagged_missing_output": []
+ },
+ "D-en-public": {
+  "counts": {},
+  "substituted_by_truth_class": {},
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:51:08",
+   "auto_ocr_log": [
+    "Auto OCR model selected rapidocr with torch.",
+    "Nemotron cannot be used because it is not installed.",
+    "easyocr cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 102,
+   "pages_judged_broken": 3,
+   "seconds_total": 496.3
+  }
+ },
+ "D-long-good": {
+  "counts": {
+   "correct": 11870,
+   "extra": 1271,
+   "moved": 0,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {},
+  "top_substitutions": {},
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:44:17",
+   "auto_ocr_log": [
+    "Auto OCR model selected rapidocr with torch.",
+    "Nemotron cannot be used because it is not installed.",
+    "easyocr cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 0,
+   "seconds_total": 49.8
+  }
+ },
+ "D-long-good (strip)": {
+  "counts": {
+   "correct": 11870,
+   "extra": 162,
+   "moved": 0,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {},
+  "top_substitutions": {},
+  "flagged_missing_output": []
+ },
+ "D-long-none": {
+  "counts": {
+   "correct": 10825,
+   "extra": 1395,
+   "missing": 980,
+   "substituted": 65,
+   "moved": 176,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 63,
+   "digit": 2
+  },
+  "top_substitutions": {
+   "l->I": 35,
+   "O->0": 17,
+   "I->1": 4,
+   "e->s": 4,
+   "l->1": 2,
+   "I->l": 1,
+   "9->|": 1,
+   "9->6": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:45:13",
+   "auto_ocr_log": [
+    "Auto OCR model selected rapidocr with torch.",
+    "Nemotron cannot be used because it is not installed.",
+    "easyocr cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 11,
+   "seconds_total": 160.1
+  }
+ },
+ "D-long-none (strip)": {
+  "counts": {
+   "correct": 10825,
+   "substituted": 94,
+   "extra": 257,
+   "missing": 951,
+   "moved": 171,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 91,
+   "digit": 3
+  },
+  "top_substitutions": {
+   "l->I": 50,
+   "O->0": 22,
+   "I->1": 8,
+   "l->1": 6,
+   "e->s": 4,
+   "9->6": 3,
+   "I->l": 1
+  },
+  "flagged_missing_output": []
+ },
+ "D-long-shift": {
+  "counts": {
+   "missing": 11156,
+   "extra": 14129,
+   "correct": 699,
+   "moved": 5213,
+   "truth_chars": 11870,
+   "substituted": 15
+  },
+  "substituted_by_truth_class": {
+   "latin": 6,
+   "digit": 6,
+   "punct/other": 3
+  },
+  "top_substitutions": {
+   "P->D": 1,
+   "e->p": 1,
+   "n->h": 1,
+   "t->g": 1,
+   "0->S": 1,
+   "%->d": 1,
+   "a->|": 1,
+   ",->/": 1,
+   "e->w": 1,
+   "3->|": 1,
+   "8->#": 1,
+   ",->g": 1,
+   "0->d": 1,
+   "6->|": 1,
+   "7->v": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:42:50",
+   "auto_ocr_log": [
+    "Auto OCR model selected rapidocr with torch.",
+    "Nemotron cannot be used because it is not installed.",
+    "easyocr cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 0,
+   "seconds_total": 81.0
+  }
+ },
+ "D-long-shift (strip)": {
+  "counts": {
+   "missing": 11156,
+   "extra": 12824,
+   "correct": 676,
+   "moved": 5128,
+   "truth_chars": 11870,
+   "substituted": 38
+  },
+  "substituted_by_truth_class": {
+   "digit": 23,
+   "punct/other": 7,
+   "latin": 8
+  },
+  "top_substitutions": {
+   "0->3": 2,
+   "6->R": 2,
+   "-->3": 2,
+   "2->:": 1,
+   "6->3": 1,
+   "-->4": 1,
+   "l->h": 1,
+   "5->v": 1,
+   "3->Q": 1,
+   ",->r": 1,
+   "5->w": 1,
+   "7->h": 1,
+   "0->=": 1,
+   "0->#": 1,
+   "4->u": 1,
+   "/->d": 1,
+   "2->w": 1,
+   "0->h": 1,
+   "I->#": 1,
+   "O->;": 1,
+   "-->(": 1,
+   "4->#": 1,
+   "4->d": 1,
+   "0->s": 1,
+   "F->s": 1
+  },
+  "flagged_missing_output": []
+ },
+ "D-mixed": {
+  "counts": {
+   "correct": 22695,
+   "extra": 2666,
+   "missing": 980,
+   "substituted": 65,
+   "moved": 232,
+   "truth_chars": 23740
+  },
+  "substituted_by_truth_class": {
+   "latin": 63,
+   "digit": 2
+  },
+  "top_substitutions": {
+   "l->I": 35,
+   "O->0": 17,
+   "I->1": 4,
+   "e->s": 4,
+   "l->1": 2,
+   "I->l": 1,
+   "9->|": 1,
+   "9->6": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:47:57",
+   "auto_ocr_log": [
+    "Auto OCR model selected rapidocr with torch.",
+    "Nemotron cannot be used because it is not installed.",
+    "easyocr cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 22,
+   "pages_judged_broken": 11,
+   "seconds_total": 187.3
+  }
+ },
+ "D-mixed (strip)": {
+  "counts": {
+   "correct": 22695,
+   "extra": 419,
+   "substituted": 94,
+   "missing": 951,
+   "moved": 222,
+   "truth_chars": 23740
+  },
+  "substituted_by_truth_class": {
+   "latin": 91,
+   "digit": 3
+  },
+  "top_substitutions": {
+   "l->I": 50,
+   "O->0": 22,
+   "I->1": 8,
+   "l->1": 6,
+   "e->s": 4,
+   "9->6": 3,
+   "I->l": 1
+  },
+  "flagged_missing_output": []
+ },
+ "E-en": {
+  "counts": {
+   "correct": 4953,
+   "substituted": 154,
+   "missing": 152,
+   "moved": 4,
+   "truth_chars": 5259,
+   "extra": 203
+  },
+  "substituted_by_truth_class": {
+   "latin": 149,
+   "digit": 5
+  },
+  "top_substitutions": {
+   "O->0": 59,
+   "l->1": 36,
+   "I->1": 35,
+   "l->I": 18,
+   "7->1": 1,
+   "9->2": 1,
+   "I->l": 1,
+   "7->2": 1,
+   "4->;": 1,
+   "7->;": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:50:59",
+   "auto_ocr_log": [
+    "Auto OCR model selected easyocr.",
+    "Nemotron cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 11,
+   "seconds_total": 321.9
+  }
+ },
+ "E-en (strip)": {
+  "counts": {
+   "correct": 4953,
+   "substituted": 157,
+   "missing": 149,
+   "moved": 2,
+   "truth_chars": 5259,
+   "extra": 21
+  },
+  "substituted_by_truth_class": {
+   "latin": 152,
+   "digit": 5
+  },
+  "top_substitutions": {
+   "O->0": 59,
+   "l->1": 37,
+   "I->1": 36,
+   "l->I": 19,
+   "7->1": 1,
+   "9->2": 1,
+   "I->l": 1,
+   "7->2": 1,
+   "4->;": 1,
+   "7->;": 1
+  },
+  "flagged_missing_output": []
+ },
+ "E-ja": {
+  "counts": {
+   "correct": 3557,
+   "extra": 2479,
+   "substituted": 94,
+   "missing": 556,
+   "moved": 66,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "kanji": 67,
+   "kana": 21,
+   "latin": 2,
+   "digit": 2,
+   "punct/other": 2
+  },
+  "top_substitutions": {
+   "一->ー": 32,
+   "ー->一": 12,
+   "付->|": 8,
+   "力->カ": 6,
+   "夕->タ": 5,
+   "口->ロ": 5,
+   "二->ニ": 4,
+   "口->|": 2,
+   "ニ->二": 2,
+   "タ->夕": 2,
+   "-->一": 2,
+   "ー->|": 2,
+   "ニ->|": 2,
+   "Q->0": 1,
+   "ロ->口": 1,
+   "0->|": 1,
+   "J->」": 1,
+   "0->の": 1,
+   "八->|": 1,
+   "工->|": 1,
+   "夕->|": 1,
+   "工->エ": 1,
+   "二->|": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "ja"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:44:45",
+   "auto_ocr_log": [
+    "Auto OCR model selected easyocr.",
+    "Nemotron cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 11,
+   "seconds_total": 369.1
+  }
+ },
+ "E-ja (strip)": {
+  "counts": {
+   "correct": 3557,
+   "missing": 501,
+   "extra": 496,
+   "substituted": 149,
+   "moved": 36,
+   "truth_chars": 4207
+  },
+  "substituted_by_truth_class": {
+   "kanji": 107,
+   "kana": 35,
+   "latin": 2,
+   "digit": 3,
+   "punct/other": 2
+  },
+  "top_substitutions": {
+   "一->ー": 35,
+   "ー->一": 21,
+   "力->カ": 19,
+   "工->エ": 16,
+   "二->ニ": 13,
+   "夕->タ": 12,
+   "口->ロ": 12,
+   "ニ->二": 8,
+   "タ->夕": 4,
+   "ロ->口": 2,
+   "-->一": 2,
+   "Q->0": 1,
+   "7->'": 1,
+   "J->」": 1,
+   "0->の": 1,
+   "2->3": 1
+  },
+  "flagged_missing_output": []
+ },
+ "T-long-none": {
+  "counts": {
+   "correct": 11497,
+   "extra": 1558,
+   "missing": 293,
+   "substituted": 80,
+   "moved": 241,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 78,
+   "digit": 2
+  },
+  "top_substitutions": {
+   "O->0": 21,
+   "l->1": 20,
+   "I->1": 15,
+   "I->l": 11,
+   "I->|": 5,
+   "l->I": 4,
+   "0->O": 2,
+   "l->\\": 1,
+   "l->[": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "TesseractCliOcrOptions",
+    "mode": "default",
+    "lang": [
+     "eng"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "tesseract_cmd": "tesseract",
+    "path": null,
+    "psm": null,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 02:00:02",
+   "auto_ocr_log": [],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 11,
+   "seconds_total": 53.8
+  }
+ },
+ "T-long-none (strip)": {
+  "counts": {
+   "correct": 11497,
+   "substituted": 127,
+   "missing": 246,
+   "extra": 402,
+   "moved": 227,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 123,
+   "digit": 4
+  },
+  "top_substitutions": {
+   "O->0": 41,
+   "l->1": 30,
+   "I->1": 28,
+   "I->l": 13,
+   "l->I": 8,
+   "0->O": 4,
+   "l->[": 2,
+   "l->\\": 1
+  },
+  "flagged_missing_output": []
+ },
+ "T-long-shift": {
+  "counts": {
+   "missing": 11156,
+   "extra": 14129,
+   "correct": 699,
+   "moved": 5213,
+   "truth_chars": 11870,
+   "substituted": 15
+  },
+  "substituted_by_truth_class": {
+   "latin": 6,
+   "digit": 6,
+   "punct/other": 3
+  },
+  "top_substitutions": {
+   "P->D": 1,
+   "e->p": 1,
+   "n->h": 1,
+   "t->g": 1,
+   "0->S": 1,
+   "%->d": 1,
+   "a->|": 1,
+   ",->/": 1,
+   "e->w": 1,
+   "3->|": 1,
+   "8->#": 1,
+   ",->g": 1,
+   "0->d": 1,
+   "6->|": 1,
+   "7->v": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "TesseractCliOcrOptions",
+    "mode": "default",
+    "lang": [
+     "eng"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "tesseract_cmd": "tesseract",
+    "path": null,
+    "psm": null,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 01:59:28",
+   "auto_ocr_log": [],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 0,
+   "seconds_total": 29.6
+  }
+ },
+ "T-long-shift (strip)": {
+  "counts": {
+   "missing": 11156,
+   "extra": 12824,
+   "correct": 676,
+   "moved": 5128,
+   "truth_chars": 11870,
+   "substituted": 38
+  },
+  "substituted_by_truth_class": {
+   "digit": 23,
+   "punct/other": 7,
+   "latin": 8
+  },
+  "top_substitutions": {
+   "0->3": 2,
+   "6->R": 2,
+   "-->3": 2,
+   "2->:": 1,
+   "6->3": 1,
+   "-->4": 1,
+   "l->h": 1,
+   "5->v": 1,
+   "3->Q": 1,
+   ",->r": 1,
+   "5->w": 1,
+   "7->h": 1,
+   "0->=": 1,
+   "0->#": 1,
+   "4->u": 1,
+   "/->d": 1,
+   "2->w": 1,
+   "0->h": 1,
+   "I->#": 1,
+   "O->;": 1,
+   "-->(": 1,
+   "4->#": 1,
+   "4->d": 1,
+   "0->s": 1,
+   "F->s": 1
+  },
+  "flagged_missing_output": []
+ },
+ "T-mixed": {
+  "counts": {
+   "correct": 23367,
+   "extra": 2829,
+   "missing": 293,
+   "substituted": 80,
+   "moved": 245,
+   "truth_chars": 23740
+  },
+  "substituted_by_truth_class": {
+   "latin": 78,
+   "digit": 2
+  },
+  "top_substitutions": {
+   "O->0": 21,
+   "l->1": 20,
+   "I->1": 15,
+   "I->l": 11,
+   "I->|": 5,
+   "l->I": 4,
+   "0->O": 2,
+   "l->\\": 1,
+   "l->[": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "TesseractCliOcrOptions",
+    "mode": "default",
+    "lang": [
+     "eng"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "tesseract_cmd": "tesseract",
+    "path": null,
+    "psm": null,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 02:00:59",
+   "auto_ocr_log": [],
+   "flags": [],
+   "pages": 22,
+   "pages_judged_broken": 11,
+   "seconds_total": 74.2
+  }
+ },
+ "T-mixed (strip)": {
+  "counts": {
+   "correct": 23367,
+   "extra": 564,
+   "substituted": 127,
+   "missing": 246,
+   "moved": 227,
+   "truth_chars": 23740
+  },
+  "substituted_by_truth_class": {
+   "latin": 123,
+   "digit": 4
+  },
+  "top_substitutions": {
+   "O->0": 41,
+   "l->1": 30,
+   "I->1": 28,
+   "I->l": 13,
+   "l->I": 8,
+   "0->O": 4,
+   "l->[": 2,
+   "l->\\": 1
+  },
+  "flagged_missing_output": []
+ },
+ "X-long-shiftks": {
+  "counts": {
+   "correct": 10825,
+   "extra": 1395,
+   "missing": 980,
+   "substituted": 65,
+   "moved": 176,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 63,
+   "digit": 2
+  },
+  "top_substitutions": {
+   "l->I": 35,
+   "O->0": 17,
+   "I->1": 4,
+   "e->s": 4,
+   "l->1": 2,
+   "I->l": 1,
+   "9->|": 1,
+   "9->6": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 02:03:02",
+   "auto_ocr_log": [
+    "Auto OCR model selected rapidocr with torch.",
+    "Nemotron cannot be used because it is not installed.",
+    "easyocr cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 11,
+   "seconds_total": 96.0
+  }
+ },
+ "X-long-shiftks (strip)": {
+  "counts": {
+   "correct": 10825,
+   "substituted": 94,
+   "extra": 257,
+   "missing": 951,
+   "moved": 171,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 91,
+   "digit": 3
+  },
+  "top_substitutions": {
+   "l->I": 50,
+   "O->0": 22,
+   "I->1": 8,
+   "l->1": 6,
+   "e->s": 4,
+   "9->6": 3,
+   "I->l": 1
+  },
+  "flagged_missing_output": []
+ },
+ "X-long-shiftks-tess": {
+  "counts": {
+   "correct": 11497,
+   "extra": 1558,
+   "missing": 293,
+   "substituted": 80,
+   "moved": 241,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 78,
+   "digit": 2
+  },
+  "top_substitutions": {
+   "O->0": 21,
+   "l->1": 20,
+   "I->1": 15,
+   "I->l": 11,
+   "I->|": 5,
+   "l->I": 4,
+   "0->O": 2,
+   "l->\\": 1,
+   "l->[": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "TesseractCliOcrOptions",
+    "mode": "default",
+    "lang": [
+     "eng"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "tesseract_cmd": "tesseract",
+    "path": null,
+    "psm": null,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 02:05:02",
+   "auto_ocr_log": [],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 11,
+   "seconds_total": 52.5
+  }
+ },
+ "X-long-shiftks-tess (strip)": {
+  "counts": {
+   "correct": 11497,
+   "substituted": 127,
+   "missing": 246,
+   "extra": 402,
+   "moved": 227,
+   "truth_chars": 11870
+  },
+  "substituted_by_truth_class": {
+   "latin": 123,
+   "digit": 4
+  },
+  "top_substitutions": {
+   "O->0": 41,
+   "l->1": 30,
+   "I->1": 28,
+   "I->l": 13,
+   "l->I": 8,
+   "0->O": 4,
+   "l->[": 2,
+   "l->\\": 1
+  },
+  "flagged_missing_output": []
+ },
+ "X-shiftks": {
+  "counts": {
+   "missing": 4874,
+   "extra": 5081,
+   "correct": 372,
+   "moved": 2286,
+   "truth_chars": 5259,
+   "substituted": 13
+  },
+  "substituted_by_truth_class": {
+   "digit": 5,
+   "punct/other": 3,
+   "latin": 5
+  },
+  "top_substitutions": {
+   ",->/": 2,
+   "1->5": 1,
+   "3->;": 1,
+   "0->5": 1,
+   "9->;": 1,
+   "0->4": 1,
+   "l->;": 1,
+   "l->3": 1,
+   "--><": 1,
+   "u->l": 1,
+   "n->h": 1,
+   "t->v": 1
+  },
+  "flagged_missing_output": [],
+  "run": {
+   "versions": {
+    "docling": "2.152.0",
+    "docling-core": "2.108.0",
+    "docling-parse": "7.27.1",
+    "docling-ibm-models": "4.0.4"
+   },
+   "options": {
+    "ocr": "OcrAutoOptions",
+    "mode": "default",
+    "lang": [
+     "en"
+    ],
+    "scale": 3.0,
+    "replace_broken_text_layer": true,
+    "force_full_page_ocr": false
+   },
+   "date": "2026-11-24 02:04:42",
+   "auto_ocr_log": [
+    "Auto OCR model selected rapidocr with torch.",
+    "Nemotron cannot be used because it is not installed.",
+    "easyocr cannot be used because it is not installed.",
+    "rapidocr cannot be used because onnxruntime is not installed."
+   ],
+   "flags": [],
+   "pages": 11,
+   "pages_judged_broken": 0,
+   "seconds_total": 16.1
+  }
+ },
+ "X-shiftks (strip)": {
+  "counts": {
+   "missing": 4883,
+   "extra": 4896,
+   "correct": 362,
+   "moved": 2281,
+   "truth_chars": 5259,
+   "substituted": 14
+  },
+  "substituted_by_truth_class": {
+   "digit": 6,
+   "punct/other": 3,
+   "latin": 5
+  },
+  "top_substitutions": {
+   "0->3": 1,
+   "2->:": 1,
+   "6->3": 1,
+   "-->4": 1,
+   "0->5": 1,
+   "9->;": 1,
+   "0->4": 1,
+   "l->;": 1,
+   "l->3": 1,
+   "--><": 1,
+   ",->/": 1,
+   "u->l": 1,
+   "n->h": 1,
+   "t->v": 1
+  },
+  "flagged_missing_output": []
+ }
+}
