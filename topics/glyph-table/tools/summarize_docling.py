@@ -64,9 +64,10 @@ out = {"self_check": self_check(),
 for d in sorted(p for p in runs.iterdir() if p.is_dir() and p.name != "test"):
     lang = "ja" if d.name.endswith("-ja") or "-ja-" in d.name else "en"
     pre = "shift3-font" if "-shift" in d.name else None
-    for key, p in (("-long-shift", "long-shift3"), ("-long-good", "long-good"),   # round 3
+    for key, p in (("-long-shiftks", "long-shift3ks"), ("X-shiftks", "shift3ks-font"),  # round 3, not pre-registered
+                   ("-long-shift", "long-shift3"), ("-long-good", "long-good"),   # round 3
                    ("-long-none", "long-none"), ("-mixed", "mixed")):
-        if key in d.name: pre = p
+        if key in d.name: pre = p; break
     if d.name.endswith("-en-public"):     # detection only: no truth
         d_name_detect_only = True
     else:

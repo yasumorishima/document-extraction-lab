@@ -8,26 +8,30 @@ Round-1 draft (superseded: wrong font description, missed `replace_broken_text_l
 
 For anyone landing here: what this issue asks for has shipped as an opt-in option. It was added in #4654 and is in 2.152.0: with `do_ocr` on, `ocr_options.replace_broken_text_layer=True` checks the visible text layer of each page and re-reads only the pages judged broken with full-page OCR.
 
-I measured it on docling 2.152.0 with self-made monthly statements whose font is Type0 / Identity-H with no ToUnicode (and no cmap table or glyph names in the embedded TrueType), English and Japanese, 11 one-page months each, scored against the generator's text:
+I measured it on docling 2.152.0, mostly with self-made monthly statements whose font is Type0 / Identity-H with no ToUnicode (and no cmap table or glyph names in the embedded TrueType), English and Japanese, 11 one-page months each, scored against the generator's text.
 
 **Detection**
-- Pages with no ToUnicode: 22 of 22 judged broken.
-- Real PDFs with a good text layer (Japan's Statistics Bureau monthly report, 55 Japanese pages): 0 judged broken. Good English text was not part of this check.
-- A ToUnicode that maps every glyph 3 code points too high (`Period` came out as `Shulrg`): 0 of 11 judged broken, so the shifted text goes straight through. The vowel-share check from #4654 is meant for this case, but it needs at least 200 letters in words and these short pages have 163–182, so it never ran; on 5 of the 11 pages the vowel share was below 0.25.
+- Pages with no ToUnicode: all judged broken (short pages 22/22, longer English pages 11/11).
+- Two-page documents with a good page 1 and a no-ToUnicode page 2: in all 11, only page 2 was re-read.
+- Good text layers: 0 judged broken among 55 Japanese pages (Japan's Statistics Bureau monthly report), 95 English pages from docling's own `tests/data/pdf/sources` and 11 self-made English pages. The only test-data pages judged broken (`redp5110_sampled` p3, and the same page of `skipped_1page` / `skipped_2pages`, which are Korean) also show many `(cid:N)` in pdfminer, so they look really broken.
+- A ToUnicode that maps every glyph 3 code points too high (`Period` came out as `Shulrg`):
+  - spaces kept as spaces: caught on the longer pages (11/11), missed on the short ones (0/11). The vowel-share check from #4654 needs at least 200 letters in 3–20-letter words; the short pages have about 160–180.
+  - spaces shifted as well (space → `#`): missed on both (0/11 each), because the words run together into tokens longer than 20 letters, which the check skips.
 
-**The OCR it falls back to** (characters silently replaced by a different one; no flag in the output; Markdown table rules removed before scoring)
+**The OCR it falls back to** (characters silently replaced by a different one, with no flag in the output; Markdown table rules removed before scoring; short pages)
 
 | | English, 5,259 chars | Japanese, 4,207 chars |
 | --- | --- | --- |
-| default engine (`OcrAutoOptions` → RapidOCR, torch) | 113 | did not run: in a plain install `OcrAutoOptions` has no engine for `ja` (it does not consider Tesseract) and raises `OcrLanguageNotSupportedError` |
+| default engine in a plain install (`OcrAutoOptions` → RapidOCR, torch) | 113 | did not run: no engine for `ja` (`OcrAutoOptions` does not consider Tesseract), `OcrLanguageNotSupportedError` |
+| default engine with `easyocr` installed (it picks EasyOCR) | 157 | 149 (and 501 characters missing) |
 | Tesseract (`eng` / `jpn`), scale 3.0 | 137 | 328 |
 | Tesseract, scale 2.0 / 4.0 | 142 / 130 | 429 / 283 |
 
-- English, RapidOCR: l→I, O→0, 6→9, I→1, l→1. English, Tesseract: O→0, l→1, I→1, I→l; for example the item code `0I-979` came out as `Ol-979`.
-- Japanese, Tesseract: 0→9 and 0→6 in dates and amounts (`10,908` was read as `19, 908`), and kanji read as look-alike katakana such as 一→ー and 力→カ.
-- The scale-3.0 settings were run twice and gave identical output; scales 2.0 and 4.0 were run once.
-- An order-free count (how often each character occurs on the page, a lower bound on misreads) gives a similar picture: English 110 (RapidOCR) and 118 (Tesseract), Japanese 355.
+- English: O→0, l→1, I→1, l→I with every engine; for example Tesseract read the item code `0I-979` as `Ol-979`.
+- Japanese: 0→9 and 0→6 in dates and amounts with Tesseract (`10,908` was read as `19, 908`), and kanji read as look-alike katakana such as 一→ー and 力→カ with both Tesseract and EasyOCR.
+- An order-free count (how often each character occurs on the page, a lower bound on misreads) gives the same picture.
+- Settings that were run twice gave identical output.
 
-So the detection works well for missing mappings, and it did not fire on the good pages tried here. Two things a user may want to know: the fallback OCR changes codes and numbers without any mark, and a shifted ToUnicode on a short page is not caught. Perhaps worth a line in the option's docs.
+So the per-page detection works well for missing mappings and kept every good page here. Two things a user may want to know: the fallback OCR changes codes and numbers without any mark, whichever engine is used, and a shifted ToUnicode is missed on short pages or when the space is shifted too. Perhaps worth a line in the option's docs.
 
-Setup, outputs and scoring script (write-up in Japanese; raw outputs, settings and `summary.json` are language-neutral): https://github.com/yasumorishima/document-extraction-lab/tree/main/topics/glyph-table/results/oss/docling/round2
+Setup, outputs and scoring script (write-up in Japanese; raw outputs, settings and `summary.json` are language-neutral): https://github.com/yasumorishima/document-extraction-lab/tree/main/topics/glyph-table/results/oss/docling

@@ -1,0 +1,7 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-06 Account 4471-0098
+
+Date Code Item Qty Amount 06/25 10-218 USB hub 9 10,791 06/01 I0-569 Ink red 7 06/23 00-887 Desk lamp 3,242 06/03 Toner black 26,832 06/13 01-711 Chair mat 8 3,672 06/17 00-517 Ink red 6 16,956 06/04 00-579 Whiteboard 5 6,735 06/09 0l-468 Toner black 8 20,032 06/16 00-338 Folder blue 5 4,155 06/09 Paper A4 box 4 9,740 06/17 I1-878 Chair mat 2,366 06/06 01-413 Chair mat 3 4,563 06/01 11-227 Cable 2m 6 5,802 06/14 I1-901 Desk lamp 3 1,017
+
+Note: rate 8% applies Total 140,767

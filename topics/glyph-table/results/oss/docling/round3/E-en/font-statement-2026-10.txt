@@ -1,0 +1,7 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-10 Account 4471-0098
+
+Date Code Item Qty Amount 10/03 01-134 Chair mat 5 1,920 10/10 01-605 Stapler 10 46,770 10/04 00-912 Folder blue 3 8,067 10/11 00-680 USB hub 3 10,041 10/02 10-966 Label roll 9 26,622 10/25 00-797 Toner black 4,168 10/12 00-631 Ink red 8 12,592 10/27 01-629 Label roll 3 8,028 10/05 I1-314 Toner black 8 2,720 10/21 10-703 Toner black 5 23,520 10/04 11-583 Toner black 8 22,320 10/20 10-592 Label roll 3 10,029 10/22 I1-652 Ink red 5 16,325 10/19 01-603 Whiteboard 1 3,456 Note: rate 8% applies
+
+Total 196,578

@@ -21,6 +21,7 @@ Options (after the positional arguments, all off by default):
   --tounicode-shift=N  (font mode) add a ToUnicode CMap that maps every glyph to the character N code
                    points above the right one ("the" -> "wkh" for N=3): a broken text layer that looks like text.
                    N=0 writes a correct ToUnicode (a normal, extractable text layer)
+  --keep-space     (with --tounicode-shift) map the space glyph to a space, shift only the other glyphs
   --notes=N        (English) N lines of fixed self-made English sentences under the total (a longer page)
   --stable-codes   (font mode) keep each glyph's code from month to month; by default
                    every file numbers its glyphs afresh in first-use order, as print drivers do
@@ -236,7 +237,8 @@ def font_objs():
     if has_tu:
         rev = {}
         for u, g in cmap.items(): rev.setdefault(g, u)
-        pairs = "".join(f"<{cid:04X}> <{rev[g] + shift:04X}>\n" for g, cid in sorted(USED.items(), key=lambda kv: kv[1]))
+        sh = lambda u: u if ("keep-space" in OPTS and u == 0x20) else u + shift
+        pairs = "".join(f"<{cid:04X}> <{sh(rev[g]):04X}>\n" for g, cid in sorted(USED.items(), key=lambda kv: kv[1]))
         cm = ("/CIDInit /ProcSet findresource begin 12 dict begin begincmap /CMapName /Shifted def /CMapType 2 def\n"
               "1 begincodespacerange <0000> <FFFF> endcodespacerange\n"
               f"{len(USED)} beginbfchar\n{pairs}endbfchar endcmap CMapName currentdict /CMap defineresource pop end end").encode()

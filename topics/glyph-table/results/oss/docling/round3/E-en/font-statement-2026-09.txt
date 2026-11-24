@@ -1,0 +1,7 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-09 Account 4471-0098
+
+Date Code Item Qty Amount 09/03 I1-267 Toner black 5 9,035 09/22 11-702 Stapler 3 3,504 09/26 I1-398 Folder blue 9 28,710 09/07 10-640 Stapler 6,074 09/06 01-557 Label roll 2 28,847 09/18 00-285 Toner black 1,108 09/06 01-873 Desk lamp 11,396 09/21 01-167 Stapler ; 16,500 09/02 11-154 Folder blue 5,052 09/28 01-296 USB hub 8 22,744 09/12 01-760 Stapler 9 33,399 09/13 11-215 USB hub 1 448 09/15 I1-561 Stapler 12 27,120 09/07 I1-583 Marker set 10 38,830 Note: rate 10% applies Credit: -1,200 (returned item)
+
+Total 232,767
