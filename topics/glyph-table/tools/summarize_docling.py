@@ -26,18 +26,18 @@ def cls(c):
     if c.isascii() and c.isalpha(): return "latin"
     return "punct/other"
 
-def stems(lang):
-    pre = "font" if lang == "en" else "ja-font"
+def stems(lang, pre=None):
+    pre = pre or ("font" if lang == "en" else "ja-font")
     return [(f"{pre}-statement-{m}", samples / f"{pre}-truth-{m}.json") for m in MONTHS]
 
 SEP = re.compile(r"^\s*\|?[\s|:\-]+\|?\s*$")
 def strip_md(t):
     return "\n".join(l for l in t.splitlines() if not SEP.match(l)).replace("|", " ")
 
-def total(arm_dir, lang, empty=False, strip=False):
+def total(arm_dir, lang, empty=False, strip=False, pre=None):
     nfkc = lang == "ja"
     c = Counter(); subs = Counter(); flags = []
-    for stem, truth in stems(lang):
+    for stem, truth in stems(lang, pre):
         f = arm_dir / f"{stem}.txt" if arm_dir else None
         if empty: text = ""
         elif not f.exists(): flags.append(stem); continue
@@ -63,17 +63,28 @@ out = {"self_check": self_check(),
        "A0-empty-en": total(None, "en", empty=True), "A0-empty-ja": total(None, "ja", empty=True)}
 for d in sorted(p for p in runs.iterdir() if p.is_dir() and p.name != "test"):
     lang = "ja" if d.name.endswith("-ja") or "-ja-" in d.name else "en"
-    out[d.name] = total(d, lang)
-    out[d.name + " (strip)"] = total(d, lang, strip=True)
+    pre = "shift3-font" if "-shift" in d.name else None
     rj = d / "run.json"
-    if rj.exists():
-        run = json.loads(rj.read_text())
+    run = json.loads(rj.read_text()) if rj.exists() else None
+    if not d.name.startswith("control"):
+        out[d.name] = total(d, lang, pre=pre)
+        out[d.name + " (strip)"] = total(d, lang, strip=True, pre=pre)
+    else:
+        out[d.name] = {"counts": {}, "substituted_by_truth_class": {}}
+    if run:
+        pages = [(f["pdf"], pg, sc) for f in run["files"] for pg, sc in (f.get("parse_score") or {}).items()]
+        if d.name.startswith("control"):   # pages 1-5 of each monthly report
+            pages = [x for x in pages if int(x[1]) <= 5]
         out[d.name]["run"] = {"versions": run["versions"], "options": run["options"], "date": run["date"],
+                              "auto_ocr_log": run.get("auto_ocr_log"),
                               "flags": [f for f in run["files"] if f.get("flag")],
+                              "pages": len(pages), "pages_judged_broken": sum(sc == 0.0 for _, _, sc in pages),
                               "seconds_total": round(sum(f["seconds"] for f in run["files"]), 1)}
 outp.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
 for k, v in out.items():
     if k == "self_check": print(k, v); continue
     c = v["counts"]
+    if "run" in v and "pages" in v["run"]:
+        print(f"{k:24} pages={v['run']['pages']} judged_broken={v['run']['pages_judged_broken']} flags={len(v['run']['flags'])}")
     print(f"{k:16} substituted={c.get('substituted',0):5} extra={c.get('extra',0):5} missing={c.get('missing',0):5} "
           f"correct={c.get('correct',0):5} truth={c.get('truth_chars',0)} by_class={v['substituted_by_truth_class']}")

@@ -1,0 +1,9 @@
+MONTHLY STATEMENT (SAMPLE)
+
+Period 2026-03 Account 4471-0098
+
+Date Code Item Qty Amount 03/15 01-788 Folder blue 2 9,480 03/11 01-563 Marker set 7 4,907 03/25 11-383 Whiteboard 5 2,210 03/21 10-558 Stapler 8 21,456 03/24 00-307 Whiteboard 3 5,955 03/06 1-425 Chair mat 8 29,512 03/24 00-806 Whiteboard 11 30,811 03/16 11-540 Cable 2m 1 2,122 03/15 01-821 Whiteboard 7 14,679 03/01 11-830 Whiteboard 2 1,532 03/15 10-148 Cable 2m 11 22,198 03/20 10-327 Folder blue 12 40,224 03/08 10-180 Cable 2m 11 8,041 03/14 11-722 Ink red 8 32,112 Note: rate 8% applies
+
+Ref #Q7 (new code)
+
+Total 225,239
