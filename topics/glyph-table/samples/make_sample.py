@@ -18,6 +18,8 @@ Options (after the positional arguments, all off by default):
   --vertical       (outline modes, Japanese) vertical writing: the same table turned so that
                    rows become columns (right to left), characters top to bottom, the font's
                    'vert' forms for ー、。「」（） etc. Half-width digits stay upright, one per cell.
+  --tounicode-shift=N  (font mode) add a ToUnicode CMap that maps every glyph to the character N code
+                   points above the right one ("the" -> "wkh" for N=3): a broken text layer that looks like text
   --stable-codes   (font mode) keep each glyph's code from month to month; by default
                    every file numbers its glyphs afresh in first-use order, as print drivers do
 Writes <out>/<prefix>-statement-2026-MM.pdf and <out>/<prefix>-truth-2026-MM.json (text and position of every character)."""
@@ -210,10 +212,21 @@ def font_objs():
         del f[t]
     buf = io.BytesIO(); f.save(buf); data = buf.getvalue()
     widths = " ".join(str(round(tt["hmtx"][g][0] * 1000 / UPM)) for g in order[1:])
-    return [b"<< /Type /Font /Subtype /Type0 /BaseFont /ABCDEF+Sample /Encoding /Identity-H /DescendantFonts [6 0 R] >>",
+    shift = int(OPTS.get("tounicode-shift", 0))
+    tu = b" /ToUnicode 9 0 R" if shift else b""
+    objs = [b"<< /Type /Font /Subtype /Type0 /BaseFont /ABCDEF+Sample /Encoding /Identity-H /DescendantFonts [6 0 R]" + tu + b" >>",
             b"<< /Type /Font /Subtype /CIDFontType2 /BaseFont /ABCDEF+Sample /CIDSystemInfo << /Registry (Adobe) /Ordering (Identity) /Supplement 0 >> /FontDescriptor 7 0 R /CIDToGIDMap /Identity /DW 500 /W [1 [" + widths.encode() + b"]] >>",
             b"<< /Type /FontDescriptor /FontName /ABCDEF+Sample /Flags 32 /FontBBox [-200 -300 1200 1000] /ItalicAngle 0 /Ascent 905 /Descent -212 /CapHeight 716 /StemV 80 /FontFile2 8 0 R >>",
             b"<< /Length %d >>\nstream\n" % len(data) + data + b"\nendstream"]
+    if shift:
+        rev = {}
+        for u, g in cmap.items(): rev.setdefault(g, u)
+        pairs = "".join(f"<{cid:04X}> <{rev[g] + shift:04X}>\n" for g, cid in sorted(USED.items(), key=lambda kv: kv[1]))
+        cm = ("/CIDInit /ProcSet findresource begin 12 dict begin begincmap /CMapName /Shifted def /CMapType 2 def\n"
+              "1 begincodespacerange <0000> <FFFF> endcodespacerange\n"
+              f"{len(USED)} beginbfchar\n{pairs}endbfchar endcmap CMapName currentdict /CMap defineresource pop end end").encode()
+        objs.append(b"<< /Length %d >>\nstream\n" % len(cm) + cm + b"\nendstream")
+    return objs
 
 def write_pdf(path, content):
     res = b"<< /Font << /F1 5 0 R >> >>" if MODE == "font" else b"<< >>"
