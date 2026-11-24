@@ -1,4 +1,4 @@
-# Draft: comment on docling-project/docling#2963 (not posted; needs the owner's OK on the exact text)
+# Draft: comment on docling-project/docling#2963 (posted 2026-11-24 unchanged as https://github.com/docling-project/docling/issues/2963#issuecomment-7120958919)
 
 Target: https://github.com/docling-project/docling/issues/2963 (open, no maintainer reply as of 2026-11-24).
 Measured in `results/docling-2026-11.md` (rounds 2 and 3); pre-registrations `results/preregistration-docling-2026-11.md`, `results/preregistration-docling2-2026-11.md` and `results/preregistration-docling3-2026-11.md`. Two independent read-only audits were applied.
