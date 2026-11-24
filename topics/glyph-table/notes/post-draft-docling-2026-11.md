@@ -1,25 +1,32 @@
 # Draft: comment on docling-project/docling#2963 (not posted; needs the owner's OK on the exact text)
 
-**On hold (2026-11-24): this round-1 draft is superseded. It wrongly calls the sample font a simple TrueType font (it is Type0/Identity-H, like the issue), it gives `images_scale` as if it set the OCR resolution, and it misses that docling 2.152.0 already has `replace_broken_text_layer`. Rewrite after round 2 (`results/preregistration-docling2-2026-11.md`).**
-
 Target: https://github.com/docling-project/docling/issues/2963 (open, no maintainer reply as of 2026-11-24).
-Measured in `results/docling-2026-11.md`; pre-registration `results/preregistration-docling-2026-11.md`.
+Measured in `results/docling-2026-11.md` (round 2); pre-registrations `results/preregistration-docling-2026-11.md` and `results/preregistration-docling2-2026-11.md`.
+Round-1 draft (superseded: wrong font description, missed `replace_broken_text_layer`) is in git history.
 
 ---
 
-A data point on the workaround in this issue (`force_full_page_ocr=True` with Tesseract), since it is the route every comment here ends up recommending.
+For anyone landing here: what this issue asks for has shipped as an opt-in option. It was added in #4654 and is in 2.152.0: `ocr_options.replace_broken_text_layer=True` checks each page's text layer and re-reads only the pages judged broken with full-page OCR.
 
-It removes the garbage, but Tesseract then swaps look-alike characters, with no flag in the output. I measured it on self-made monthly statements whose embedded font has no ToUnicode, no cmap table and no glyph names (a simple TrueType font rather than the Type0/Identity-H fonts in this issue, but with the same lack of any Unicode clue). Eleven months were scored against the generator's own text:
+I measured it on docling 2.152.0 with self-made monthly statements whose font is Type0 / Identity-H with no ToUnicode (and no cmap table or glyph names in the embedded TrueType), English and Japanese, 11 months each, scored against the generator's text:
+
+**Detection**
+- Pages with no ToUnicode: 22 of 22 judged broken.
+- Real PDFs with a good text layer (Japan's Statistics Bureau monthly report, 55 pages): 0 judged broken.
+- A ToUnicode that maps every glyph 3 code points too high (`the` → `wkh`, the Caesar-shift case described in an earlier comment): 0 of 11 judged broken, so the shifted text goes straight through.
+
+**The OCR it falls back to** (characters silently replaced by a different one; no flag in the output)
 
 | | English, 5,259 chars | Japanese, 4,207 chars |
 | --- | --- | --- |
-| default conversion | unusable (5,117 missing) | unusable (3,959 missing) |
-| `force_full_page_ocr` + Tesseract (`eng` / `jpn`) | **137 substituted** | **330 substituted** |
+| default engine (`OcrAutoOptions` → RapidOCR, torch) | 113 | did not run: no installed engine for `ja` in a plain `pip install docling` |
+| Tesseract (`eng` / `jpn`), scale 3.0 | 137 | 328 |
+| Tesseract, scale 2.0 / 4.0 | 142 / 130 | 429 / 283 |
 
-- English: O→0 (43), l→1 (33), I→1 (30), I→l (15), l→I (8); for example the item code `0I-979` came out as `Ol-979`.
-- Japanese: digits 0→9 (89) and 0→6 (21), and kanji read as look-alike katakana, such as 一→ー (82) and 力→カ (27); one amount went from `10,908` to `19,908`.
-- Two runs gave byte-identical output, so the same characters are swapped every time.
+- English: l→I, O→0, I→1, l→1, 6→9; for example the item code `0I-979` came out as `Ol-979`.
+- Japanese: 0→9 and 0→6 in dates and amounts (`10,908` became `19,908`), and kanji read as look-alike katakana such as 一→ー and 力→カ.
+- Two runs of each setting gave identical output.
 
-So a detector for broken text layers (as proposed above) would help, but the fallback it switches to is not error-free on this kind of document: codes and numbers can change silently. It may be worth saying so in the troubleshooting docs requested in this issue.
+So the detection works well for missing mappings, and it did not fire on good pages here. Two things a user may want to know: the fallback OCR changes codes and numbers without any mark, and a wrong-but-plausible ToUnicode is not caught. Perhaps worth a line in the option's docs.
 
-Setup: docling 2.152.0, docling-parse 7.27.1, Tesseract 5.3.4, `images_scale=2.0`, `do_table_structure=False`. Sample generator, outputs, settings and scoring script: https://github.com/yasumorishima/document-extraction-lab/blob/main/topics/glyph-table/results/docling-2026-11.md
+Setup, outputs and scoring script: https://github.com/yasumorishima/document-extraction-lab/blob/main/topics/glyph-table/results/docling-2026-11.md
