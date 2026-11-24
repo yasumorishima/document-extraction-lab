@@ -43,7 +43,7 @@ docling issue #2963（未解決、2026-11-24 時点でメンテナーの返事�
 
 ## 第 2 回：壊れた文字の層の置き換え（`replace_broken_text_layer`）（2026-11-24）
 
-事前登録：`results/preregistration-docling2-2026-11.md`（実行前に main に入れた、PR #25）。出力 `results/oss/docling/round2/`、集計 `results/oss/docling/round2/summary.json`。
+事前登録：`results/preregistration-docling2-2026-11.md`（実行前に main に入れた、PR #25）。出力 `results/oss/docling/round2/`（正常な PDF の 2 本は判定の記録 `run.json` だけ）、集計 `results/oss/docling/round2/summary.json`。
 
 docling 2.152.0 には、#2963 が求めている機能がすでに入っている（PR #4654、2026-10-27 マージ、既定では無効）。`replace_broken_text_layer=True` にすると、文字の層が壊れていると判定したページだけを OCR で読み直す。判定は `docling/utils/text_quality.py` の `is_broken_text_layer`（U+FFFD や制御文字の割合、英字の母音の少なさなど）。
 
@@ -53,7 +53,7 @@ docling 2.152.0 には、#2963 が求めている機能がすでに入ってい�
 | 自作 英語（ToUnicode なし） | 11 | **11** |
 | 自作 日本語（ToUnicode なし） | 11 | **11**（Tesseract の設定で。既定エンジンは日本語で動かず、下記） |
 | 自作 英語、文字を 3 つずらした ToUnicode（"the" → "wkh"） | 11 | **0** |
-| 人口推計 月報の元の PDF（正常な文字の層）1〜5 ページ × 11 か月 | 55 | **0**（既定エンジンの設定）／CONTROL_TESS（Tesseract の設定） |
+| 人口推計 月報の元の PDF（正常な文字の層）1〜5 ページ × 11 か月 | 55 | **0**（既定エンジンの設定）／**0**（Tesseract の設定） |
 
 ### 置き換えた後の読み取り（2〜12 月、置き換え＝誤り）
 | 設定 | 英語 5,259 字 | 日本語 4,207 字 |
@@ -72,7 +72,7 @@ docling 2.152.0 には、#2963 が求めている機能がすでに入ってい�
 ### 事前登録との照合
 - **F3（成立）**：対応表のない自作 22 ページは、すべて壊れていると判定された。
 - **F4（成立）**：置き換えた後も、英語で既定エンジン 113 字・Tesseract 137 字が黙って置き換わる（O/0、I/l/1 を含む）。解像度を 2.0〜4.0 に変えても 130〜142 字。
-- **F5**：正常な人口推計 55 ページは、既定エンジンの設定で 0 ページが誤判定。Tesseract の設定は CONTROL_TESS_F5。
+- **F5（成立）**：正常な人口推計 55 ページは、既定エンジン・Tesseract のどちらの設定でも 0 ページが誤判定。
 - **F6**：文字を 3 つずらした対応表（#2963 で tseaver さんが報告した形）は、11 ページとも壊れていると判定されず、ずれた文字がそのまま出力された。
 - **F7（成立）**：帳簿方式は同じ PDF で英語・日本語とも 0。
 

@@ -1,0 +1,126 @@
+{
+ "arm": "replace-tess",
+ "options": {
+  "ocr": "TesseractCliOcrOptions",
+  "mode": "default",
+  "lang": [
+   "jpn"
+  ],
+  "scale": 3.0,
+  "replace_broken_text_layer": true,
+  "tesseract_cmd": "tesseract",
+  "path": null,
+  "psm": null,
+  "force_full_page_ocr": false
+ },
+ "date": "2026-11-24 00:13:02",
+ "python": "3.13.18",
+ "versions": {
+  "docling": "2.152.0",
+  "docling-core": "2.108.0",
+  "docling-parse": "7.27.1",
+  "docling-ibm-models": "4.0.4"
+ },
+ "files": [
+  {
+   "pdf": "ja-font-statement-2026-02.pdf",
+   "sha256": "3eb1c5987c30139fd8603b7b47a44de8332b9c7af48e2b3fa06a8c0769fe611c",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1371,
+   "seconds": 9.4
+  },
+  {
+   "pdf": "ja-font-statement-2026-03.pdf",
+   "sha256": "987eb1d613a67c9fd7c9076aa77927c8aca3fab21db2804b23642916664246dc",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1434,
+   "seconds": 5.6
+  },
+  {
+   "pdf": "ja-font-statement-2026-04.pdf",
+   "sha256": "d1217fc28a5a8c1827a8ba9a6bf4c56957a5eef4715538c9683844fe262d75ae",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1367,
+   "seconds": 5.5
+  },
+  {
+   "pdf": "ja-font-statement-2026-05.pdf",
+   "sha256": "ab54a358a6aa0142bd4b08e1782c7acb33c175bf93a4499d2bd30c1790ee3e7c",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1367,
+   "seconds": 5.4
+  },
+  {
+   "pdf": "ja-font-statement-2026-06.pdf",
+   "sha256": "1823a83473c7cff530335a273ada5c4732e901293bca10da2aec84a14a2f8c07",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1371,
+   "seconds": 5.6
+  },
+  {
+   "pdf": "ja-font-statement-2026-07.pdf",
+   "sha256": "440902a7331a5a721aecf8fb19a43a0b1089ff61da451d3d2ffe0ba0115aa6af",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1884,
+   "seconds": 5.7
+  },
+  {
+   "pdf": "ja-font-statement-2026-08.pdf",
+   "sha256": "aae0c0f4c208ce0fd04668c2946507d8ef59b5db5243798264fd6e4d2454b534",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1367,
+   "seconds": 5.6
+  },
+  {
+   "pdf": "ja-font-statement-2026-09.pdf",
+   "sha256": "a83fc14414307e22faac9804cfae9e8b7d11bcbf52796727c3144fe9e42dc996",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1974,
+   "seconds": 5.8
+  },
+  {
+   "pdf": "ja-font-statement-2026-10.pdf",
+   "sha256": "31a216a1269d0b5e9527e8193c8f97698766ef025796d8938170296526c6e31e",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1367,
+   "seconds": 5.5
+  },
+  {
+   "pdf": "ja-font-statement-2026-11.pdf",
+   "sha256": "fee7f6b970caeba232e9404389c5c29abd0b790d0cc659ccf4dba1ffcd158c89",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1371,
+   "seconds": 5.7
+  },
+  {
+   "pdf": "ja-font-statement-2026-12.pdf",
+   "sha256": "fcbc136e3830e4716ae3714076513e18ed7bc909b78c863a4b5de7e8602e33b0",
+   "parse_score": {
+    "1": 0.0
+   },
+   "chars": 1371,
+   "seconds": 5.6
+  }
+ ],
+ "auto_ocr_log": []
+}

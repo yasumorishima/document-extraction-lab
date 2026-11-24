@@ -1,0 +1,126 @@
+{
+ "arm": "replace-tess",
+ "options": {
+  "ocr": "TesseractCliOcrOptions",
+  "mode": "default",
+  "lang": [
+   "eng"
+  ],
+  "scale": 3.0,
+  "replace_broken_text_layer": true,
+  "tesseract_cmd": "tesseract",
+  "path": null,
+  "psm": null,
+  "force_full_page_ocr": false
+ },
+ "date": "2026-11-24 00:14:11",
+ "python": "3.13.18",
+ "versions": {
+  "docling": "2.152.0",
+  "docling-core": "2.108.0",
+  "docling-parse": "7.27.1",
+  "docling-ibm-models": "4.0.4"
+ },
+ "files": [
+  {
+   "pdf": "shift3-font-statement-2026-02.pdf",
+   "sha256": "d0e724b3a4f8fef458af5c9913ad1b986407f81d1a96e9c87ce676e8df1f61e4",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 572,
+   "seconds": 4.7
+  },
+  {
+   "pdf": "shift3-font-statement-2026-03.pdf",
+   "sha256": "2b7db3dd8307b7a4150845a1dc4d0a0c8837a4cf1a3a9aef735736eb371641a0",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 591,
+   "seconds": 0.8
+  },
+  {
+   "pdf": "shift3-font-statement-2026-04.pdf",
+   "sha256": "c88b1ba431f7bc74a0405d2b53aad4cfe8c9348959a44df467f03f592d006bec",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 1589,
+   "seconds": 4.0
+  },
+  {
+   "pdf": "shift3-font-statement-2026-05.pdf",
+   "sha256": "3124bbf1620d1fd4b4d05edc0bf3dfa614a0c8023b26c6417859b72bcf65316f",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 591,
+   "seconds": 0.7
+  },
+  {
+   "pdf": "shift3-font-statement-2026-06.pdf",
+   "sha256": "c8170ea3d962a950b1388aee0c2017495c9ff18464eca5e8e839917a98490221",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 566,
+   "seconds": 0.6
+  },
+  {
+   "pdf": "shift3-font-statement-2026-07.pdf",
+   "sha256": "d6080bea8cb4cbccf7381008637314d7d6cf3fb3692a946294bfb66f12961539",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 602,
+   "seconds": 0.7
+  },
+  {
+   "pdf": "shift3-font-statement-2026-08.pdf",
+   "sha256": "9427910f91d7b91876a1c10ec92c7726854a8b400716be4ddaf06bd7f02e9662",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 571,
+   "seconds": 0.7
+  },
+  {
+   "pdf": "shift3-font-statement-2026-09.pdf",
+   "sha256": "9e605755153c86ed6b000c740e6762ef59e18931e67a9385ee58e015461a4ab4",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 594,
+   "seconds": 0.6
+  },
+  {
+   "pdf": "shift3-font-statement-2026-10.pdf",
+   "sha256": "e1aeaadb03cae91501a5872aebbce9ba6d5efc43d9bf3c00690884882732cd3f",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 573,
+   "seconds": 0.7
+  },
+  {
+   "pdf": "shift3-font-statement-2026-11.pdf",
+   "sha256": "93e1b757a3036ccaa0608c5b455bc1bc1f525d10ab01d1c9b756f92902f99074",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 591,
+   "seconds": 0.7
+  },
+  {
+   "pdf": "shift3-font-statement-2026-12.pdf",
+   "sha256": "cfd6245c4d037bda0a1e06574115c635e244138bc17d4ef3f1f6890e18294e78",
+   "parse_score": {
+    "1": 1.0
+   },
+   "chars": 577,
+   "seconds": 0.7
+  }
+ ],
+ "auto_ocr_log": []
+}

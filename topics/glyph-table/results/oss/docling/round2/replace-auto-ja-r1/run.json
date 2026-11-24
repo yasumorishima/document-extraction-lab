@@ -1,0 +1,106 @@
+{
+ "arm": "replace-auto",
+ "options": {
+  "ocr": "OcrAutoOptions",
+  "mode": "default",
+  "lang": [
+   "ja"
+  ],
+  "scale": 3.0,
+  "replace_broken_text_layer": true,
+  "force_full_page_ocr": false
+ },
+ "date": "2026-11-24 00:18:14",
+ "python": "3.13.18",
+ "versions": {
+  "docling": "2.152.0",
+  "docling-core": "2.108.0",
+  "docling-parse": "7.27.1",
+  "docling-ibm-models": "4.0.4"
+ },
+ "files": [
+  {
+   "pdf": "ja-font-statement-2026-02.pdf",
+   "sha256": "3eb1c5987c30139fd8603b7b47a44de8332b9c7af48e2b3fa06a8c0769fe611c",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.3
+  },
+  {
+   "pdf": "ja-font-statement-2026-03.pdf",
+   "sha256": "987eb1d613a67c9fd7c9076aa77927c8aca3fab21db2804b23642916664246dc",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-04.pdf",
+   "sha256": "d1217fc28a5a8c1827a8ba9a6bf4c56957a5eef4715538c9683844fe262d75ae",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-05.pdf",
+   "sha256": "ab54a358a6aa0142bd4b08e1782c7acb33c175bf93a4499d2bd30c1790ee3e7c",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-06.pdf",
+   "sha256": "1823a83473c7cff530335a273ada5c4732e901293bca10da2aec84a14a2f8c07",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-07.pdf",
+   "sha256": "440902a7331a5a721aecf8fb19a43a0b1089ff61da451d3d2ffe0ba0115aa6af",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-08.pdf",
+   "sha256": "aae0c0f4c208ce0fd04668c2946507d8ef59b5db5243798264fd6e4d2454b534",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-09.pdf",
+   "sha256": "a83fc14414307e22faac9804cfae9e8b7d11bcbf52796727c3144fe9e42dc996",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-10.pdf",
+   "sha256": "31a216a1269d0b5e9527e8193c8f97698766ef025796d8938170296526c6e31e",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-11.pdf",
+   "sha256": "fee7f6b970caeba232e9404389c5c29abd0b790d0cc659ccf4dba1ffcd158c89",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  },
+  {
+   "pdf": "ja-font-statement-2026-12.pdf",
+   "sha256": "fcbc136e3830e4716ae3714076513e18ed7bc909b78c863a4b5de7e8602e33b0",
+   "flag": "error",
+   "error": "OcrLanguageNotSupportedError(\"Automatic OCR engine selection has no model for the OCR language 'ja'. No installed engine can serve it:\\n  - nemotron: not installed\\n  - rapidocr (onnxruntime): not installed\\n  - easyocr: not installed\\n  - rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, is",
+   "seconds": 0.0
+  }
+ ],
+ "auto_ocr_log": [
+  "Auto OCR: skipping rapidocr (torch): RapidOCR (backend=torch) has no model for the OCR language 'ja'. Engine codes: arabic, cyrillic, devanagari, latin. Supported: iso:af, iso:az, iso:bs, iso:ca, iso:cs, iso:cy, iso:da, iso:de, iso:en, iso:es, iso:et, iso:eu, iso:fi, iso:fil, iso:fr, iso:ga, iso:gl, iso:hr, iso:hu, iso:id, iso:is, iso:it, iso:ja, iso:kn, iso:ko, iso:ku, iso:la, iso:lb, iso:lt, iso:lv, iso:mi, iso:ms, iso:mt, iso:nl, iso:no, iso:oc, iso:pl, iso:pt, iso:qu, iso:rm, iso:ro, iso:sk, iso:sl, iso:sq, iso:sr-Latn, iso:sv, iso:sw, iso:ta, iso:te, iso:tr, iso:uz, iso:vi, iso:zh, iso:zh-Hant.",
+  "Nemotron cannot be used because it is not installed.",
+  "easyocr cannot be used because it is not installed.",
+  "rapidocr cannot be used because onnxruntime is not installed."
+ ]
+}
