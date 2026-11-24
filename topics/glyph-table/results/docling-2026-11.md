@@ -1,5 +1,7 @@
 # 評価：docling の「ページ全体を OCR し直す」回避策（2026-11-24）
 
+> 第 2 回（壊れた文字の層を置き換える `replace_broken_text_layer`、既定の OCR エンジン、帳簿方式を同じ PDF で）は `results/preregistration-docling2-2026-11.md` で事前登録。結果は下に追記する。
+
 事前登録：`results/preregistration-docling-2026-11.md`（実行前に main に入れた）。実行場所：Claude Code クラウド（x86_64）。
 出力と設定：`results/oss/docling/`（各 `run.json` に版・設定・入力 PDF の sha256・時間）、集計 `results/oss/docling/summary.json`（`tools/summarize_docling.py`）。
 
@@ -8,10 +10,10 @@ docling issue #2963（未解決、2026-11-24 時点でメンテナーの返事�
 文字の対応表（ToUnicode）がないフォントの PDF は、docling の既定では文字化けする。issue で示された回避策は、Tesseract でページ全体を OCR し直すこと（`force_full_page_ocr=True`）で、コメントでも「これしか道がない」とされている。
 その回避策で、似た字が黙って置き換わるかを測った。
 
-- サンプル：自作の明細（`samples/make_sample.py` の `font` モード。埋め込み TrueType で、ToUnicode・cmap 表・グリフ名なし）。英語（Liberation Sans）と日本語（IPAゴシック）、各 12 か月のうち 2〜12 月を採点。
-- issue のフォントは Type0/CID（Identity-H）で、こちらは単純な TrueType。どちらも Unicode の手がかりがない点は同じ。
+- サンプル：自作の明細（`samples/make_sample.py` の `font` モード。Type0 フォント、CIDFontType2、`/Encoding /Identity-H`、`/CIDToGIDMap /Identity`、ToUnicode なし。埋め込み TrueType には cmap 表もグリフ名もない）。英語（Liberation Sans）と日本語（IPAゴシック）、各 12 か月のうち 2〜12 月を採点。
+- issue と同じ種類のフォント（Type0/CID、Identity-H、ToUnicode なし）。2026-11-24 訂正：最初の版は「こちらは単純な TrueType」と書いていたが誤り（生成スクリプトを読み直して確認。事前登録の第 1 回にも同じ誤りがあり、凍結のため第 2 回の事前登録に訂正を書いた）。
 - 版：docling 2.152.0、docling-parse 7.27.1、docling-core 2.108.0、docling-ibm-models 4.0.4、Tesseract 5.3.4（eng・jpn）。
-- 回避策の設定は issue のとおり：`do_ocr=True`、`TesseractCliOcrOptions(force_full_page_ocr=True, lang=[eng|jpn])`、`images_scale=2.0`、`do_table_structure=False`。2 回実行した。
+- 回避策の設定は issue のとおり：`do_ocr=True`、`TesseractCliOcrOptions(force_full_page_ocr=True, lang=[eng|jpn])`、`images_scale=2.0`、`do_table_structure=False`。OCR の解像度は `images_scale` ではなく OCR 側の `scale`（既定 3.0 = 216 dpi）で決まるので、Tesseract は scale 3.0 で動いた（2026-11-24 追記）。2 回実行した。
 
 ## 結果（2〜12 月）
 | 方法 | 英語 5,259 字：誤り（置き換え）／余分／足りない | 日本語 4,207 字：同 |

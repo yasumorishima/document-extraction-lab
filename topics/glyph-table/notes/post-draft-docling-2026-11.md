@@ -1,5 +1,7 @@
 # Draft: comment on docling-project/docling#2963 (not posted; needs the owner's OK on the exact text)
 
+**On hold (2026-11-24): this round-1 draft is superseded. It wrongly calls the sample font a simple TrueType font (it is Type0/Identity-H, like the issue), it gives `images_scale` as if it set the OCR resolution, and it misses that docling 2.152.0 already has `replace_broken_text_layer`. Rewrite after round 2 (`results/preregistration-docling2-2026-11.md`).**
+
 Target: https://github.com/docling-project/docling/issues/2963 (open, no maintainer reply as of 2026-11-24).
 Measured in `results/docling-2026-11.md`; pre-registration `results/preregistration-docling-2026-11.md`.
 
